@@ -7,13 +7,15 @@
     font-weight: 300;
 }
 .heroArea {
+    margin-top: 50px;
     height: calc(100% - 50px);
     width: 100%;
     position: relative;
     z-index: 800;
     overflow: hidden;
-    background-image: url(../media/herobg-1.jpg);
+    background-image: url(../media/herobg-3.jpg);
     background-size: cover;
+    background-position: bottom
 }
 .heroBoxContainer {
     max-width: 900;
@@ -39,7 +41,7 @@
     height: 60;
     display: flex;
     margin: 0 auto;
-    margin-bottom: 15;
+    margin-bottom: 20;
     margin-top: 10;
     max-width: 450;
 }
@@ -84,10 +86,14 @@ input[type=text] {
     font-size: 115%!important;
 }
 .nav-top {
+    top: 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     height: 50;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: white;
     z-index: 900;
 }
 #loginButton {
@@ -98,4 +104,12 @@ input[type=text] {
 #cookButton {
     margin-left: 40;
     text-transform: none;
+}
+
+.aboutSection {
+    margin-top: -2;
+    height: 300;
+    z-index: 900;
+    position: relative;
+    background-color: #010102;
 }
