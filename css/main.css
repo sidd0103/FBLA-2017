@@ -13,7 +13,7 @@
     position: relative;
     z-index: 800;
     overflow: hidden;
-    background-image: url(../media/herobg-6.jpg);
+    background-image: url(../media/herobg-3.jpg);
     background-size: cover;
     background-position: bottom
 }
@@ -108,56 +108,8 @@ input[type=text] {
 
 .aboutSection {
     margin-top: -2;
-    overflow: hidden;
-    min-height: 100%;
+    height: 300;
+    z-index: 900;
     position: relative;
-    1b2443
-    background: linear-gradient(down, #1b2443, black);
-    background: linear-gradient(#1b2443, black);
-}
-
-
-.slantSection {
-    background: white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    margin-top: 150;
-    padding: 50;
-    height: 200;
-}
-.slantSection:before, .slantSection:after {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  -webkit-backface-visibility: hidden;
-}
-.slantSection:before {
-  top: 0;
-  -webkit-transform: skewY(1.5deg);
-          transform: skewY(1.5deg);
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
-}
-.slantSection:after {
-  bottom: 0;
-  -webkit-transform: skewY(-3.5deg);
-          transform: skewY(-3s.5deg);
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
-}
-
-.backgroundbg {
-    width: 100%;
-    height: 100%;
-    background-image: url(../media/herobg-7.jpg);
-    background-size: cover;
+    background-color: #010102;
 }
