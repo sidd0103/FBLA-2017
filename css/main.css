@@ -1,3 +1,10 @@
+/*FONTS*/
+@font-face {
+    font-family: summerHearts;
+    src: url(../fonts/SummerHearts-Regular.otf);
+}
+
+/*HERO SECTION*/
 .title {
     position: absolute;
     width: 100%;
@@ -13,7 +20,7 @@
     position: relative;
     z-index: 800;
     overflow: hidden;
-    background-image: url(../media/herobg-3.jpg);
+    background-image: url(../media/alt.jpg);
     background-size: cover;
     background-position: bottom
 }
@@ -94,7 +101,7 @@ input[type=text] {
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 900;
+    z-index: 950;
 }
 #loginButton {
     margin-left: auto;
@@ -106,10 +113,161 @@ input[type=text] {
     text-transform: none;
 }
 
+
+
+/*ABOUT SECTION*/
+/*ABOUT SECTION*/
+/*ABOUT SECTION*/
 .aboutSection {
     margin-top: -2;
-    height: 300;
+    display: flex;
+    align-items: center;
     z-index: 900;
+    flex-direction: column;
     position: relative;
     background-color: #010102;
+}
+.aboutSection:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+
+}
+.tastesContainer {
+    color: white;
+    font-weight: 300;
+    font-size: 300%;
+    margin-top: 100;
+    content: '';
+}
+.mansoryArea {
+    height: 300;
+    column-count: 3;
+    column-gap: 0px;
+    background-color: white;
+}
+.mansoryItem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.darker-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0,0,0,.6)
+}
+.x {
+    background-image: url(../media/foodpics/tuscany-grape-field-nature-51947.jpg);
+}
+.y {
+    background-image: url(../media/foodpics/restraunt.jpg);
+}
+.z {
+    background-image: url(../media/foodpics/homemade.jpg);
+}
+.description {
+    position: absolute;
+    bottom: 20;
+    left: 20;
+    font-size: 20;
+}
+.location {
+    font-size: 15;
+}
+.mansoryContainer {
+    padding: 50;
+    margin-bottom: 100;
+    border-radius: 30px;
+    margin-top: 30;
+
+}
+.title-mansory {
+    font-weight: 300;
+    text-align: center;
+    font-weight: 100;
+    font-size: 80%;
+    color: WHITE;
+    margin-top: -70;
+    text-shadow: 0 0 24px black;
+
+}
+.about-sub {
+    text-align: center;
+    font-weight: 100;
+}
+
+/*DOOR SECTION*/
+.doorsection {
+    height: 300;
+    background-position: center;
+    background-image: url(../media/doorstep.jpg);
+    background-size: cover;
+}
+.darker-overlay2 {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.door-sub {
+    color: white;
+    font-size: 300%;
+    text-shadow: 0 0 24px black;
+    font-weight: 200;
+}
+/*GET STARTED SECTION */
+.madeForConsumers {
+
+    background-color: #010102;
+    height: 400;
+    position: relative;
+    z-index: 900;
+    overflow: visible;
+}
+.madeForConsumers:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    top: 0;
+    -webkit-transform: skewY(1.5deg);
+      transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.subtitleForConsumers {
+    font-weight: 300;
+    text-align: center;
+    font-weight: 100;
+    font-size: 300%;
+    color: WHITE;
+    padding-top: 120;
+    text-shadow: 0 0 24px black;
+    position: relative;
 }
