@@ -4,6 +4,9 @@
     src: url(../fonts/SummerHearts-Regular.otf);
 }
 
+body {
+    overflow-x: hidden;
+}
 /*HERO SECTION*/
 .title {
     position: absolute;
@@ -237,37 +240,111 @@ input[type=text] {
 }
 /*GET STARTED SECTION */
 .madeForConsumers {
-
+    display: block;
+    justify-content: center;
     background-color: #010102;
-    height: 400;
     position: relative;
     z-index: 900;
     overflow: visible;
 }
-.madeForConsumers:before {
+.madeForConsumers:before, .madeForConsumers:after  {
     background: inherit;
     content: '';
     display: block;
     height: 50%;
-    top: 0;
-    -webkit-transform: skewY(1.5deg);
-      transform: skewY(1.5deg);
-    -webkit-transform-origin: 100% 0;
-      transform-origin: 100% 0;
     left: 0;
     position: absolute;
     right: 0;
-    -webkit-backface-visibility: hidden;
+    z-index: -1;
+}
+.madeForConsumers:before {
+    top: 0;
     -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+    -webkit-transform: skewY(1.5deg);
+    transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
 }
-.subtitleForConsumers {
+.madeForConsumers:after {
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.cookMessage {
     font-weight: 300;
     text-align: center;
     font-weight: 100;
     font-size: 300%;
     color: WHITE;
-    padding-top: 120;
+    padding-top: 70;
     text-shadow: 0 0 24px black;
     position: relative;
+}
+.cooksArea {
+    max-width: 902;
+    margin: 0 auto;
+    padding-bottom: 70;
+    display: block;
+    position: relative;
+}
+.mansory-chefs {
+    height: 300;
+    column-gap: 0px;
+    font-weight: 300;
+    column-count: 3;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+}
+.mansory-chefsContainer {
+    padding: 50;
+    margin-top: 20;
+}
+.farmer-pic  {
+    background-image: url(../media/people/farmer.jpg);
+}
+.average-pic{
+    background-image: url(../media/people/average.jpg);
+}
+.cook-pic {
+    background-image: url(../media/people/cook.jpg);
+}
+
+/*JOIN NOW*/
+.joinNow {
+    height: 400;
+    background-image: url(../media/food-dinner-grilled-shashlik.jpg);
+    background-size: cover;
+
+    background-position: center;
+
+}
+.join-message {
+    color: white;
+    font-size: 300%;
+    font-weight: 200;
+}
+.join {
+    flex-direction: column;
+}
+#getStarted {
+    margin-top: 20;
+}
+
+/*footer */
+.upshadow {
+    -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.unbold {
+    font-weight: 300;
+}
+.expand {
+    margin-bottom: 20;
 }
