@@ -18,7 +18,7 @@ body {
 }
 .heroArea {
     margin-top: 50px;
-    height: calc(100% - 50px);
+    min-height: calc(100% - 50px);
     width: 100%;
     position: relative;
     z-index: 800;
@@ -32,6 +32,7 @@ body {
     margin: 0 auto;
     padding: 60;
     margin-top: 40;
+    margin-bottom: 200;
 }
 .heroBox {
     padding: 30;
@@ -111,7 +112,7 @@ input[type=text] {
     margin-right: 40;
     text-transform: none;
 }
-#cookButton {
+#registerButton {
     margin-left: 40;
     text-transform: none;
 }
@@ -123,10 +124,7 @@ input[type=text] {
 /*ABOUT SECTION*/
 .aboutSection {
     margin-top: -2;
-    display: flex;
-    align-items: center;
     z-index: 900;
-    flex-direction: column;
     position: relative;
     background-color: #010102;
 }
@@ -154,10 +152,25 @@ input[type=text] {
     content: '';
 }
 .mansoryArea {
+    max-width: 902;
+    margin: 0 auto;
+    padding-bottom: 70;
+    display: block;
+    position: relative;
+}
+.mansory-types {
     height: 300;
-    column-count: 3;
     column-gap: 0px;
-    background-color: white;
+    font-weight: 300;
+    column-count: 3;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+}
+.mansory-types-container{
+    padding: 50;
+    margin-top: 20;
 }
 .mansoryItem {
     position: relative;
@@ -201,18 +214,21 @@ input[type=text] {
 
 }
 .title-mansory {
-    font-weight: 300;
-    text-align: center;
     font-weight: 100;
-    font-size: 80%;
+    text-align: center;
+    font-size: 230%;
     color: WHITE;
     margin-top: -70;
     text-shadow: 0 0 24px black;
 
 }
 .about-sub {
+    padding-top: 70;
     text-align: center;
     font-weight: 100;
+    color: white;
+    font-size: 300%;
+    font-weight: 200;
 }
 
 /*DOOR SECTION*/
@@ -234,6 +250,7 @@ input[type=text] {
 }
 .door-sub {
     color: white;
+    text-align: center;
     font-size: 300%;
     text-shadow: 0 0 24px black;
     font-weight: 200;
@@ -315,7 +332,9 @@ input[type=text] {
 .cook-pic {
     background-image: url(../media/people/cook.jpg);
 }
-
+.responsive-columns  {
+    
+}
 /*JOIN NOW*/
 .joinNow {
     height: 400;
@@ -326,6 +345,7 @@ input[type=text] {
 
 }
 .join-message {
+    text-align: center;
     color: white;
     font-size: 300%;
     font-weight: 200;
@@ -347,4 +367,32 @@ input[type=text] {
 }
 .expand {
     margin-bottom: 20;
+}
+
+
+/*responsivness*/
+@media only screen and (max-width: 1000px) {
+    .sectionTitle  {
+        font-size: 250%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .responsive-columns {
+        column-count: 1;
+        height: auto;
+    }
+    .mansoryItem {
+        height: 300;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .sectionTitle  {
+        font-size: 200%;
+        padding-left: 20;
+        padding-right: 20;
+    }
+    .heroBoxContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

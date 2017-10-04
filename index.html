@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-
+    <script src="js/mediaCheck-min.js"></script>
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
     <link href="css/main.css" rel="stylesheet">
-    <script src="js/parallax.js"></script>
+    <script src="js/responsive.js"></script>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
     <main>
         <div class="z-depth-4 nav-top">
             <div class="title red-text accent-3 ">TASTERY</div>
-            <a id="cookButton" class="white red-text accent-3 waves-effect waves btn">Sign Up</a>
-            <a id="loginButton" class="red accent-3 waves-effect waves-light btn">Sign In</a>
+            <a id="registerButton" class="white red-text accent-3 waves-effect waves btn">Sign Up</a>
+            <a id="loginButton" class="loginbtn red accent-3 waves-effect waves-light btn">Sign In</a>
         </div>
         <div class="heroArea">
             <div class="heroBoxContainer">
@@ -53,10 +53,10 @@
 
         </div>
         <div class="aboutSection">
-            <div class="tastesContainer">
-                <div class="about-sub">Affordable, Local, and Vibrant Tastes a tap away.</div>
-                <div class="z-depth-4 mansoryContainer">
-                    <div class="z-depth-4 mansoryArea">
+            <div class="sectionTitle about-sub">Affordable, Local, and Vibrant Tastes a tap away.</div>
+            <div class="z-depth-4 mansoryArea">
+                <div class="mansoryResponsive mansory-types-container">
+                    <div class="responsive-columns mansory-types">
                         <div class="x mansoryItem">
                             <div class="waves-effect darker-overlay">
                                 <div class="title-mansory">PRODUCE</div>
@@ -91,7 +91,7 @@
         </div>
         <div class="doorsection">
             <div class="darker-overlay2">
-                <div class="door-sub">All delivered straight to your door.</div>
+                <div class="sectionTitle door-sub">All delivered straight to your door.</div>
 
             </div>
 
@@ -99,9 +99,9 @@
         </div>
         <div class="madeForConsumers">
             <div class="cooksArea">
-                <div class="cookMessage">Made for Consumers, By Consumers</div>
-                <div class="mansory-chefsContainer">
-                    <div class="mansory-chefs">
+                <div class="sectionTitle cookMessage">Made for Consumers, By Consumers</div>
+                <div class="mansoryResponsive mansory-chefsContainer">
+                    <div class="responsive-columns mansory-chefs">
                         <div class="farmer-pic mansoryItem">
                             <div class="waves-effect darker-overlay">
                                 <div class="description">
@@ -134,7 +134,7 @@
         </div>
         <div class="joinNow">
             <div class="join darker-overlay">
-                <div class="join-message">Join the Food Revolution Today.</div>
+                <div class="sectionTitle join-message">Join the Food Revolution Today.</div>
                 <a id="getStarted" class="red accent-3 waves-effect waves-light btn-large">Get started</a>
             </div>
         </div>
@@ -159,7 +159,7 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container">
+        <div class="grey-text text-lighten-4  container">
             © 2017 Tastery 
             <a class="grey-text text-lighten-4 right" href="#!">Privacy</a>
         </div>
