@@ -1,0 +1,14 @@
+{
+  "short_name": "Tastery",
+  "name": "Tastery Food Delivery",
+  "start_url": "index.html?launcher=true",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "manifest-icons/tastery-logo.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    }
+  ]
+}

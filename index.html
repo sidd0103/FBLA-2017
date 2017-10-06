@@ -4,6 +4,8 @@
     <!--SEO Optimization-->
     <title>Tastery Food Delivery Made by Consumers for Consumers</title>
     <link href="media/tastery-logo.png" rel="icon">
+    <!--Manifest-->
+    <link rel="manifest" href="manifest.json">
     <!--Link Prelim js-->
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/materialize.js"></script>
@@ -21,6 +23,11 @@
     <!--Get our working files linked-->
     <link href="css/main.css" rel="stylesheet">
     <script src="js/responsive.js"></script>
+    <script src="js/location.js"></script>
+    <!--GMAPS API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete"
+    async defer></script>
+    <link href="css/autocomplete.css" rel=stylesheet>
 </head>
 
 <body>
@@ -43,7 +50,7 @@
                     <div class="z-depth-3 red accent-3 enterLocation">
                         <div class="location-input">
 
-                            <input placeholder="Enter Your Location" class="input-location-box white-text" type="text">
+                            <input id="enterLocation" placeholder="Enter Your Location" class="input-location-box white-text" type="text">
 
                         </div>
                         <div class="waves-effect location-submit"><i class="check-icon material-icons">check</i></div>

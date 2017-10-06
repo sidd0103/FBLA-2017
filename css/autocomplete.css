@@ -1,0 +1,22 @@
+.pac-item {
+    padding: 10;
+}
+.pac-container {
+    display: block!important;
+    margin-top: 10;
+    position: relative;
+    max-width: 370!important;
+    margin-left: -30;
+    margin-right: 30;
+}
+.pac-container:after {
+    display: none!important;
+}
+.pac-matched {
+    font-family: Roboto;
+    font-weight: 400!important;
+}
+.pac-item-query {
+    font-family: Roboto;
+    font-weight: 400!important;
+}
