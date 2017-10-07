@@ -73,10 +73,12 @@ body {
 .location-input {
     padding-top: 8.4;
     width: calc(100% - 100px);
+}
+#enterLocation {
     padding-left: 30;
     padding-right: 30;
+    width: calc(100% - 60px)!important;
 }
-
 .location-submit:hover .check-icon{
     color: #ff1744;
     transform: scale(1.1);
