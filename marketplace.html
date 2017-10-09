@@ -9,9 +9,11 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/momentjs.js"></script>
+    <script src="js/nouislider.js"></script>
     <!--Link prelim css-->
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/materialize.css" rel="stylesheet">
+    <link href="css//nouislider.css" rel="stylesheet">
     <!--Link fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
@@ -35,10 +37,10 @@
     <!--HEADER BAR-->
     <div class="z-depth-1 nav-top">
         <div class="title red-text accent-3 ">TASTERY</div>
-        <div class="z-depth-3 waves-effect waves-light openNav"><a data-activates="navigationBar" id="openNavbtn" class="nav-button"><i class="white-text material-icons">menu</i></a></div>
+        <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
         <div class="z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="location-display">West Portola Ave</span></div>
         <div class="z-depth-2 level"><i class="material-icons">show_chart</i><span class="level-display">Level 1 <b>Taster</b></span></div>
-        <div class="z-depth-3 waves-effect waves-light openCart"><a data-activates="shoppingCart" id="openCartbtn" class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
+        <div  data-activates="shoppingCart" id="openCartbtn"  class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
     </div>
     <!--MAIN TAG THAT HOLDS EVERYTHING-->
     <main>
@@ -47,13 +49,21 @@
     </main>
     <!--SIDE NAVIGATION BAR -->
     <ul id="navigationBar" class="fixed side-nav">
-        <li class="z-depth-1 userBox">
-            <div class="movemeUp user-view">
+        <li class="userWindow">
+            <div class="user-view">
+                <div class="background">
+              
+                </div>
+                <a href="#!user"><img class="circle" src="media/people/average-square.jpg"></a>
                 <a href="#!name"><span class="black-text name">John Doe</span></a>
                 <a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Quick Filter</a></li>
+        <li><div id="test-slider"></div></li>
         <li><a href="#!">Second Link</a></li>
         <li>
             <div class="divider"></div>
@@ -63,8 +73,8 @@
     </ul>
     <!--SHOPPING CART -->
     <ul id="shoppingCart" class="right-aligned fixed side-nav">
-        <li class="z-depth-1 cartTitle">My Cart</li>
-
+        <li class="cartTitle">My Cart</li>
+        <li class="waves-effect z-depth-5 checkoutbnt">Check Out</li>
     </ul>
 
 
