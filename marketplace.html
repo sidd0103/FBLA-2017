@@ -27,6 +27,7 @@
     <script src="js/responsive.js"></script>
     <script src="js/location.js"></script>
     <script src="js/marketplace.js"></script>
+    <script src="js/itemGenerator.js"></script>
     <!--GMAPS API-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
     <link href="css/autocomplete.css" rel=stylesheet>
@@ -44,16 +45,15 @@
     </div>
     <!--MAIN TAG THAT HOLDS EVERYTHING-->
     <main>
-        <!--DASHBOARD BAR-->
-
+        <div class="marketplace-window">
+            <div class="restraunt-items"></div>
+        </div>
     </main>
     <!--SIDE NAVIGATION BAR -->
     <ul id="navigationBar" class="fixed side-nav">
         <li class="userWindow">
             <div class="user-view">
-                <div class="background">
-              
-                </div>
+                <div class="background"></div>
                 <a href="#!user"><img class="circle" src="media/people/average-square.jpg"></a>
                 <a href="#!name"><span class="black-text name">John Doe</span></a>
                 <a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
@@ -62,7 +62,13 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">Quick Filter</a></li>
+        <li class="filter-select">
+            <select>
+              <option selected value="1">Filter Price Range</option>
+              <option value="2">Filter Rating Range</option>
+              <option value="3">Filter Popularity Range</option>
+            </select>
+        </li>
         <li class="priceSlider"><div id="test-slider"></div></li>
         <li>
             <div class="divider"></div>
