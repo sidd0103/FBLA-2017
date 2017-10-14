@@ -85,6 +85,20 @@
 .userWindow{
     margin-top: 50;
 }
+.priceSlider {
+    padding: 30;
+    padding-bottom: 30;
+    padding-top: 15;
+}
+.noUi-tooltip span {
+    display: block;
+    top: -10;
+    text-align: center;
+    left: -.5;
+}
+.noUi-target.noUi-horizontal .noUi-tooltip, .noUi-connect, .noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle{
+    background-color: #ff1744;
+}
 /*SHOPPING CART*/
 .cartTitle {
     font-size: 24;
