@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Tastery Food Delivery Made by Consumers for Consumers</title>
+    <link href="media/tastery-logo.png" rel="icon">
+    <!--Manifest-->
+    <link rel="manifest" href="manifest.json">
+    <!--Link Prelim js-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/momentjs.js"></script>
+    <script src="js/nouislider.js"></script>
+    <!--Link prelim css-->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="css//nouislider.css" rel="stylesheet">
+    <!--Link fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <script src="js/mediaCheck-min.js"></script>
+    <!--Set page attributes, ie responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Get our working files linked-->
+    <script src="js/animations.js"></script>
+    <link href="css/marketplace.css" rel="stylesheet">
+    <script src="js/responsive.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/marketplace.js"></script>
+    <script src="js/itemGenerator.js"></script>
+    <!--GMAPS API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
+    <link href="css/autocomplete.css" rel=stylesheet>
+
+</head>
+
+<body>
+    <!--HEADER BAR-->
+    <div class="z-depth-1 nav-top">
+        <div class="title red-text accent-3 ">TASTERY</div>
+        <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
+        <div id="responsive-change" class="z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="location-display">West Portola Ave</span></div>
+        <div id="responsive-change" class="z-depth-2 level"><i class="material-icons">show_chart</i><span class="level-display">Level 1 <b>Taster</b></span></div>
+        <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
+    </div>
+    <div class="searchbox-container">
+        <div class="searchbox">
+            <input class="searchInput" placeholder="Search for anything" type="text">
+        
+        </div>
+    </div>
+    <!--MAIN TAG THAT HOLDS EVERYTHING-->
+    <main>
+        <div class="marketplace-window">
+            <div class="paralaxheader"></div>
+            <div class="upshadow item-banner">RESTAURANTS</div>
+            <div id="restraunt-items" class="striped window-items"></div>
+            <div class="item-banner">DISHES</div>
+            <div id="dish-items" class="striped window-items"></div>
+            <div class="item-banner">PRODUCE</div>
+            <div id="produce-items" class="striped window-items"></div>
+            <div class="z-depth-5 item-footer"></div>
+            <div class="upshadow window-footer">
+                <div class="copyright">© 2017 Tastery </div>
+                <div class="terms-of-service">Terms of Service</div>
+            </div>
+        </div>
+    </main>
+    <!--SIDE NAVIGATION BAR -->
+    <ul id="navigationBar" class="fixed side-nav">
+        <li class="userWindow">
+            <div class="user-view">
+                <div class="background"></div>
+                <a href="#!user"><img class="circle" src="media/people/average-square.jpg"></a>
+                <a href="#!name"><span class="black-text name">John Doe</span></a>
+                <a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li class="filter-select">
+            <select>
+                <option selected value="1">Filter Price Range</option>
+                <option value="2">Filter Rating Range</option>
+                <option value="3">Filter Popularity Range</option>
+            </select>
+        </li>
+        <li class="moveup priceSlider">
+            <div id="test-slider"></div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Navigation</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <!--SHOPPING CART -->
+    <ul id="shoppingCart" class="right-aligned fixed side-nav">
+        <li class="cartTitle">My Cart</li>
+        <li class="waves-effect z-depth-5 checkoutbnt">Check Out</li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>
