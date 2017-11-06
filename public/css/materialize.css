@@ -6535,7 +6535,7 @@ input[type=range]:focus::-ms-fill-upper {
     right: 0;
     left: auto;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1100px) {
     .side-nav.fixed {
         -webkit-transform: translateX(-105%);
         transform: translateX(-105%);

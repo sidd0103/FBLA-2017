@@ -12,7 +12,7 @@ function initAutoComplete(){
         }
         else {
             if (place['types'][0] == 'street_address' || place['types'][0] == 'premise') {
-                
+                window.location.href = 'marketplace.html'
             }
             else {
                 Materialize.toast('Please Enter a valid Location!',800);

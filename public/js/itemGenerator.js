@@ -3,11 +3,10 @@ function initItems() {
     var restraunts = restrauntJSONGenerator(6);
     var dishes = dishesJSONGenerator(6);
     var produce = produceJSONGenerator(6);
-    console.log(restraunts);
     //build the tile structures
     initRestraunts(restraunts);
     initDishes(dishes);
-    initProduce(produce)
+    initProduce(produce);
 }
 
 
@@ -25,10 +24,9 @@ function initRestraunts(data) {
         var itemRating = data[x].itemRating;
         //convert the itemrating into html
         var ratingHTML = ratingToHTML(itemRating);
-        var html = '<div style="background-image: url('+itemImage+')" id="'+itemID+'" class="waves-effect waves-light z-depth-2 tastery-item"> <div class="darken"> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
+        var html = '<div style="background-image: url('+itemImage+')" id="'+itemID+'" class="lazy waves-effect waves-light z-depth-2 tastery-item"> <div class="darken"> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
         totalHTML += html;
     }
-    console.log(totalHTML);
     $('#restraunt-items').html(totalHTML);
 }
 function initDishes(data) {
@@ -47,10 +45,9 @@ function initDishes(data) {
         var itemRating = data[x].itemRating;
         //convert the itemrating into html
         var ratingHTML = ratingToHTML(itemRating);
-        var html = '<div style="background-image: url('+itemImage+')" id="'+itemID+'" class="waves-effect waves-light z-depth-2 tastery-item"> <div class="darken"> <div class="item-details">'+detailsHTML+'</div> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
+        var html = '<div style="background-image: url('+itemImage+')" id="'+itemID+'" class="lazy waves-effect waves-light z-depth-2 tastery-item"> <div class="darken"> <div class="item-details">'+detailsHTML+'</div> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
         totalHTML += html;
     }
-    console.log(totalHTML);
     $('#dish-items').html(totalHTML);
     $('.tooltipped').tooltip();
 }
@@ -70,10 +67,9 @@ function initProduce(data) {
         var itemRating = data[x].itemRating;
         //convert the itemrating into html
         var ratingHTML = ratingToHTML(itemRating);
-        var html = '<div style="background-image: url('+itemImage+')" id="'+itemID+'" class="waves-effect waves-light z-depth-2 tastery-item"> <div class="darken"> <div class="item-details">'+detailsHTML+'</div> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
+        var html = '<div style="background-image: url('+itemImage+')" id="'+itemID+'" class="lazy waves-effect waves-light z-depth-2 tastery-item"> <div class="darken"> <div class="item-details">'+detailsHTML+'</div> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
         totalHTML += html;
     }
-    console.log(totalHTML);
     $('#produce-items').html(totalHTML);
     $('.tooltipped').tooltip();
 }
