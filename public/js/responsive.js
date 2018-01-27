@@ -2,13 +2,26 @@ $(document).ready(function(){
     mediaCheck({
         media: '(max-width: 650px)',
         entry: function() {
-            $('#loginButton').html('<i class="material-icons">account_circle</i>');
-            $('#registerButton').html('<i class="material-icons">person_add</i>');
+            if (document.location.href.includes("index.html")) {
+                 $('#loginButton').html('<i class="material-icons">account_circle</i>');
+            }
+            else {
+                $('#loginButton').html('<i class="material-icons">account_circle</i>');
+                $('#registerButton').html('<i class="material-icons">person_add</i>');
+            }
         },
         exit: function() {
-            $('#loginButton').html('Sign In');
-            $('#registerButton').html('Sign Up');
-
+            if (document.location.href.includes("marketplace.html")) {
+                $('#loginButton').html('Sign In');
+                $('#registerButton').html('Sign Up');   
+            }
+            else if (document.location.href.includes("index.html")) {
+                $('#loginButton').html('Sign Up');
+            }
+            else if (document.location.href.includes("login.html")) {
+                $('#loginButton').html('Register');
+                $('#registerButton').html('Back');   
+            }
         }
     });
     

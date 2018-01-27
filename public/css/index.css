@@ -1,0 +1,474 @@
+/*FONTS*/
+@font-face {
+    font-family: summerHearts;
+    src: url(../fonts/SummerHearts-Regular.otf);
+}
+@font-face {
+  font-family: 'adamcg';
+  src: url(../fonts/ADAM.CG.otf) format('opentype');
+}
+
+body {
+    overflow-x: hidden;
+}
+/*HERO SECTION*/
+.heroArea {
+    margin-top: 50px;
+    min-height: calc(100% - 43px);
+    width: 100%;
+    position: relative;
+    z-index: 800;
+    overflow: hidden;
+    background-image: url(../media/lightbg2.jpeg);
+    background-size: cover;
+    background-position: bottom
+}
+.heroBoxContainer {
+    max-width: 900;
+    margin: 0 auto;
+    padding: 60;
+    margin-top: 40;
+    margin-bottom: 200;
+}
+.heroBox {
+    padding: 30;
+    width: 100%;
+    background-color: white;
+}
+.hero-catchPhrase {
+    padding: 20;
+    text-align: center;
+    font-size: 220%;
+    font-weight: 300;
+}
+.phrase-sub {
+    font-size: 70%;
+}
+.enterLocation {
+    height: 60;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20;
+    margin-top: 10;
+    max-width: 450;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
+
+.location-submit {
+    width: 100;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: auto;
+}
+.check-icon {
+    font-size: 230%;
+    transition: .2s;
+}
+.location-input {
+    padding-top: 8.4;
+    width: calc(100% - 100px);
+}
+#enterLocation {
+    padding-left: 30;
+    padding-right: 30;
+    width: calc(100% - 60px)!important;
+}
+.location-submit:hover .check-icon{
+    color: #ff1744;
+    transform: scale(1.1);
+}
+.input-location-box {
+    width: 100%!important;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+input[type=text]:focus {
+    border-bottom: none!important;
+    box-shadow: none!important;
+}
+input[type=text] {
+    border-bottom: none!important;
+    box-shadow: none!important;
+    font-size: 115%!important;
+}
+/*nav bar*/
+.nav-top {
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+#loginButton {
+    margin-left: auto;
+    margin-right: 40;
+    font-family: Poppins;
+    font-weight: 600;
+    border-radius: 30px;
+    background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-transform: none;
+}
+#menuButton {
+    margin-left: 40;
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-weight: 600;
+    text-transform: none;
+}
+.title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: adamcg;
+    font-size: 170%;
+    font-weight: 700;
+    padding-bottom: 5;
+}
+/*SIDE NAV BAR*/
+.login-box {
+    margin-top: 70;
+    margin-left: 30;
+    padding: 25;
+    width: calc(100% - 60px);
+    margin-right: 20;
+    margin-bottom: 15;
+    background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 
+}
+.login-box > div {
+    color: white;
+    font-family: Poppins;
+}
+.login-box .email {
+    font-size: 12;
+}
+.login-box .prof-pic {
+    margin-bottom: 10;
+    border: 3px solid white;
+    height: 60;
+}
+.priceSlider {
+    padding: 30;
+    padding-bottom: 30;
+    padding-top: 15;
+}
+.noUi-tooltip span {
+    display: block;
+    top: -9.5;
+    text-align: center;
+    left: -.9;
+}
+.noUi-target.noUi-horizontal .noUi-tooltip, .noUi-connect, .noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle{
+    background-color: #ff1744;
+}
+.filter-select {
+    padding: 30;
+    padding-bottom: 0;
+    font-family: Poppins;
+    padding-top: 20;
+}
+.select-wrapper {
+
+}
+.moveup {
+    margin-top: -25;
+}
+#navigationBar {
+    font-family: Poppins;
+}
+/*ABOUT SECTION*/
+.aboutSection {
+    margin-top: -2;
+    z-index: 900;
+    position: relative;
+    background-color: white;
+}
+.aboutSection:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+
+}
+.tastesContainer {
+    color: black;
+    font-weight: 300;
+    font-size: 300%;
+    margin-top: 100;
+    content: '';
+}
+.mansoryArea {
+    max-width: 902;
+    margin: 0 auto;
+    padding-bottom: 70;
+    display: block;
+    position: relative;
+}
+.mansory-types {
+    height: 300;
+    column-gap: 0px;
+    font-weight: 300;
+    column-count: 3;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+}
+.mansory-types-container{
+    padding: 50;
+    margin-top: 20;
+}
+.mansoryItem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.darker-overlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(0,0,0,.6)
+}
+.x {
+    background-image: url(../media/foodpics/tuscany-grape-field-nature-51947.jpg);
+}
+.y {
+    background-image: url(../media/foodpics/restraunt.jpg);
+}
+.z {
+    background-image: url(../media/foodpics/homemade.jpg);
+}
+.description {
+    position: absolute;
+    bottom: 20;
+    left: 20;
+    font-size: 20;
+}
+.location {
+    font-size: 15;
+}
+.mansoryContainer {
+    padding: 50;
+    margin-bottom: 100;
+    border-radius: 30px;
+    margin-top: 30;
+
+}
+.title-mansory {
+    font-weight: 100;
+    text-align: center;
+    font-size: 230%;
+    color: WHITE;
+    margin-top: -70;
+    text-shadow: 0 0 24px black;
+
+}
+.about-sub {
+    padding-top: 70;
+    text-align: center;
+    font-weight: 100;
+    color: black;
+    font-family: POPPINS;
+    font-size: 300%;
+    font-weight: 200;
+}
+
+/*DOOR SECTION*/
+.doorsection {
+    height: 300;
+    background-position: center;
+    background: linear-gradient(to right, #ed4264, #ffedbc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+.darker-overlay2 {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+.door-sub {
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    font-family: Poppins;
+    text-shadow: 0 0 24px black;
+    font-weight: 200;
+}
+/*GET STARTED SECTION */
+.madeForConsumers {
+    display: block;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 900;
+    overflow: visible;
+}
+.madeForConsumers:before, .madeForConsumers:after  {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.madeForConsumers:before {
+    top: 0;
+   
+    -webkit-transform: skewY(1.5deg);
+    transform: skewY(1.5deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+.madeForConsumers:after {
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+}
+.cookMessage {
+    font-weight: 300;
+    text-align: center;
+    font-weight: 100;
+    font-size: 300%;
+    color: black;
+    font-family: Poppins;
+    padding-top: 70;
+    position: relative;
+}
+.cooksArea {
+    max-width: 902;
+    margin: 0 auto;
+    padding-bottom: 70;
+    display: block;
+    position: relative;
+}
+.mansory-chefs {
+    height: 300;
+    column-gap: 0px;
+    font-weight: 300;
+    column-count: 3;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+}
+.mansory-chefsContainer {
+    padding: 50;
+    margin-top: 20;
+}
+.farmer-pic  {
+    background-image: url(../media/people/farmer.jpg);
+}
+.average-pic{
+    background-image: url(../media/people/average.jpg);
+}
+.cook-pic {
+    background-image: url(../media/people/cook.jpg);
+}
+.responsive-columns  {
+    
+}
+/*JOIN NOW*/
+.joinNow {
+    height: 400;
+    background: linear-gradient(to right, #ed4264, #ffedbc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+
+    background-position: center;
+
+}
+.join-message {
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    font-weight: 200;
+}
+.join {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Poppins;
+    text-shadow: 0 0 24px black;
+}
+#getStarted {
+    margin-top: 20;
+    text-shadow: none
+        ;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
+#becomepartner {
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
+#becomecourrier {
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
+/*footer */
+.upshadow {
+    -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.unbold {
+    font-weight: 300;
+}
+.expand {
+    margin-bottom: 20;
+}
+
+
+/*responsivness*/
+@media only screen and (max-width: 1000px) {
+    .sectionTitle  {
+        font-size: 250%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .responsive-columns {
+        column-count: 1;
+        height: auto;
+    }
+    .mansoryItem {
+        height: 300;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .sectionTitle  {
+        font-size: 200%;
+        padding-left: 20;
+        padding-right: 20;
+    }
+    .heroBoxContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

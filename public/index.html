@@ -2,14 +2,15 @@
 
 <head>
     <!--SEO Optimization-->
-    <title>Tastery Food Delivery Made by Consumers for Consumers</title>
+    <title>Tastery Food Delivery | Made by Consumers for Consumers</title>
     <link href="media/tastery-logo.png" rel="icon">
     <!--Manifest-->
     <link rel="manifest" href="manifest.json">
     <!--Link Prelim js-->
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/materialize.js"></script>
-    <script src="js/momentjs.js"></script>
+    <script src="js/mediaCheck-min.js"></script>
+    <script src="js/links.js"></script>
     <!--Link prelim css-->
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/materialize.css" rel="stylesheet">
@@ -17,17 +18,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <script src="js/mediaCheck-min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
-    <script src="js/animations.js"></script>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <script src="js/responsive.js"></script>
     <script src="js/location.js"></script>
+    <script src="js/index.js"></script>
     <!--GMAPS API-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
     <link href="css/autocomplete.css" rel=stylesheet>
 </head>
 
@@ -35,11 +35,27 @@
     <!--Main Wrapper holds all the non-overlay contents-->
     <main>
         <!--Divide our main section into 3 parts-->
-        <div class="z-depth-4 nav-top">
+        <div class="z-depth-2 nav-top">
             <div class="title red-text accent-3 ">TASTERY</div>
-            <a id="registerButton" class="white red-text accent-3 waves-effect waves btn">Sign Up</a>
-            <a id="loginButton" class="loginbtn red accent-3 waves-effect waves-light btn">Sign In</a>
+            <a data-activates="navigationBar" id="menuButton" class="waves-effect waves btn"><span class="material-icons">menu</span></a>
+            <a data-to="login.html" id="loginButton" class="link loginbtn waves-effect waves-light btn">Sign In</a>
         </div>
+        <!--SIDE NAVIGATION BAR -->
+        <ul id="navigationBar" class="side-nav">
+            <div class="waves-effect z-depth-3 login-box">
+                <img class="z-depth-3 prof-pic circle" src="media/people/guest.jpg">
+                <div href="#!name"><span class="name">Sign in</span></div>
+                <div href="#!email"><span class="email">To make tasting easier.</span></div>
+            </div>
+            <li class="down">
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Navigation</a></li>
+            <li><a class="waves-effect" href="index.html">Home</a></li>
+            <li><a class="waves-effect" href="marketplace.html">Marketplace</a></li>
+            <li><a class="waves-effect" href="#!">About Us</a></li>
+            <li><a class="waves-effect" href="#!">Contact Us</a></li>
+        </ul>
         <!--Hero area-->
         <div class="heroArea">
             <div class="heroBoxContainer">
@@ -63,10 +79,10 @@
         </div>
         <!--About Section-->
         <div class="aboutSection">
-            <div class="sectionTitle about-sub">Affordable, Local, and Vibrant Tastes a tap away.</div>
-            <div class="z-depth-4 mansoryArea">
+            <div class="sectionTitle about-sub">Affordable and Vibrant Tastes a tap away.</div>
+            <div class="mansoryArea">
                 <div class="mansoryResponsive mansory-types-container">
-                    <div class="responsive-columns mansory-types">
+                    <div class="z-depth-4 responsive-columns mansory-types">
                         <div class="x mansoryItem">
                             <div class="waves-effect darker-overlay">
                                 <div class="title-mansory">PRODUCE</div>
@@ -111,7 +127,7 @@
             <div class="cooksArea">
                 <div class="sectionTitle cookMessage">Made for Consumers, By Consumers</div>
                 <div class="mansoryResponsive mansory-chefsContainer">
-                    <div class="responsive-columns mansory-chefs">
+                    <div class="responsive-columns mansory-chefs z-depth-4 ">
                         <div class="farmer-pic mansoryItem">
                             <div class="waves-effect darker-overlay">
                                 <div class="description">
@@ -143,9 +159,9 @@
         </div>
         <!--Join now-->
         <div class="joinNow">
-            <div class="join darker-overlay">
+            <div class="join">
                 <div class="sectionTitle join-message">Join the Food Revolution Today.</div>
-                <a id="getStarted" class="red accent-3 waves-effect waves-light btn-large">Get started</a>
+                <a data-to="register.html" id="getStarted" class="link red accent-3 waves-effect waves-light btn-large">Get started</a>
             </div>
         </div>
     </main>
@@ -153,25 +169,25 @@
 </body>
 <!--Footer is always at the bottom of this page-->
 <!--Includes copyright info, etc. -->
-<footer class="black upshadow page-footer">
+<footer class="white  page-footer">
     <div class="container">
         <div class="row">
             <div class="expand col l5 s12">
-                <h5 class="unbold white-text">Want to become a cook?</h5>
-                <p class="unbold grey-text text-lighten-4">Whether you own a restraunt, or are just a food activist, the Tastery Marketplace is open to you.</p>
-                <a id="becomePartner" class="red accent-3 waves-effect waves-light btn">become a partner</a>
+                <h5 class="unbold black-text">Want to become a cook?</h5>
+                <p class="unbold black-text text-lighten-4">Whether you own a restaurant, or are just a food activist, the Tastery Marketplace is open to you.</p>
+                <a data-to="register.html#partner" id="becomePartner" class="link red accent-3 waves-effect waves-light btn">become a partner</a>
             </div>
             <div class="col l5 offset-l2 s12">
-                <h5 class="unbold white-text">Want to deliver with us?</h5>
-                <p class="unbold grey-text text-lighten-4">Bike or drive, we've got a position for you at Tastery.  Enjoy working on your own time, and instant payments. </p>
-                <a id="becomeCourier" class="red accent-3 waves-effect waves-light btn">become a courier</a>
+                <h5 class="unbold black-text">Want to deliver with us?</h5>
+                <p class="unbold black-text text-lighten-4">Bike or drive, we've got a position for you at Tastery. Enjoy working on your own time, and instant payments. </p>
+                <a data-to="register.html#courrier" id="becomeCourrier" class="link red accent-3 waves-effect waves-light btn">become a courrier</a>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="grey-text text-lighten-4  container">
-            © 2017 Tastery 
-            <a class="grey-text text-lighten-4 right" href="#!">Privacy</a>
+        <div class="black-text text-lighten-4  container">
+            © 2018 Tastery
+            <a class="black-text text-lighten-4 right" href="#!">Privacy</a>
         </div>
     </div>
 </footer>

@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
     <script defer src="js/mediaCheck-min.js"></script>
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +45,7 @@
         <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
     </div>
     <div class="searchbox-container">
-        <div class="searchbox">
+        <div class="z-depth-3 searchbox">
             <input class="searchInput" placeholder="Search for anything" type="text">
         
         </div>
@@ -53,37 +54,34 @@
     <main>
         <div class="marketplace-window">
             <div class="paralaxheader"></div>
-            <div class="upshadow item-banner">RESTAURANTS</div>
+            <div class="item-banner">RESTAURANTS</div>
             <div id="restraunt-items" class="striped window-items"></div>
             <div class="item-banner">DISHES</div>
             <div id="dish-items" class="striped window-items"></div>
             <div class="item-banner">PRODUCE</div>
             <div id="produce-items" class="striped window-items"></div>
-            <div class="z-depth-5 item-footer"></div>
-            <div class="upshadow window-footer">
-                <div class="copyright">© 2017 Tastery </div>
+            <div class="item-footer"></div>
+            <div class="window-footer">
+                <div class="copyright">© 2018 Tastery </div>
                 <div class="terms-of-service">Terms of Service</div>
             </div>
         </div>
     </main>
     <!--SIDE NAVIGATION BAR -->
     <ul id="navigationBar" class="fixed side-nav">
-        <li class="userWindow">
-            <div class="user-view">
-                <div class="background"></div>
-                <a href="#!user"><img class="circle" src="media/people/average-square.jpg"></a>
-                <a href="#!name"><span class="black-text name">John Doe</span></a>
-                <a href="#!email"><span class="black-text email">jdandturk@gmail.com</span></a>
-            </div>
-        </li>
-        <li>
+        <div class="waves-effect z-depth-3 login-box">
+           <img class="z-depth-3 prof-pic circle" src="media/people/average-square.jpg">
+            <div href="#!name"><span class="name">John Doe</span></div>
+            <div href="#!email"><span class="email">jdandturk@gmail.com</span></div>
+        </div>
+        <li class="down">
             <div class="divider"></div>
         </li>
         <li class="filter-select">
             <select>
-                <option selected value="1">Filter Price Range</option>
-                <option value="2">Filter Rating Range</option>
-                <option value="3">Filter Popularity Range</option>
+                <option selected value="1">Filter Price</option>
+                <option value="2">Filter Rating</option>
+                <option value="3">Filter Popularity</option>
             </select>
         </li>
         <li class="moveup priceSlider">
@@ -92,8 +90,11 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">Navigation</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <li><a class="downmore subheader">Navigation</a></li>
+        <li><a class="waves-effect" href="index.html">Home</a></li>
+        <li><a class="waves-effect" href="marketplace.html">Marketplace</a></li>
+        <li><a class="waves-effect" href="#!">About Us</a></li>
+        <li><a class="waves-effect" href="#!">Contact Us</a></li>
     </ul>
     <!--SHOPPING CART -->
     <ul id="shoppingCart" class="right-aligned fixed side-nav">
