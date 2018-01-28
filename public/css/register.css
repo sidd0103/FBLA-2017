@@ -71,6 +71,7 @@ body {
     font-family: Poppins;
     background-color: white;
     padding-bottom: 30;
+    margin-bottom: 150;
 }
 .register-box > .row {
     padding: 50;
@@ -139,4 +140,9 @@ ul .noUi-tooltip span {
 }
 #navigationBar {
     font-family: Poppins;
+}
+@media only screen and (max-width: 400px) {
+    .page-title {
+        text-align: center;
+    }
 }

@@ -17,11 +17,12 @@ body {
     min-height: calc(100% - 43px);
     width: 100%;
     position: relative;
+    background-image: url(../media/lightbg2.jpeg);
     z-index: 800;
     overflow: hidden;
-    background-image: url(../media/lightbg2.jpeg);
     background-size: cover;
-    background-position: bottom
+    background-position: bottom;
+
 }
 .heroBoxContainer {
     max-width: 900;
@@ -134,6 +135,7 @@ input[type=text] {
     font-size: 170%;
     font-weight: 700;
     padding-bottom: 5;
+    
 }
 /*SIDE NAV BAR*/
 .login-box {
@@ -205,7 +207,7 @@ input[type=text] {
     right: 0;
     transform: skewY(-1.5deg);
     transform-origin: 100%;
-    z-index: -1;
+    z-index: -2;
 
 }
 .tastesContainer {
@@ -215,32 +217,73 @@ input[type=text] {
     margin-top: 100;
     content: '';
 }
-.mansoryArea {
-    max-width: 902;
-    margin: 0 auto;
-    padding-bottom: 70;
-    display: block;
-    position: relative;
-}
-.mansory-types {
-    height: 300;
-    column-gap: 0px;
-    font-weight: 300;
-    column-count: 3;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    width: 100%;
-}
-.mansory-types-container{
+.grid-layout {
     padding: 50;
-    margin-top: 20;
+    z-index: -3;
+    position: re
 }
-.mansoryItem {
+.grid-row {
+    display: flex;
+    max-width: 1000;
+    margin: 0 auto;
+    margin-bottom: 70;
+}
+.row-desc {
+    font-family: Poppins;
+    max-width: 60%;
+}
+.row-desc .content {
+    font-size: 18;
+    color: rgba(0,0,0,.6);
+}
+.row-title {
+    font-size: 36;
+    color: dimgray;
+    font-weight: 400;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.grid-thumb {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 250;
+    height: 300;
+    color: white;
+    font-family: Poppins;
+    font-weight: 300;
     background-size: cover;
+}
+.right-aligned {
+
+    margin-left: auto;
+}
+.left-aligned {
+    margin-right: auto;
+}
+.right-corner-red {
+    position: absolute;
+    height: 100;
+    width: 100;
+    left: -25;
+    top: -25;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    z-index: -1;
+}
+.left-corner-red {
+    position: absolute;
+    height: 100;
+    width: 100;
+    right: -25;
+    bottom: -25;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+    z-index: -1;
+}
+.grid-layout.down-more {
+    padding-top: 120;
+}
+.down-more {
+    padding-top: 40;
 }
 .darker-overlay {
     position: relative;
@@ -250,7 +293,7 @@ input[type=text] {
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background-color: rgba(0,0,0,.6)
+    background-color: rgba(0,0,0,.2)
 }
 .x {
     background-image: url(../media/foodpics/tuscany-grape-field-nature-51947.jpg);
@@ -269,13 +312,6 @@ input[type=text] {
 }
 .location {
     font-size: 15;
-}
-.mansoryContainer {
-    padding: 50;
-    margin-bottom: 100;
-    border-radius: 30px;
-    margin-top: 30;
-
 }
 .title-mansory {
     font-weight: 100;
@@ -313,12 +349,19 @@ input[type=text] {
     width: 100%;
 }
 .door-sub {
+    padding-left: 50;
+    padding-right: 50;
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: 300%;
     font-family: Poppins;
     text-shadow: 0 0 24px black;
     font-weight: 200;
+}
+.door-sub .label {
+    text-align: left;
+    text-shadow: none;
+    font-size: 30;
 }
 /*GET STARTED SECTION */
 .madeForConsumers {
@@ -337,7 +380,7 @@ input[type=text] {
     left: 0;
     position: absolute;
     right: 0;
-    z-index: -1;
+    z-index: -2;
 }
 .madeForConsumers:before {
     top: 0;
@@ -370,20 +413,6 @@ input[type=text] {
     padding-bottom: 70;
     display: block;
     position: relative;
-}
-.mansory-chefs {
-    height: 300;
-    column-gap: 0px;
-    font-weight: 300;
-    column-count: 3;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    width: 100%;
-}
-.mansory-chefsContainer {
-    padding: 50;
-    margin-top: 20;
 }
 .farmer-pic  {
     background-image: url(../media/people/farmer.jpg);
@@ -423,8 +452,7 @@ input[type=text] {
 }
 #getStarted {
     margin-top: 20;
-    text-shadow: none
-        ;
+    text-shadow: none;
     background: linear-gradient(to right, #cb356b, #bd3f32);
 }
 #becomepartner {
@@ -448,20 +476,27 @@ input[type=text] {
 
 /*responsivness*/
 @media only screen and (max-width: 1000px) {
-    .sectionTitle  {
-        font-size: 250%;
+    .row-desc {
+        max-width: calc(100% - 320px)
     }
 }
 @media only screen and (max-width: 850px) {
-    .responsive-columns {
-        column-count: 1;
-        height: auto;
-    }
-    .mansoryItem {
-        height: 300;
-    }
+    
 }
 @media only screen and (max-width: 650px) {
+    .grid-row {
+        flex-direction: column;
+    }
+    .grid-thumb  {
+        margin-top: 60;
+    }
+    .mid.grid-row {
+        flex-direction: column-reverse;
+    }
+    .row-title {
+        line-height: 40px;
+        font-size: 33;
+    }
     .sectionTitle  {
         font-size: 200%;
         padding-left: 20;
@@ -470,5 +505,37 @@ input[type=text] {
     .heroBoxContainer {
         padding-left: 0;
         padding-right: 0;
+    }
+    .right-aligned, .left-aligned {
+        margin: 0 auto;
+        margin-top: 60;
+    }
+    .row-desc {
+        margin: 0 auto;
+        max-width: 340;
+    }
+    .row-desc .content {
+        font-size: 15;
+    }
+    .grid-thumb {
+        margin-bottom: 30;
+    }
+    .down-more  {
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 450px) {
+     .grid-thumb {
+        width: 100%;
+    }
+    .grid-layout {
+        padding-left: 20;
+        padding-right: 20;
+    }
+    .left-corner-red {
+        display: none;
+    }
+    .right-corner-red {
+        display: none;
     }
 }

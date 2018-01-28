@@ -34,7 +34,6 @@ $(document).ready(function () {
         onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
     
-    
     /*Handle the Filters*/
     var slider = document.getElementById('test-slider');
     noUiSlider.create(slider, {
@@ -49,6 +48,26 @@ $(document).ready(function () {
         format: wNumb({
             decimals: 0
         })
+    });
+    
+    //handle clicking on a tile
+    var modal;
+    $('body').on('click','.tastery-item',function(){
+        var type = $(this).attr('data-itemType');
+        if (type == 'restraunts') {
+            var id = $(this).attr('id');
+            var data = getData();
+            var element = data[type]['items'][id];
+            modal = new RestaurantMenu(element);
+            modal.open();
+        }
+        
+    });
+    $('body').on('click','.menu-modal-container, .searchbox-container',function(){
+        modal.close();
+    });
+    $('body').on('click','.menu-page',function(e){
+        e.stopPropagation();
     });
     
 })

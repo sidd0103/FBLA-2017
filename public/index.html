@@ -22,6 +22,7 @@
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
+    <script src="js/auth.js"></script>
     <link href="css/index.css" rel="stylesheet">
     <script src="js/responsive.js"></script>
     <script src="js/location.js"></script>
@@ -57,9 +58,9 @@
             <li><a class="waves-effect" href="#!">Contact Us</a></li>
         </ul>
         <!--Hero area-->
-        <div class="heroArea">
+        <div class="heroArea" data-parallax="scroll" data-image-src="/media/lightbg2.jpeg">
             <div class="heroBoxContainer">
-                <div class="z-depth-5 heroBox">
+                <div id="heroBox" class="z-depth-5 heroBox">
                     <div class="hero-catchPhrase">
                         <div>Great food, made for everyone.</div>
                         <div class="phrase-sub">Join the food revolution today.</div>
@@ -75,84 +76,124 @@
                 </div>
 
             </div>
-
         </div>
         <!--About Section-->
         <div class="aboutSection">
-            <div class="sectionTitle about-sub">Affordable and Vibrant Tastes a tap away.</div>
-            <div class="mansoryArea">
-                <div class="mansoryResponsive mansory-types-container">
-                    <div class="z-depth-4 responsive-columns mansory-types">
-                        <div class="x mansoryItem">
-                            <div class="waves-effect darker-overlay">
-                                <div class="title-mansory">PRODUCE</div>
-                                <div class="description">
-                                    <div>De Martini Orchard</div>
-                                    <div class="location">Los Altos, California</div>
-                                </div>
+            <div class="down-more grid-layout">
+                <div class="grid-row">
+                    <div class="row-desc">
+                        <div class="row-title">Local, and Fresh Produce </div>
+                        <div class="content">Enjoy fresh, locally sourced ingredients that can come from your neighbor's garden or largest farm in your area. All ingredients from our market have been harvested within a week to guarantee freshness.</div>
+                    </div>
+                    <div class="right-aligned x z-depth-4 grid-thumb">
+                        <div class="z-depth-1 right-corner-red"></div>
+                        <div class="z-depth-1 left-corner-red"></div>
+                        <div class="darker-overlay">
+                            <div class="title-mansory">PRODUCE</div>
+                            <div class="description">
+                                <div>De Martini Orchard</div>
+                                <div class="location">Los Altos, California</div>
                             </div>
                         </div>
-                        <div class="z mansoryItem">
-                            <div class="waves-effect  darker-overlay">
-                                <div class="title-mansory">DISHES</div>
-                                <div class="description">
-                                    <div>Roy Gruender's Burgers</div>
-                                    <div class="location">Los Altos, California</div>
-                                </div>
+                    </div>
+                </div>
+                <div class="mid grid-row">
+                    <div class="left-aligned z z-depth-4 grid-thumb">
+                        <div class="z-depth-1 right-corner-red"></div>
+                        <div class="z-depth-1 left-corner-red"></div>
+                        <div class="darker-overlay">
+                            <div class="title-mansory">DISHES</div>
+                            <div class="description">
+                                <div>Roy's Burgers</div>
+                                <div class="location">Los Altos, California</div>
                             </div>
                         </div>
-                        <div class="y mansoryItem">
-                            <div class="waves-effect  darker-overlay">
-                                <div class="title-mansory">RESTRAUNTS</div>
-                                <div class="description">
-                                    <div>Los Altos Grill</div>
-                                    <div class="location">Los Altos, California</div>
-                                </div>
-
+                    </div>
+                    <div class="right-aligned row-desc">
+                        <div class="row-title">Diverse, Delightful, Dishes</div>
+                        <div class="content">Enjoy healthy, diverse dishes that can be tailored to any type of dietary restriction. The Tastery market isn't just reserved for restaurants, allowing for a tremendous expansion in the diversity of dishes we offer on the platform. Get ready for a tasty experience!</div>
+                    </div>
+                </div>
+                <div class="down-more grid-row">
+                    <div class="row-desc">
+                        <div class="row-title">Restaurants, on Demand </div>
+                        <div class="content">Enjoy fresh, locally sourced ingredients that can come from your neighbor's garden or largest farm in your area. All ingredients from our market have been harvested within a week to guarantee freshness.</div>
+                    </div>
+                    <div class="right-aligned y z-depth-4 grid-thumb">
+                        <div class="z-depth-1 right-corner-red"></div>
+                        <div class="z-depth-1 left-corner-red"></div>
+                        <div class="darker-overlay">
+                            <div class="title-mansory">RESTAURANTS</div>
+                            <div class="description">
+                                <div>Los Altos Grill</div>
+                                <div class="location">Los Altos, California</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        
         </div>
         <!--"Delivered to your door" section-->
         <div class="doorsection">
             <div class="darker-overlay2">
-                <div class="sectionTitle door-sub">All delivered straight to your door.</div>
+                <div class="sectionTitle door-sub">
+                    <div class="label">And best of all,</div>
+                    <div>It's all delivered straight to your door.</div>
+                </div>
 
             </div>
         </div>
         <!--Made by consumers, made for consumers-->
         <div class="madeForConsumers">
-            <div class="cooksArea">
-                <div class="sectionTitle cookMessage">Made for Consumers, By Consumers</div>
-                <div class="mansoryResponsive mansory-chefsContainer">
-                    <div class="responsive-columns mansory-chefs z-depth-4 ">
-                        <div class="farmer-pic mansoryItem">
-                            <div class="waves-effect darker-overlay">
-                                <div class="description">
-                                    <div>Roger Griffin</div>
-                                    <div class="location">Local Apricot Farmer</div>
-                                </div>
+            <div class="down-more grid-layout">
+                <div class="grid-row">
+                    <div class="row-desc">
+                        <div class="row-title">Farmers and Gardners </div>
+                        <div class="content">Tastery's free marketplace allows you to order food from large farms or local gardeners looking to sell off some of their surpluses.  Discover local produce today.</div>
+                    </div>
+                    <div class="right-aligned farmer-pic z-depth-4 grid-thumb">
+                        <div class="z-depth-1 right-corner-red"></div>
+                        <div class="z-depth-1 left-corner-red"></div>
+                        <div class="darker-overlay">
+                            <div class="description">
+                                <div>Roger Griffin</div>
+                                <div class="location">Local Apricot Farmer</div>
                             </div>
                         </div>
-                        <div class="average-pic mansoryItem">
-                            <div class="waves-effect darker-overlay">
-                                <div class="description">
-                                    <div>Roy Gruender</div>
-                                    <div class="location">Food Hobbiest</div>
-                                </div>
+                    </div>
+                </div>
+                <div class="mid grid-row">
+                    <div class="left-aligned average-pic z-depth-4 grid-thumb">
+                        <div class="z-depth-1 right-corner-red"></div>
+                        <div class="z-depth-1 left-corner-red"></div>
+                        <div class="darker-overlay">
+  
+                            <div class="description">
+                                <div>Roy Gruender</div>
+                                <div class="location">Food Hobbyist</div>
                             </div>
                         </div>
-                        <div class="cook-pic mansoryItem">
-                            <div class="waves-effect darker-overlay">
-                                <div class="description">
-                                    <div>Louis Laurant</div>
-                                    <div class="location">Head Chef</div>
-                                </div>
+                    </div>
+                    <div class="right-aligned row-desc">
+                        <div class="row-title">Food Hobbyists</div>
+                        <div class="content">Often times, the best food we eat is the food we eat at home.  One of Tastery's major services is providing home cooks the certificates to sell food from their home. Pre-checked and FDA approved, discover a new affordable, delicious type of food. </div>
+                    </div>
+                </div>
+                <div class="down-more grid-row">
+                    <div class="row-desc">
+                        <div class="row-title">Proffesional Cooks </div>
+                        <div class="content">And of course, much of Tastery's food is cooked by professionals, working for amazing restaurants. Get to know the cook behind your favorite food, and see what their favorite dishes are. Welcome to a new type of dining.</div>
+                    </div>
+                    <div class="right-aligned cook-pic z-depth-4 grid-thumb">
+                        <div class="z-depth-1 right-corner-red"></div>
+                        <div class="z-depth-1 left-corner-red"></div>
+                        <div class="darker-overlay">
+                            <div class="description">
+                                <div>Louis Laurant</div>
+                                <div class="location">Head Chef</div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -161,7 +202,7 @@
         <div class="joinNow">
             <div class="join">
                 <div class="sectionTitle join-message">Join the Food Revolution Today.</div>
-                <a data-to="register.html" id="getStarted" class="link red accent-3 waves-effect waves-light btn-large">Get started</a>
+                <a data-to="#heroBox" id="getStarted" class="link red accent-3 waves-effect waves-light btn-large">Get started</a>
             </div>
         </div>
     </main>

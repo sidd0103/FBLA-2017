@@ -29,6 +29,7 @@
     <script defer src="js/location.js"></script>
     <script src="js/marketplace.js"></script>
     <script src="js/itemGenerator.js"></script>
+    <script src="js/menu.js"></script>
     <!--GMAPS API-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
     <link href="css/autocomplete.css" rel=stylesheet>
@@ -47,7 +48,7 @@
     <div class="searchbox-container">
         <div class="z-depth-3 searchbox">
             <input class="searchInput" placeholder="Search for anything" type="text">
-        
+
         </div>
     </div>
     <!--MAIN TAG THAT HOLDS EVERYTHING-->
@@ -67,10 +68,64 @@
             </div>
         </div>
     </main>
+    <!--MENU-->
+    <div class="menu-modal-container">
+        <div class="material-icons close-modal">clear</div>
+        <div class="z-depth-4 menu-page">
+            <div class="slant1"></div>
+            <div class="slant2"></div>
+            <div class="header">
+                <div class="thumbnail-container">
+                    <div class="z-depth-4 menu-thumb">
+                        <div class="darker">
+                            <div class="menu-title">
+                                <div class="sub">Restraunt</div>
+                                <div class="menu-title-name">Ricks Cafe </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="z-depth-3 stats">
+                <div class="rating">
+                    <div class="material-icons">star</div>
+                    <div class="material-icons">star</div>
+                    <div class="material-icons">star</div>
+                    <div class="material-icons">star</div>
+                    <div class="material-icons">star</div>
+                </div>
+                <div class="cost">
+                    <div class="material-icons">attach_money</div>
+                    <div class="material-icons">attach_money</div>
+                    <div class="material-icons">attach_money</div>
+                </div>
+                <div class="time">
+                    <div class="material-icons">av_timer</div>
+                    <div class="label">45 mins</div>
+                </div>
+            </div>
+            <div class="z-depth-1 menu">
+                <div class="menu-header">
+                    <div class="text">MENU</div>
+                    <div class="search-bar"><i class="material-icons">search</i>
+                        <input placeholder="Search Ricks Cafe" type="text">
+                    </div>
+                </div>
+                <div class="menu-nav">
+                    <ul class="tabs-fixed-width tabs"></ul>
+                </div>
+                <div class="menu-container"></div>
+            </div>
+            <div class="reviews"></div>
+            
+        </div>
+
+    </div>
     <!--SIDE NAVIGATION BAR -->
     <ul id="navigationBar" class="fixed side-nav">
         <div class="waves-effect z-depth-3 login-box">
-           <img class="z-depth-3 prof-pic circle" src="media/people/average-square.jpg">
+            <img class="z-depth-3 prof-pic circle" src="media/people/average-square.jpg">
             <div href="#!name"><span class="name">John Doe</span></div>
             <div href="#!email"><span class="email">jdandturk@gmail.com</span></div>
         </div>

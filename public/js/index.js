@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //side nav
     $('#menuButton').sideNav({
         menuWidth: 250, // Default is 300
         edge: 'left', // Choose the horizontal origin
@@ -7,4 +8,12 @@ $(document).ready(function(){
         onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
         onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
+    $('.login-box').click(function(){
+        if (tasteAuth.loggedIn) {
+            
+        }
+        else {
+            document.location.href = "login.html";
+        }
+    })
 })
