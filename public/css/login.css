@@ -4,8 +4,9 @@
     src: url(../fonts/SummerHearts-Regular.otf);
 }
 @font-face {
-  font-family: 'adamcg';
-  src: url(../fonts/ADAM.CG.otf) format('opentype');
+    font-family: 'adamcg';
+    src: url('../fonts/adam.cg-webfont.woff2') format('woff2'),
+     url('../fonts/adam.cg-webfont.woff') format('woff');
 }
 /*BODY*/
 body {
@@ -49,7 +50,6 @@ body {
     font-family: adamcg;
     font-size: 170%;
     font-weight: 700;
-    padding-bottom: 5;
 }
 /*page-title*/
 .page-title {

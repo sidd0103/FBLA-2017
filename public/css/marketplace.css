@@ -3,9 +3,11 @@
     src: url(../fonts/SummerHearts-Regular.otf);
 }
 @font-face {
-  font-family: 'adamcg';
-  src: url(../fonts/ADAM.CG.otf) format('opentype');
+    font-family: 'adamcg';
+    src: url('../fonts/adam.cg-webfont.woff2') format('woff2'),
+     url('../fonts/adam.cg-webfont.woff') format('woff');
 }
+
 body {
 }
 body::-webkit-scrollbar { 
@@ -38,7 +40,6 @@ body::-webkit-scrollbar {
     position: absolute;
     width: 100%;
     text-align: center;
-    padding-bottom: 5;
     font-family: adamcg;
     font-size: 170%;
     font-weight: 700;
@@ -401,6 +402,9 @@ input[type=text] {
 .menu-modal-container::-webkit-scrollbar { 
     display: none; 
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 .menu-page {
     transform: translateY(100px);
     max-width: calc(100% - 500px);
@@ -614,7 +618,19 @@ input[type=text] {
     padding: 3;
     border-right: 1px solid #eee;
 }
-
+.message {
+    max-width: 800;
+    padding: 50;
+    margin: 0 auto;
+    margin-top: 50;
+    font-family: Poppins;
+    color: white;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
+.message .sub {
+    font-size: 80%;
+    color: #eee;
+}
 /*RESPONSIVENESS */
 @media only screen and (max-width: 1100px) {
     .openNav, .openCart {
@@ -643,10 +659,15 @@ input[type=text] {
     .menu-item {
         width: 100%;
     }
+    .review-container {
+        column-count: 1;
+    }
     .stats .rating div {
         font-size: 18;
     }
-    
+    .menu-page {
+        padding-bottom: 0;
+    }
 }
 @media only screen and (max-width: 400px) {
     .menu-thumb {
