@@ -5,8 +5,7 @@ $(document).ready(function(){
             if (document.location.href.includes("index.html")) {
                  $('#loginButton').html('<i class="material-icons">account_circle</i>');
             }
-            else if document.location.href.includes("marketplace.html")) {
-                console..log("lol");
+            else if (document.location.href.includes("marketplace.html")) {
                 $('.stats .rating').html('5/5');
             }
             else {
