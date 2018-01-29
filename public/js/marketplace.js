@@ -1,7 +1,17 @@
 $(document).ready(function () {
     //handle filling in the item window
     initItems();
-    
+    //handle search bar
+    $('.searchInput').keyup(function(){
+        var val = $(this).val();
+        console.log(val);
+        if (val.length > 0) {
+            $('.search-modal-container').addClass('active');
+        }
+        else {
+            $('.search-modal-container').removeClass('active');
+        }
+    })
     //handle the select
     $('select').material_select();
     
