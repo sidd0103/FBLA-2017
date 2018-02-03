@@ -42,20 +42,19 @@
         <div class="title red-text accent-3 ">TASTERY</div>
         <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
         <div id="responsive-change" class="z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="location-display">West Portola Ave</span></div>
-        <div id="responsive-change" class="z-depth-2 level"><i class="material-icons">show_chart</i><span class="level-display">Level 1 <b>Taster</b></span></div>
+        <div id="responsive-change" class="z-depth-2 level"><i class="material-icons">local_shipping</i><span class="level-display">Delivery: <b>ASAP</b></span></div>
         <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
     </div>
     <div class="searchbox-container">
         <div class="z-depth-3 searchbox">
             <input class="searchInput" placeholder="Search for anything" type="text">
-
         </div>
     </div>
     <!--MAIN TAG THAT HOLDS EVERYTHING-->
     <main>
         <div class="marketplace-window">
             <div class="paralaxheader"></div>
-            <div class="item-banner">RESTAURANTS</div>
+            <div class="item-banner">PLACES</div>
             <div id="restraunt-items" class="striped window-items"></div>
             <div class="item-banner">DISHES</div>
             <div id="dish-items" class="striped window-items"></div>
@@ -85,6 +84,60 @@
             
             </ul>
         </div>
+    </div>
+    <!--ITEM MODAL-->
+    <div class="item-modal-container ">
+        <div class="z-depth-3 item-modal-page">
+            <div class="item-modal-header">
+                <div class="darken-layer"></div>
+                <div class="white-slant"></div>
+                <div class="ctnt">
+                    <div class="item-header-title">
+                        Udon
+                        <div class="from">from <span class="place-link">Ricks Cafe</span></div>
+                    </div>
+                    <div class="z-depth-3 btns">
+                        <div class="waves-effect addtocart-btn">
+                            <div class="label material-icons">add_shopping_cart</div>
+                            <div class="price">$10</div>
+                        </div>
+                        <div class="num-items">
+                            <div class="waves-effect z-depth-1 minus">-</div>
+                            <div class="num-display">1</div>
+                            <div class="waves-effect z-depth-1 plus">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="flex-row">
+                    <div class="left-side">
+                        <div class="ratings">
+                            <div class="numeric-rating">4.5/5</div>
+                            <div class="time"><span class="material-icons">av_timer</span>45 mins</div>
+                        </div>
+                        <div class="desc">A traditional Japanese noodle dish served with broth and vegetables.</div>
+                    </div>
+                    <div class="right-side">
+                        <div class="tags">
+                            <div class="tag">Vegan</div>
+                            <div class="tag">Vegetrian</div>
+                            <div class="tag">Fresh</div>
+                            <div class="tag">Dynamic</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dietary-restrictions">
+                    <div class="row">
+                        <div class="input-field">
+                          <textarea data-length="200" id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">Add Requests for Chef</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </div>
     <!--MENU-->
     <div class="menu-modal-container">
@@ -175,6 +228,13 @@
     <!--SHOPPING CART -->
     <ul id="shoppingCart" class="right-aligned fixed side-nav">
         <li class="cartTitle">My Cart</li>
+        <div class="cart">
+            <div class="waves-effect z-depth-2 item">
+                <div class="cart-item-title">Udon</div>
+                <div class="price"><span class="amount">x4</span><span class="total">$40</span></div>
+            </div>
+        
+        </div>
         <li class="waves-effect z-depth-5 checkoutbnt">Check Out</li>
     </ul>
 

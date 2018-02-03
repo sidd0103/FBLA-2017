@@ -71,7 +71,9 @@ $(document).ready(function () {
             modal = new RestaurantMenu(element);
             modal.open();
         }
-        
+        else {
+            $('.item-modal-container').addClass('active');
+        }
     });
     $('body').on('click','.menu-modal-container, .searchbox-container',function(){
         modal.close();
@@ -79,5 +81,24 @@ $(document).ready(function () {
     $('body').on('click','.menu-page',function(e){
         e.stopPropagation();
     });
-    
+    $('body').on('click','.menu-item',function(){
+        $('.item-modal-container').addClass('active');
+    })
+    $('.item-modal-container').click(function(){
+        $(this).removeClass('active');
+    })
+    $('.item-modal-page').click(function(ev){
+        ev.stopPropagation();
+    })
+    //handle the items modal
+    $('.plus').click(function(){
+        var num = $('.num-display').text() * 1;
+        $('.num-display').text(num + 1);
+    })
+    $('.minus').click(function(){
+        var num = $('.num-display').text() * 1;
+        if (num > 1) {
+            $('.num-display').text(num - 1);
+        }
+    })
 })
