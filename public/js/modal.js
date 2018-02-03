@@ -1,9 +1,21 @@
-class RestaurantMenu {
+class Modal {
+    open() {
+        this.container.addClass('active');
+        $('body').css('overflow','hidden');
+    }
+    close() {
+        this.container.removeClass('active');
+        $('body').css('overflow','');
+    }
+}
+
+class RestaurantMenu extends Modal{
     constructor(element) {
         this.element = element;
         this.tabs = $('.menu-nav .tabs');
         this.thumbnail = $('.menu-thumb');
         this.tabsHTML = '';
+        $('.menu-modal-container .rating').html(ratingToHTMLDiv(this.element.rating));
         this.menuElement = $('.menu-container');
         this.menuHTML = '';
         this.title = $('.menu-title-name');
@@ -29,13 +41,5 @@ class RestaurantMenu {
         }
         this.menuElement.html(this.menuHTML);
         this.tabs.html(this.tabsHTML).tabs();
-    }
-    open() {
-        this.container.addClass('active');
-        $('body').css('overflow','hidden');
-    }
-    close() {
-        this.container.removeClass('active');
-        $('body').css('overflow','');
     }
 }

@@ -1,0 +1,32 @@
+[debug] [2018-02-03T17:22:10.190Z] ----------------------------------------------------------------------
+[debug] [2018-02-03T17:22:10.191Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sreeram\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-02-03T17:22:10.191Z] CLI Version:   3.9.2
+[debug] [2018-02-03T17:22:10.191Z] Platform:      win32
+[debug] [2018-02-03T17:22:10.191Z] Node Version:  v6.10.2
+[debug] [2018-02-03T17:22:10.191Z] Time:          Sat Feb 03 2018 09:22:10 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-03T17:22:10.192Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-03T17:22:10.200Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-03T17:22:10.201Z] > authorizing via signed-in user
+[debug] [2018-02-03T17:22:10.203Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-03T17:22:10.203Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/nOYeXEirIMeQINKUrrvMp4C69XaNSJlxGuoEmhZ7RJg',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Feb 03 2018 09:22:10 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-03T17:22:10.344Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-03T17:22:10.348Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tastery-c81be  
+ Sat Feb 03 2018 09:22:10 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-03T17:22:10.789Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-03T17:22:10.791Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tastery-c81be/tokens  
+ Sat Feb 03 2018 09:22:10 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-03T17:22:11.226Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tastery-c81be'...
+[info] 
+[info] i  deploying database, hosting
+[info] +  database: rules ready to deploy.
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-02-03T17:22:12.659Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tastery-c81be/uploads/-L4Rg8C3RdN_ad-fBKBm?fileCount=79&message=  
+ Sat Feb 03 2018 09:22:12 GMT-0800 (Pacific Standard Time)
