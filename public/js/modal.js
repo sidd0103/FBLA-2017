@@ -11,6 +11,7 @@ class Modal {
 
 class RestaurantMenu extends Modal{
     constructor(element) {
+        super();
         this.element = element;
         this.tabs = $('.menu-nav .tabs');
         this.thumbnail = $('.menu-thumb');
