@@ -54,11 +54,11 @@
     <main>
         <div class="marketplace-window">
             <div class="paralaxheader"></div>
-            <div class="item-banner">PLACES</div>
+            <div class="bg1 item-banner">PLACES</div>
             <div id="restraunt-items" class="striped window-items"></div>
-            <div class="item-banner">DISHES</div>
+            <div class="bg2 item-banner">DISHES</div>
             <div id="dish-items" class="striped window-items"></div>
-            <div class="item-banner">PRODUCE</div>
+            <div class="bg3 item-banner">PRODUCE</div>
             <div id="produce-items" class="striped window-items"></div>
             <div class="item-footer"></div>
             <div class="window-footer">
@@ -74,20 +74,28 @@
             <div class="search-title">Search Results</div>
             <ul>
                 <li>
-                    <div class="head"><div class="z-depth-1 thumb"></div><div class="name">Ricks Cafe</div><div class="type">Restaurant</div></div>
+                    <div class="head">
+                        <div class="z-depth-1 thumb"></div>
+                        <div class="name">Ricks Cafe</div>
+                        <div class="type">Restaurant</div>
+                    </div>
                     <div class="desc">We are a family owned business offering a family friendly atmosphere for locals and visitors alike.</div>
                 </li>
                 <li>
-                    <div class="head"><div class="z-depth-1 thumb"></div><div class="name">Ricks Cafe</div><div class="type">Restaurant</div></div>
+                    <div class="head">
+                        <div class="z-depth-1 thumb"></div>
+                        <div class="name">Ricks Cafe</div>
+                        <div class="type">Restaurant</div>
+                    </div>
                     <div class="desc">We are a family owned business offering a family friendly atmosphere for locals and visitors alike.</div>
                 </li>
-            
+
             </ul>
         </div>
     </div>
     <!--ITEM MODAL-->
     <div class="item-modal-container ">
-        <div class="z-depth-3 item-modal-page">
+        <div class="z-depth-4 item-modal-page">
             <div class="item-modal-header">
                 <div class="darken-layer"></div>
                 <div class="white-slant"></div>
@@ -130,14 +138,14 @@
                 <div class="dietary-restrictions">
                     <div class="row">
                         <div class="input-field">
-                          <textarea data-length="200" id="textarea1" class="materialize-textarea"></textarea>
-                          <label for="textarea1">Add Requests for Chef</label>
+                            <textarea data-length="200" id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Add Requests for Chef</label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </div>
     <!--MENU-->
     <div class="menu-modal-container">
@@ -230,10 +238,12 @@
         <li class="cartTitle">My Cart</li>
         <div class="cart">
             <div class="waves-effect z-depth-2 item">
-                <div class="cart-item-title">Udon</div>
-                <div class="price"><span class="amount">x4</span><span class="total">$40</span></div>
+                <div class="item-cart-ctnt">
+                    <div class="cart-item-title">Udon</div>
+                    <div class="price"><span class="amount">x4</span><span class="total">$40</span></div>
+                </div>
             </div>
-        
+
         </div>
         <li class="waves-effect z-depth-5 checkoutbnt">Check Out</li>
     </ul>

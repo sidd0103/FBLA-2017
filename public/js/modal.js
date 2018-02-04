@@ -3,6 +3,7 @@
 class RestaurantMenu {
     constructor(data) {
         this.data = data;
+        this.on = false;
         this.tabs = $('.menu-nav .tabs');
         this.thumbnail = $('.menu-thumb');
         this.tabsHTML = '';
@@ -34,10 +35,12 @@ class RestaurantMenu {
         this.tabs.html(this.tabsHTML).tabs();
     }
     open() {
+        this.on = true;
         this.container.addClass('active');
         $('body').css('overflow','hidden');
     }
     close() {
+        this.on = false;
         this.container.removeClass('active');
         $('body').css('overflow','');
     }
@@ -46,6 +49,7 @@ class RestaurantMenu {
 class ItemModal  {
     constructor(data) {
         this.data = data;
+        this.on = false;
         this.container = $('.item-modal-container');
         this.initUI();
     }
@@ -72,12 +76,16 @@ class ItemModal  {
         }
     }
     open() {
+        this.on = true;
         this.container.addClass('active');
         $('body').css('overflow','hidden');
     }
-    close() {
+    close(noOverflow) {
+        this.on = false;
         this.container.removeClass('active');
-        $('body').css('overflow','');
+        if (noOverflow == false) {
+            $('body').css('overflow','');   
+        }
         $('.num-display').text('1');
     }
 }

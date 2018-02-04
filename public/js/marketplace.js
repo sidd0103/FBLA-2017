@@ -92,7 +92,12 @@ $(document).ready(function () {
         itemModal.open();
     });
     $('.item-modal-container').click(function(){
-        itemModal.close();
+        if (menuModal != null) {
+            itemModal.close(menuModal.on);   
+        }
+        else {
+            itemModal.close(false);
+        }
     })
     $('.item-modal-page').click(function(ev){
         ev.stopPropagation();

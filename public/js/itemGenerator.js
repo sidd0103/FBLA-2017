@@ -165,7 +165,7 @@ var tempdata = {
             }
         },
         {
-            'itemName' : 'Ricks Cafe',
+            'itemName' : 'Posh Bagel',
             'itemImage' : '/media/items/restraunts/raclette.jpg',
             'itemDescription' : 'We are a family owned business offering a family friendly atmosphere for locals and visitors alike.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
