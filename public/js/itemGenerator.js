@@ -58,108 +58,108 @@ var tempdata = {
             'menu' : {
                 'Popular' : [
                     {
-                        'name' : 'Eggs and Waffles', 
+                        'itemName' : 'Eggs and Waffles', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 10, 
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                 ],
                 'Appetizers' : [
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                 ],
                 'Entrees' : [
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs Benedict', 
-                        'price' : 10, 
-                        'tags' : ['Non-Vegeterian'], 
+                        'itemName' : 'Eggs Benedict', 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'desc' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'name' : 'Shirly Temple', 
-                        'price' : 2, 
+                        'itemName' : 'Shirly Temple', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Soda'], 
+                        'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'desc' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegan'], 
+                        'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
                 'Desserts' : [
                     {
-                        'name' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'static' : true,
-                        'price' : 2, 
-                        'tags' : ['Vegetarian','Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'desc' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
+                        'itemName' : 'Banana Milkshake', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 2, 
-                        'tags' : ['Organic','Non-Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
             }
@@ -172,109 +172,109 @@ var tempdata = {
             'menu' : {
                 'Popular' : [
                     {
-                        'name' : 'Eggs and Waffles', 
+                        'itemName' : 'Eggs and Waffles', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 10, 
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                 ],
                 'Appetizers' : [
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                 ],
                 'Entrees' : [
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs Benedict', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs Benedict', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegeterian'], 
+                        'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'desc' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'name' : 'Shirly Temple', 
-                        'price' : 2, 
+                        'itemName' : 'Shirly Temple', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Soda'], 
+                        'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'desc' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegan'], 
+                        'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
                 'Desserts' : [
                     {
-                        'name' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'static' : true,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 2, 
-                        'tags' : ['Vegetarian','Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'desc' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Organic','Non-Vegan'], 
+                        'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
             }
@@ -287,109 +287,109 @@ var tempdata = {
             'menu' : {
                 'Popular' : [
                     {
-                        'name' : 'Eggs and Waffles', 
+                        'itemName' : 'Eggs and Waffles', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 10, 
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                 ],
                 'Appetizers' : [
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                 ],
                 'Entrees' : [
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs Benedict', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs Benedict', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegeterian'], 
+                        'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'desc' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'name' : 'Shirly Temple', 
-                        'price' : 2, 
+                        'itemName' : 'Shirly Temple', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Soda'], 
+                        'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'desc' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegan'], 
+                        'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
                 'Desserts' : [
                     {
-                        'name' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'static' : true,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 2, 
-                        'tags' : ['Vegetarian','Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'desc' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Organic','Non-Vegan'], 
+                        'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
             }
@@ -402,109 +402,109 @@ var tempdata = {
             'menu' : {
                 'Popular' : [
                     {
-                        'name' : 'Eggs and Waffles', 
+                        'itemName' : 'Eggs and Waffles', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 10, 
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                 ],
                 'Appetizers' : [
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                 ],
                 'Entrees' : [
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs Benedict', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs Benedict', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegeterian'], 
+                        'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'desc' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'name' : 'Shirly Temple', 
-                        'price' : 2, 
+                        'itemName' : 'Shirly Temple', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Soda'], 
+                        'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'desc' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegan'], 
+                        'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
                 'Desserts' : [
                     {
-                        'name' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'static' : true,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 2, 
-                        'tags' : ['Vegetarian','Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'desc' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Organic','Non-Vegan'], 
+                        'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
             }
@@ -517,109 +517,109 @@ var tempdata = {
             'menu' : {
                 'Popular' : [
                     {
-                        'name' : 'Eggs and Waffles', 
+                        'itemName' : 'Eggs and Waffles', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 10, 
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                 ],
                 'Appetizers' : [
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                 ],
                 'Entrees' : [
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs Benedict', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs Benedict', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegeterian'], 
+                        'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'desc' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'name' : 'Shirly Temple', 
-                        'price' : 2, 
+                        'itemName' : 'Shirly Temple', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Soda'], 
+                        'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'desc' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegan'], 
+                        'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
                 'Desserts' : [
                     {
-                        'name' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'static' : true,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 2, 
-                        'tags' : ['Vegetarian','Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'desc' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Organic','Non-Vegan'], 
+                        'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
             }
@@ -632,109 +632,109 @@ var tempdata = {
             'menu' : {
                 'Popular' : [
                     {
-                        'name' : 'Eggs and Waffles', 
+                        'itemName' : 'Eggs and Waffles', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 10, 
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                 ],
                 'Appetizers' : [
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                     {
-                        'name' : 'Fruit Bowl', 
-                        'price' : 10, 
+                        'itemName' : 'Fruit Bowl', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'desc' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
                     },
                 ],
                 'Entrees' : [
                     {
-                        'name' : 'Eggs and Waffles', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs and Waffles', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'desc' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
                     },
                     {
-                        'name' : 'Eggs Benedict', 
-                        'price' : 10, 
+                        'itemName' : 'Eggs Benedict', 
+                        'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegeterian'], 
+                        'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'desc' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'name' : 'Shirly Temple', 
-                        'price' : 2, 
+                        'itemName' : 'Shirly Temple', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Soda'], 
+                        'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'desc' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Non-Vegan'], 
+                        'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
                 'Desserts' : [
                     {
-                        'name' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'static' : true,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'price' : 2, 
-                        'tags' : ['Vegetarian','Vegan'], 
+                        'itemPrice' : 2, 
+                        'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'desc' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.'
                     },
                     {
-                        'name' : 'Banana Milkshake', 
-                        'price' : 2, 
+                        'itemName' : 'Banana Milkshake', 
+                        'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'tags' : ['Organic','Non-Vegan'], 
+                        'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'desc' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
                     },
                 ],
             }

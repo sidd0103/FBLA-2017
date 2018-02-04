@@ -61,31 +61,38 @@ $(document).ready(function () {
     });
     
     //handle clicking on a tile
-    var modal;
+    var menuModal;
+    var itemModal;
     $('body').on('click','.tastery-item',function(){
         var type = $(this).attr('data-itemType');
+        var id = $(this).attr('id');
+        var data = getData();
+        var element = data[type]['items'][id];
         if (type == 'restraunts') {
-            var id = $(this).attr('id');
-            var data = getData();
-            var element = data[type]['items'][id];
-            modal = new RestaurantMenu(element);
-            modal.open();
+            menuModal = new RestaurantMenu(element);
+            menuModal.open();
         }
         else {
-            $('.item-modal-container').addClass('active');
+            itemModal = new ItemModal(element);
+            itemModal.open();
         }
     });
     $('body').on('click','.menu-modal-container, .searchbox-container',function(){
-        modal.close();
+        menuModal.close();
     });
     $('body').on('click','.menu-page',function(e){
         e.stopPropagation();
     });
     $('body').on('click','.menu-item',function(){
-        $('.item-modal-container').addClass('active');
-    })
+        var id = $(this).attr('id');
+        var category = id.substring(0,id.indexOf('_'));
+        var index = id.substring(id.indexOf('_') + 1);
+        var itemData = menuModal.data.menu[category][index];
+        itemModal = new ItemModal(itemData);
+        itemModal.open();
+    });
     $('.item-modal-container').click(function(){
-        $(this).removeClass('active');
+        itemModal.close();
     })
     $('.item-modal-page').click(function(ev){
         ev.stopPropagation();
@@ -94,11 +101,15 @@ $(document).ready(function () {
     $('.plus').click(function(){
         var num = $('.num-display').text() * 1;
         $('.num-display').text(num + 1);
+        var newPrice = itemModal.data.itemPrice * $('.num-display').text();
+        $('.item-modal-container .price').text('$'+newPrice);
     })
     $('.minus').click(function(){
         var num = $('.num-display').text() * 1;
         if (num > 1) {
             $('.num-display').text(num - 1);
+            var newPrice = itemModal.data.itemPrice * $('.num-display').text();
+            $('.item-modal-container .price').text('$'+newPrice);
         }
     })
 })
