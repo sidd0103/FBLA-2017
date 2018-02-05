@@ -376,8 +376,8 @@ input[type=text] {
     z-index: 800;
     z-index: 4;
     background-image: url(../media/lightbg.jpeg);
-    background-size: 2000px;
-    background-position: center;
+    background-size:  1200px;
+    background-position: 50% -60px;
     background-attachment: fixed;
     display: flex;
     position: relative;
