@@ -116,5 +116,20 @@ $(document).ready(function () {
             var newPrice = itemModal.data.itemPrice * $('.num-display').text();
             $('.item-modal-container .price').text('$'+newPrice);
         }
-    })
+    });
+    //handle shopping cart
+    var cart = new ShoppingCart();
+    $('.addtocart-btn').click(function(){
+        console.log(itemModal.data);
+        var num = $('.num-display').text();
+        var comments = $('#textarea1').val();
+        var options = {num: num, requests:comments};
+        cart.addItem(options, itemModal.data);
+    });
+    $('body').on('click','.delete-btn',function(){
+        console.log('close');
+        var id = $(this).parent('.item').attr('id');
+        cart.removeItem(id);
+    });
 })
+

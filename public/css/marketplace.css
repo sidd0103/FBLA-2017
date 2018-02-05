@@ -174,34 +174,97 @@ body::-webkit-scrollbar {
 }
 .cart {
     padding: 30;
+    padding-bottom: 60;
+    padding-top: 20;
+    overflow: auto;
     height: calc(100% - (90px + 50px));
 }
 .cart .item {
-    height: 100;
-    padding: 10;
+    height: 130;
     width: 100%;
-
-    background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: white;
     border-radius: 20px;
     color: white;
+    color: black;
+    margin-bottom: 10;
+    overflow: visible;
+    cursor: default;
+    position: relative;
+    margin-top: 10;
     font-family: Poppins;
+}
+.cart .item .delete-btn {
+    position: absolute;
+    z-index: 500;
+    padding: 5;
+    transform: scale(0);
+    color: cb356b;
+    border-radius: 30px;
+    background-color: white;
+    right: -10;
+    top: -10;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.cart .item:hover .delete-btn {
+    transform: scale(1);
+    opacity: 1;
+}
+.cart .item .thumbnail {
+    height: 70%;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cart .item .thumbnail .text {
+    color: white;
+    font-weight: 700;
+    position: relative;
+    max-width: 70%;
+    font-size: 18;
+}
+.cart .item .thumbnail .text .from {
+    font-weight: 300;
+    color: #eee;
+    font-size: 12;
 }
 .cart .item .cart-item-title {
     font-weight: 700;
 }
-.item-cart-ctnt {
+.cart .item .thumbnail.bg .darken-layer{
+    opacity: 1;
+}
+.cart .darken-layer {
+    opacity: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    background: linear-gradient(to right, #ed4264, #ffedbc);
-    color: white;
-    padding: 15;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    position: absolute;
 }
-.cart .item .price {
+.cart .item .priceinfo {
     display: flex;
+    padding-left: 30;
+    padding-right: 30;
+    height: 30%;
+    align-items: center;
 }
-.price .total {
+.priceinfo .total {
+    font-size: 14;
     margin-left: auto;
+}
+.priceinfo .num {
+    display: flex;
+    font-size: 14;
+    align-items: center;
+}
+.priceinfo .num i {
+    font-size: 14;
 }
 .checkoutbnt {
     position: absolute;
@@ -210,11 +273,19 @@ body::-webkit-scrollbar {
     background-color: white;
     padding: 0;
     padding-left: 30;
-    font-family: adamcg;
+    font-family: Poppins;
+    font-weight: 700;
     color: ff1744 ;
     transition: color .4s, background-color .4s, transform .2s; 
     cursor: pointer;
     padding-right: 30;
+    display: flex;
+}
+.checkoutbnt .total {
+    margin-left: auto;
+    padding-left: 30;
+    border-left: 1px solid #eee;
+    color: blac
 }
 .checkoutbnt:hover {
     background-color: ff1744;
@@ -321,20 +392,22 @@ input[type=text] {
     z-index: 900;
 }
 .copyright {
-    color: white;
+    color: black;
 }
 .terms-of-service {
     margin-left: auto;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 .window-footer {
     height: 40;
     display: flex;
+    border-top: 1px solid #eee;
+    font-family: Poppins;
     padding: 10;
     padding-left: 30;
     padding-right: 30;
-    background-color: black;
+    background-color: white;
 }
 .window-items {
     z-index: 200;
@@ -983,6 +1056,12 @@ input[type=text] {
     color: gray;
     font-family: Poppins;
 }
+/*toast*/
+.toast-style {
+    font-family: Poppins;
+    font-weight: 700;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
 /*RESPONSIVENESS */
 @media only screen and (max-width: 1100px) {
     .openNav, .openCart {
@@ -1035,6 +1114,12 @@ input[type=text] {
     }
     .menu-item {
         width: 100%;
+    }
+    .openNav {
+        margin-left: 20;
+    }
+    .openCart {
+        margin-right: 20;
     }
     
 }
@@ -1093,10 +1178,23 @@ input[type=text] {
     
 }
 @media only screen and (max-width: 800px) {
-    #responsive-change {
+    .responsive-change {
+        justify-content: center;
+        display: flex;
+        padding: 8;
+        align-items: center;
+    }
+    .level-display {
         display: none;
     }
-    #openCartbtn {
-        margin-left: auto;
+    .location-display {
+        display: none;
     }
+    .deliver-to {
+        margin-left: 10;
+    }
+    .level {
+        margin-right: 10;
+    }
+    
 }

@@ -8,7 +8,6 @@
     <!--Link Prelim js-->
     <script src="js/jquery-3.2.1.js"></script>
     <script defer src="js/materialize.js"></script>
-    <script defer src="js/momentjs.js"></script>
     <script defer src="js/nouislider.js"></script>
     <!--Link prelim css-->
     <link href="css/animate.css" rel="stylesheet">
@@ -23,13 +22,13 @@
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
-    <script defer src="js/animations.js"></script>
     <link href="css/marketplace.css" rel="stylesheet">
     <script defer src="js/responsive.js"></script>
     <script defer src="js/location.js"></script>
     <script src="js/marketplace.js"></script>
     <script src="js/itemGenerator.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/cart.js"></script>
     <!--GMAPS API-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
     <link href="css/autocomplete.css" rel=stylesheet>
@@ -41,8 +40,8 @@
     <div class="z-depth-1 nav-top">
         <div class="title red-text accent-3 ">TASTERY</div>
         <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
-        <div id="responsive-change" class="z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="location-display">West Portola Ave</span></div>
-        <div id="responsive-change" class="z-depth-2 level"><i class="material-icons">local_shipping</i><span class="level-display">Delivery: <b>ASAP</b></span></div>
+        <div class="responsive-change z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="location-display">West Portola Ave</span></div>
+        <div class="responsive-change z-depth-2 level"><i class="material-icons">local_shipping</i><span class="level-display">Delivery: <b>ASAP</b></span></div>
         <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
     </div>
     <div class="searchbox-container">
@@ -167,13 +166,7 @@
                 </div>
             </div>
             <div class="z-depth-3 stats">
-                <div class="rating">
-                    <div class="material-icons">star</div>
-                    <div class="material-icons">star</div>
-                    <div class="material-icons">star</div>
-                    <div class="material-icons">star</div>
-                    <div class="material-icons">star</div>
-                </div>
+                <div class="rating"></div>
                 <div class="cost">
                     <div class="material-icons">attach_money</div>
                     <div class="material-icons">attach_money</div>
@@ -236,16 +229,8 @@
     <!--SHOPPING CART -->
     <ul id="shoppingCart" class="right-aligned fixed side-nav">
         <li class="cartTitle">My Cart</li>
-        <div class="cart">
-            <div class="waves-effect z-depth-2 item">
-                <div class="item-cart-ctnt">
-                    <div class="cart-item-title">Udon</div>
-                    <div class="price"><span class="amount">x4</span><span class="total">$40</span></div>
-                </div>
-            </div>
-
-        </div>
-        <li class="waves-effect z-depth-5 checkoutbnt">Check Out</li>
+        <div class="cart"></div>
+        <li class="waves-effect z-depth-5 checkoutbnt">CHECK OUT<div class="total">$0</div></li>
     </ul>
 
 
