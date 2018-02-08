@@ -89,3 +89,32 @@ class ItemModal  {
         $('.num-display').text('1');
     }
 }
+
+class locationModal {
+    constructor() {
+        this.deliverLocation;
+        this.container = $('.location-modal-container');
+        this.initLocation();
+    }
+    initLocation() {
+        var loc = sessionStorage.getItem('deliveryLocation');
+        if (loc == null) {
+            window.location.href = 'index.html';
+        }
+        else {
+            this.setLocation(loc);
+        }
+    }
+    setLocation(location) {
+        this.deliverLocation = location;
+        $('.location-display').text(location);
+        sessionStorage.setItem('deliveryLocation', location);
+    }
+    open() {
+        this.container.addClass('active');
+        $('#enterLocation').val(this.deliverLocation);
+    }
+    close(noOverflow) {
+        this.container.removeClass('active');
+    }
+}

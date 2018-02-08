@@ -1,25 +1,32 @@
 .pac-item {
     cursor: pointer;
     padding: 15;
+    font-family: Poppins!important;
     font-size: 12;
 }
 .pac-container {
     margin-top: 20;
+    font-family: Poppins!important;
     position: relative;
     -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 }
+#marketPlace .pac-container {
+    position: fixed!important;
+    top: 170!important;
+}
 .pac-container:after {
+    font-family: Poppins!important;
     display: none!important;
 }
 .pac-matched {
+    font-family: Poppins!important;
     font-size: 120%;
-    font-family: Roboto;
     font-weight: 500!important;
 }
 .pac-item-query {
+    font-family: Poppins!important;
     font-size: 120%;
-    font-family: Roboto;
     font-weight: 400!important;
 }
 .pac-icon {

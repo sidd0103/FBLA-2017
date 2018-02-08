@@ -24,7 +24,6 @@
     <!--Get our working files linked-->
     <link href="css/marketplace.css" rel="stylesheet">
     <script defer src="js/responsive.js"></script>
-    <script defer src="js/location.js"></script>
     <script src="js/marketplace.js"></script>
     <script src="js/itemGenerator.js"></script>
     <script src="js/modal.js"></script>
@@ -35,14 +34,24 @@
 
 </head>
 
-<body>
+<body id="marketPlace">
     <!--HEADER BAR-->
     <div class="z-depth-1 nav-top">
         <div class="title red-text accent-3 ">TASTERY</div>
         <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
-        <div class="responsive-change z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="location-display">West Portola Ave</span></div>
-        <div class="responsive-change z-depth-2 level"><i class="material-icons">local_shipping</i><span class="level-display">Delivery: <b>ASAP</b></span></div>
+        <div class="waves-effect responsive-change z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="truncate location-display">West Portola Ave</span></div>
+        <div class="waves-effect responsive-change z-depth-2 level"><i class="material-icons">local_shipping</i><span class="level-display">Delivery: <b>ASAP</b></span></div>
         <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
+    </div>
+    <div class="location-modal-container">
+        <div class="z-depth-2  location-modal">
+            <div class="close-location-btn material-icons">close</div>
+            <div class="location-title">Choose Another Location</div>
+            <div class="input-area input-field">
+                <input class="truncate" id="enterLocation" placeholder="Enter any location" type="text">
+                <div id="location-submit" class="waves-effect save-changes material-icons">check</div>
+            </div>
+        </div>
     </div>
     <div class="searchbox-container">
         <div class="z-depth-3 searchbox">

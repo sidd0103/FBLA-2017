@@ -12,6 +12,7 @@ function initAutoComplete(){
         }
         else {
             if (place['types'][0] == 'street_address' || place['types'][0] == 'premise') {
+                sessionStorage.setItem('deliveryLocation', place['formatted_address']);
                 window.location.href = 'marketplace.html'
             }
             else {
