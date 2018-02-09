@@ -18,18 +18,31 @@ body {
     min-height: calc(100% - 43px);
     width: 100%;
     position: relative;
-    background-image: url(../media/lightbg2.jpeg);
+    background-image: url(../media/lightbg.jpeg);
+    background-size: cover;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    background-color: #f5f6f8;
     z-index: 800;
     overflow: hidden;
-    background-size: cover;
-    background-position: bottom;
-
+}
+.bg-thumb {
+    position: absolute;
+}
+.slab {
+    left: 20;
+    bottom: -300;
+}
+.bowl {
+    right: calc(50% - 300px);
+    width: 600;
+    top: -400;
 }
 .heroBoxContainer {
     max-width: 800;
     margin: 0 auto;
     padding: 60;
-    margin-top: 40;
+    margin-top: 100;
     margin-bottom: 200;
 }
 .heroBox {
@@ -39,14 +52,34 @@ body {
 .hero-catchPhrase {
     padding: 20;
     font-family: Poppins;
-    font-size: 220%;
-    color: white;
-    font-size: 40;
+    color: black;
+    font-size: 90;
     font-weight: 700;
 }
+.anew {
+    font-size: 60%;
+    text-align: center;
+    background-image: url(../media/lightbg2.jpeg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -20;
+}
+.hero-catchPhrase span {
+     background-image: url(../media/lightbg2.jpeg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ff1744;
+    background-position: bottom;
+}
+.white-gradient {
+    
+}
 .phrase-sub {
-    color: #eee;
-    font-size: 70%;
+    background-image: url(../media/lightbg2.jpeg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40%;
+    text-align: center;
 }
 .enterLocation {
     height: 60;
@@ -73,6 +106,7 @@ body {
 }
 .location-input {
     padding-top: 8.4;
+    font-family: Poppins;
     width: calc(100% - 100px);
 }
 #enterLocation {
@@ -109,6 +143,7 @@ input[type=text] {
     position: fixed;
     width: 100%;
     background-color: white;
+    border-bottom: solid 1px #eee;
     z-index: 1000;
 }
 #loginButton {
@@ -482,8 +517,29 @@ input[type=text] {
         max-width: calc(100% - 320px)
     }
 }
-@media only screen and (max-width: 850px) {
-    
+
+@media only screen and (max-width: 820px) {
+    .hero-catchPhrase {
+        font-size: 70;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .hero-catchPhrase {
+        font-size: 12vw;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .anew {
+        margin-bottom: -10;
+    }
+    .heroBox {
+        padding-right: 40;
+    }
+   
 }
 @media only screen and (max-width: 650px) {
     .grid-row {
@@ -540,7 +596,10 @@ input[type=text] {
     .right-corner-red {
         display: none;
     }
-    .hero-catchPhrase {
-        font-size: 37;
+    .bowl {
+        width: 500;
+        right: calc(50% - 240px);
+        top: -340;
     }
+
 }
