@@ -24,6 +24,8 @@ body {
     background-repeat: no-repeat;
     background-color: #f5f6f8;
     z-index: 800;
+    display: flex;
+    align-items: center;
     overflow: hidden;
 }
 .bg-thumb {
@@ -42,8 +44,8 @@ body {
     max-width: 800;
     margin: 0 auto;
     padding: 60;
-    margin-top: 100;
-    margin-bottom: 200;
+
+
 }
 .heroBox {
     padding: 30;
@@ -514,7 +516,14 @@ input[type=text] {
 /*responsivness*/
 @media only screen and (max-width: 1000px) {
     .row-desc {
-        max-width: calc(100% - 320px)
+        max-width: calc(100% - 320px);
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .bowl {
+        width: 400;
+        top: -260;
+        right: calc(50% - 200px);
     }
 }
 
@@ -601,5 +610,7 @@ input[type=text] {
         right: calc(50% - 240px);
         top: -340;
     }
-
+    .location-input {
+        max-width: 200;
+    }
 }
