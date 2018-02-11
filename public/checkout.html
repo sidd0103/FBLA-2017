@@ -24,7 +24,12 @@
     <link href="css/checkout.css" rel="stylesheet">
     <script src="js/responsive.js"></script>
     <script src="js/checkout.js"></script>
-    <script src="js/location.js"></script>
+    <script src="js/modal.js"></script>
+    <!--stripe-->
+    <script src="https://js.stripe.com/v3/"></script>
+    <!--GMAPS API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
+    <link href="css/autocomplete.css" rel=stylesheet>
 </head>
 
 <body>
@@ -53,11 +58,56 @@
     <!--checkout box-->
     <div class="z-depth-1 checkout-box">
         <div class="deliver-info">
-            <div class="waves-effect location-info truncate">73 West Portola</div>
+            <div class="location-display waves-effect location-info truncate">73 West Portola</div>
+            <div class="change-location-modal">
+                <input id="enterLocation" placeholder="Change Location" type="text">
+            </div>
             <div class="waves-effect time-info"><span>ASAP</span> 20 - 40 mins</div>
         </div>
-        <div class="item-container"></div>
-    
+        <div class="item-container">
+            <div class="z-depth-2 item">
+                <div class="thumbnail">
+                    <div>
+                        <div class="item-title">Eggs and Waffles</div>
+                        <div class="sub">Ricks Cafe</div>
+                    </div>
+                </div>
+                <div class="description">
+                    <label>Instructions</label>
+                    <div class="instructions">With no eggs or ham</div>
+                </div>
+                <div class="price-details">
+                    <div class="num">x4</div>
+                    <div class="price">$40</div>
+                </div>
+            </div>
+            <div class="z-depth-2 courrier-item">
+                <div class="header-info">
+                    <div class="txt">Courrier Cost</div>
+                    <div class="cost">$5</div>
+                </div>
+                <div class="tip">
+                    <div>TIP:</div>
+                    <div class="tip-num">
+                        <div class="waves-effect z-depth-1 minus">-</div>
+                        <div class="num-display">$1</div>
+                        <div class="waves-effect z-depth-1 plus">+</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="credit-card-enter">
+            <div class="credit-card">
+                <div id="card-element" class="card-element"></div>
+                <div class="credit-error"></div>
+            </div>
+            <div class="waves-effect submit">
+                <div class="txt">ORDER</div>
+                <div class="mon">$40</div>
+            </div>
+        </div>
+
     </div>
 </body>
 

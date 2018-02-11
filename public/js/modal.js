@@ -1,4 +1,4 @@
-//Restraunt Menu Modal Object
+//these objects control most of the major modals we see on the Marketplace website. 
 class RestaurantMenu {
     constructor(data) {
         this.data = data;
