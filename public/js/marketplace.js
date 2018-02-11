@@ -146,6 +146,10 @@ $(document).ready(function () {
     $('.location-modal-container').click(function(){
         deliverModal.close();
     })
+    //handle checkout
+    $('.checkoutbnt').click(function(){
+        document.location.href = "checkout.html";
+    })
 })
 
 //this callback function runs once the google maps library is fetched. 
