@@ -6,7 +6,8 @@ var tempdata = {
             'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 10,
-            'itemDetails' : ['vegan']
+            'itemDetails' : ['vegan'],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Udon',
@@ -14,7 +15,8 @@ var tempdata = {
             'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 10,
-            'itemDetails' : ['vegan']
+            'itemDetails' : ['vegan'],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Udon',
@@ -22,7 +24,8 @@ var tempdata = {
             'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 10,
-            'itemDetails' : ['vegan']
+            'itemDetails' : ['vegan'],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Udon',
@@ -30,7 +33,8 @@ var tempdata = {
             'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 10,
-            'itemDetails' : ['vegan']
+            'itemDetails' : ['vegan'],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Udon',
@@ -38,7 +42,8 @@ var tempdata = {
             'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 10,
-            'itemDetails' : ['vegan']
+            'itemDetails' : ['vegan'],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Udon',
@@ -46,7 +51,8 @@ var tempdata = {
             'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 10,
-            'itemDetails' : ['vegan']
+            'itemDetails' : ['vegan'],
+            'itemAvailability' : 100,
         },
     ]},
     'restraunts' : {'formalName' : 'Restraunt', 'items': [
@@ -63,7 +69,8 @@ var tempdata = {
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -71,7 +78,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -79,7 +87,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -87,7 +96,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Appetizers' : [
@@ -97,7 +107,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Fruit Bowl', 
@@ -105,7 +116,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Entrees' : [
@@ -115,14 +127,16 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
                         'itemPrice' : 10, 
                         'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
@@ -132,7 +146,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'itemDescription' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -140,18 +155,20 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Desserts' : [
                     {
                         'itemName' : 'Vanilla Ice Cream', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'static' : true,
+                        'static' : 100,
                         'itemPrice' : 2, 
                         'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'itemDescription' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -159,7 +176,8 @@ var tempdata = {
                         'itemPrice' : 2, 
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
             }
@@ -177,7 +195,8 @@ var tempdata = {
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -185,7 +204,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -193,7 +213,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -201,7 +222,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Appetizers' : [
@@ -211,7 +233,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Fruit Bowl', 
@@ -219,7 +242,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Entrees' : [
@@ -229,7 +253,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
@@ -237,7 +262,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
@@ -247,7 +273,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'itemDescription' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -255,18 +282,20 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Desserts' : [
                     {
                         'itemName' : 'Vanilla Ice Cream', 
-                        'static' : true,
+                        'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
                         'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'itemDescription' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -274,7 +303,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
             }
@@ -292,7 +322,8 @@ var tempdata = {
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -300,7 +331,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -308,7 +340,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -316,7 +349,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Appetizers' : [
@@ -326,7 +360,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Fruit Bowl', 
@@ -334,7 +369,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Entrees' : [
@@ -344,7 +380,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
@@ -352,7 +389,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
@@ -362,7 +400,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'itemDescription' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -370,18 +409,20 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Desserts' : [
                     {
                         'itemName' : 'Vanilla Ice Cream', 
-                        'static' : true,
+                        'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
                         'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'itemDescription' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -389,7 +430,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
             }
@@ -407,7 +449,8 @@ var tempdata = {
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -415,7 +458,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -423,7 +467,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -431,7 +476,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Appetizers' : [
@@ -441,7 +487,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Fruit Bowl', 
@@ -449,7 +496,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Entrees' : [
@@ -459,7 +507,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
@@ -467,7 +516,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
@@ -477,7 +527,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'itemDescription' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -485,18 +536,20 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Desserts' : [
                     {
                         'itemName' : 'Vanilla Ice Cream', 
-                        'static' : true,
+                        'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
                         'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'itemDescription' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -504,7 +557,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
             }
@@ -522,7 +576,8 @@ var tempdata = {
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -530,7 +585,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -538,7 +594,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -546,7 +603,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Appetizers' : [
@@ -556,7 +614,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Fruit Bowl', 
@@ -564,7 +623,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Entrees' : [
@@ -574,7 +634,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
@@ -582,7 +643,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
@@ -592,7 +654,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'itemDescription' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -600,18 +663,20 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Desserts' : [
                     {
                         'itemName' : 'Vanilla Ice Cream', 
-                        'static' : true,
+                        'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
                         'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'itemDescription' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -619,7 +684,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
             }
@@ -637,7 +703,8 @@ var tempdata = {
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -645,7 +712,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -653,7 +721,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs and Waffles', 
@@ -661,7 +730,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Appetizers' : [
@@ -671,7 +741,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Fruit Bowl', 
@@ -679,7 +750,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
-                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. '
+                        'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Entrees' : [
@@ -689,7 +761,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
-                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup '
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
@@ -697,7 +770,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
                         'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce'
+                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
@@ -707,7 +781,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
-                        'itemDescription' : 'Sprite with cherry food coloring.'
+                        'itemDescription' : 'Sprite with cherry food coloring.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -715,18 +790,20 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
                 'Desserts' : [
                     {
                         'itemName' : 'Vanilla Ice Cream', 
-                        'static' : true,
+                        'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
                         'itemDetails' : ['Vegetarian','Vegan'], 
                         'ingredients':['Vanilla Ice Cream'], 
-                        'itemDescription' : 'Some Vanilla Ice Cream.'
+                        'itemDescription' : 'Some Vanilla Ice Cream.',
+                        'itemAvailability' : 100,
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -734,7 +811,8 @@ var tempdata = {
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
-                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.'
+                        'itemDescription' : 'Organic milkshake made every morning.  Made with fresh Bananas.',
+                        'itemAvailability' : 100,
                     },
                 ],
             }
@@ -747,7 +825,8 @@ var tempdata = {
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 4,
-            'itemDetails' : []
+            'itemDetails' : [],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Apples',
@@ -755,7 +834,8 @@ var tempdata = {
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 4,
-            'itemDetails' : []
+            'itemDetails' : [],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Apples',
@@ -763,7 +843,8 @@ var tempdata = {
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 4,
-            'itemDetails' : []
+            'itemDetails' : [],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Apples',
@@ -771,7 +852,8 @@ var tempdata = {
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 4,
-            'itemDetails' : []
+            'itemDetails' : [],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Apples',
@@ -779,7 +861,8 @@ var tempdata = {
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 4,
-            'itemDetails' : []
+            'itemDetails' : [],
+            'itemAvailability' : 100,
         },
         {
             'itemName' : 'Apples',
@@ -787,7 +870,8 @@ var tempdata = {
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 4,
-            'itemDetails' : []
+            'itemDetails' : [],
+            'itemAvailability' : 100,
         },
     ]}
     

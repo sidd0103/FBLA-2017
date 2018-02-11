@@ -160,8 +160,10 @@
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-  -webkit-animation-duration: 5s;
-   animation-duration: 5s;
+  -webkit-animation-duration: 2s;
+   animation-duration: 2s;
+  animation-iteration-count:infinite;
+
 }
 
 @-webkit-keyframes rubberBand {

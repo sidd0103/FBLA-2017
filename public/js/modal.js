@@ -1,5 +1,4 @@
-
-
+//Restraunt Menu Modal Object
 class RestaurantMenu {
     constructor(data) {
         this.data = data;
@@ -102,13 +101,14 @@ class locationModal {
             window.location.href = 'index.html';
         }
         else {
-            this.setLocation(loc);
+            this.setLocation(loc);   
         }
     }
     setLocation(location) {
         this.deliverLocation = location;
         $('.location-display').text(location);
         sessionStorage.setItem('deliveryLocation', location);
+        this.close();
     }
     open() {
         this.container.addClass('active');
@@ -118,3 +118,4 @@ class locationModal {
         this.container.removeClass('active');
     }
 }
+

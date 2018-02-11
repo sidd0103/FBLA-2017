@@ -16,6 +16,22 @@ $(document).ready(function(){
             document.location.href = "login.html";
         }
     })
+    //handle locations modal
+    var locationModalOn = false;
+    $('.location-link').click(function(){
+        $('.locations-modal').addClass('active');
+        locationModalOn = true;
+    });
+    $('.locations-modal').click(function(){
+        $('.locations-modal').removeClass('active');
+        locationModalOn = false;
+    });
+    $(document).scroll(function(){
+        if (locationModalOn) {
+            $('.locations-modal').removeClass('active');
+            locationModalOn = false;
+        }
+    });
 })
 
 //this callback function runs once the google maps library is fetched. 

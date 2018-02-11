@@ -164,6 +164,7 @@ function initAutoComplete(){
         else {
             if (place['types'][0] == 'street_address' || place['types'][0] == 'premise') {
                 deliverModal.setLocation(place['formatted_address']);
+                Materialize.toast("Location changed to " + place['formatted_address'],1000,"toast-style");
             }
             else {
                 Materialize.toast('<span class="error-icon material-icons">error</span>Please enter a specific location.',800,'toast-style');

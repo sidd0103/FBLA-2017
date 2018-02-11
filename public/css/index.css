@@ -20,7 +20,7 @@ body {
     position: relative;
     background-image: url(../media/lightbg.jpeg);
     background-size: cover;
-    background-position: 50% 0px;
+    background-position: 50% ;
     background-repeat: no-repeat;
     background-color: #f5f6f8;
     z-index: 800;
@@ -44,7 +44,7 @@ body {
     max-width: 800;
     margin: 0 auto;
     padding: 60;
-    margin-top: 50;
+    margin-top: -100;
     padding-top: 0;
     
 
@@ -409,6 +409,7 @@ input[type=text] {
     position: relative;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -439,6 +440,14 @@ input[type=text] {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-position: bottom;
+}
+.locations {
+    font-family: Poppins;
+    text-align: left;
+    font-size: 20;
+    font-weight: 300;
+    color: rgba(0,0,0,.6);
+    max-width: 70%;
 }
 /*GET STARTED SECTION */
 .madeForConsumers {
@@ -580,12 +589,46 @@ input[type=text] {
 .expand {
     margin-bottom: 20;
 }
-
-
+/*locations-modal*/
+.locations-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    background-color: rgba(0,0,0,.7);
+    z-index: -1000;
+    opacity: 0;
+    -webkit-transition: opacity .2s, transform .2s, z-index 0s .3s;
+}
+.locations-modal.active {
+    z-index: 901;
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transition: opacity .2s, transform .2s;
+}
+.locations-page {
+    max-width: 700;
+    padding: 40;
+    margin: 0 auto;
+    margin-top: 200;
+    margin-bottom: 200;
+    color: white;
+}
+.locations-page .location {
+    font-family: Poppins;
+    text-align: center;
+    font-size: 40;
+    font-weight: 700;
+    padding: 5;
+}
 /*responsivness*/
 @media only screen and (max-width: 1000px) {
     .row-desc {
         max-width: calc(100% - 320px);
+    }
+    .heroBoxContainer {
+        margin-top: 0;
     }
 }
 @media only screen and (max-width: 1400px) {

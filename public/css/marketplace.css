@@ -9,6 +9,7 @@
 }
 
 body {
+
 }
 body::-webkit-scrollbar { 
     display: none; 
@@ -1159,6 +1160,7 @@ input[type=text]#enterLocation {
 .error-icon {
     margin-right: 10;
 }
+
 /*RESPONSIVENESS */
 @media only screen and (max-width: 1100px) {
     .openNav, .openCart {
