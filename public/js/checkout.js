@@ -1,44 +1,53 @@
 $(document).ready(function () {
-        //sidenav init
-        $('#menuButton').sideNav({
-            menuWidth: 250, // Default is 300
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true, // Choose whether you can drag to open on touch screens,
-            onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
-            onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
-        });
+    //sidenav init
+    $('#menuButton').sideNav({
+        menuWidth: 250, // Default is 300
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true, // Choose whether you can drag to open on touch screens,
+        onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+        onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+    });
 
-        //stripe checkout init
-        var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
-        var elements = stripe.elements({
-            fonts: [{
-                cssSrc: 'https://fonts.googleapis.com/css?family=Poppins:400,700,900'
-    }]
-        });
-        var style = {
-            base: {
-                color: '#32325d',
-                lineHeight: '18px',
-                fontFamily: 'Poppins',
-                fontSmoothing: 'antialiased',
-                fontSize: '16px',
-                '::placeholder': {
-                    color: '#aab7c4'
-                }
-            },
-            invalid: {
-                color: '#fa755a',
-                iconColor: '#fa755a'
+    //stripe checkout init
+    var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+    var elements = stripe.elements({
+        fonts: [{cssSrc: 'https://fonts.googleapis.com/css?family=Poppins:400,700,900'}]
+    });
+    var style = {
+        base: {
+            color: '#32325d',
+            lineHeight: '18px',
+            fontFamily: 'Poppins',
+            fontSmoothing: 'antialiased',
+            fontSize: '16px',
+            '::placeholder': {
+                color: '#aab7c4'
             }
-        };
-        var card = elements.create('card', {
-            style: style
-        });
-        card.mount('#card-element');
+        },
+        invalid: {
+            color: '#fa755a',
+            iconColor: '#fa755a'
+        }
+    };
+    var card = elements.create('card', {
+        style: style
+    });
+    card.mount('#card-element');
+    //hande modal
+    $('.location-display').click(function(e){
+        deliverModal.open();
+        e.stopPropagation();
+    });
+    $('.change-location-modal').click(function(e){
+        e.stopPropagation();
     })
-    //handle location 
-    //this callback function runs once the google maps library is fetched. 
+    $('body').click(function(){
+        deliverModal.close();
+    });
+})
+//handle location
+//this callback function runs once the google maps library is fetched. 
 function initAutoComplete() {
     console.log("hi");
     deliverModal = new locationModal();
@@ -60,4 +69,32 @@ function initAutoComplete() {
             }
         }
     });
+}
+class locationModal {
+    constructor() {
+        this.deliverLocation;
+        this.container = $('.change-location-modal');
+        this.initLocation();
+    }
+    initLocation() {
+        var loc = sessionStorage.getItem('deliveryLocation');
+        if (loc == null) {
+            window.location.href = 'index.html';
+        } else {
+            this.setLocation(loc);
+        }
+    }
+    setLocation(location) {
+        this.deliverLocation = location;
+        $('.location-display').text(location);
+        sessionStorage.setItem('deliveryLocation', location);
+        this.close();
+    }
+    open() {
+        this.container.addClass('active');
+        $('#enterLocation').val(this.deliverLocation);
+    }
+    close(noOverflow) {
+        this.container.removeClass('active');
+    }
 }
