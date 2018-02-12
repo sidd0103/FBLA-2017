@@ -17,6 +17,7 @@ body {
     margin-top: 50px;
     min-height: calc(100% - 43px);
     width: 100%;
+    padding-top: 50;
     position: relative;
     background-image: url(../media/lightbg.jpeg);
     background-size: cover;
@@ -749,5 +750,10 @@ input[type=text] {
     .view-locations {
         padding-left: 0;
         padding-right: 0;
+    }
+}
+@media only screen and (max-height: 700px) {
+    .heroBoxContainer {
+        margin-top: 0;
     }
 }
