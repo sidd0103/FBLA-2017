@@ -565,14 +565,14 @@ var tempdata = {
             }
         },
         {
-            'itemName' : 'Ricks Cafe',
+            'itemName' : 'Thai Palace',
             'itemImage' : '/media/items/restraunts/raclette.jpg',
-            'itemDescription' : 'We are a family owned business offering a family friendly atmosphere for locals and visitors alike.',
+            'itemDescription' : 'We are a popular and delicious Thai restaurant also serving some delicacies from other Asian cuisines',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
                 'Popular' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Red Curry Chicken', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -581,7 +581,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Chicken Satay', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -590,7 +590,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Tofu and Eggplant Stir Fry', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -599,7 +599,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Pad Thai', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -610,7 +610,7 @@ var tempdata = {
                 ],
                 'Appetizers' : [
                     {
-                        'itemName' : 'Fruit Bowl', 
+                        'itemName' : 'Spring Rolls', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -619,7 +619,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Fruit Bowl', 
+                        'itemName' : 'Pinneaple Fried Rice', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -630,7 +630,7 @@ var tempdata = {
                 ],
                 'Entrees' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Tofu and Eggplant Stir Fry', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -639,18 +639,18 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs Benedict', 
+                        'itemName' : 'Chicken Satay', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'itemDetails' : ['Non-Vegeterian'], 
-                        'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'ingredients':['Eggs','Wheat','Milk'], 
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
                         'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'itemName' : 'Shirly Temple', 
+                        'itemName' : 'Green Tea', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
@@ -659,7 +659,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Sprite', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
@@ -670,7 +670,7 @@ var tempdata = {
                 ],
                 'Desserts' : [
                     {
-                        'itemName' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Red Bean Ice Cream', 
                         'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
@@ -680,7 +680,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Vanilla Ice Cream', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
@@ -692,14 +692,14 @@ var tempdata = {
             }
         },
         {
-            'itemName' : 'Ricks Cafe',
+            'itemName' : 'Noodle Talk',
             'itemImage' : '/media/items/restraunts/raclette.jpg',
-            'itemDescription' : 'We are a family owned business offering a family friendly atmosphere for locals and visitors alike.',
+            'itemDescription' : 'We are a local Chinese restaurant',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
                 'Popular' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Chow Mein', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -708,7 +708,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Egg Fried Rice', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -717,7 +717,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Kung Pao Chicken', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -726,7 +726,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Black Pepper Chicken', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -737,7 +737,7 @@ var tempdata = {
                 ],
                 'Appetizers' : [
                     {
-                        'itemName' : 'Fruit Bowl', 
+                        'itemName' : 'Spring Rolls', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -746,7 +746,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Fruit Bowl', 
+                        'itemName' : 'Chicken Fried Rice', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -757,7 +757,7 @@ var tempdata = {
                 ],
                 'Entrees' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Kung Pao Chicken', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -766,18 +766,18 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs Benedict', 
-                        'itemPrice' : 10, 
+                        'itemName' : 'Chow Mein', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
-                        'itemDetails' : ['Non-Vegeterian'], 
-                        'ingredients':['Eggs','Ham','Toast'], 
-                        'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
+                        'itemPrice' : 10, 
+                        'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
+                        'ingredients':['Eggs','Wheat','Milk'], 
+                        'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
                         'itemAvailability' : 100,
                     },
                 ],
                 'Sides/Drinks' : [
                     {
-                        'itemName' : 'Shirly Temple', 
+                        'itemName' : 'Black Tea', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
@@ -786,7 +786,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Orange Cream Soda', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
@@ -797,7 +797,7 @@ var tempdata = {
                 ],
                 'Desserts' : [
                     {
-                        'itemName' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Fortune Cookie', 
                         'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
@@ -807,7 +807,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Chocolate Chip Cookies', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
