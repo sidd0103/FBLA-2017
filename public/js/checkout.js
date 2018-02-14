@@ -8,7 +8,12 @@ $(document).ready(function () {
         onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
         onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
-
+    //handle the generation of cart items
+    var cart = new CheckOutCart();
+    $('body').on('click','.del-item',function(){
+        var id = $(this).parent('.item').attr('id');
+        cart.removeItem(id);
+    });
     //stripe checkout init
     var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
     var elements = stripe.elements({
@@ -45,6 +50,9 @@ $(document).ready(function () {
     $('body').click(function(){
         deliverModal.close();
     });
+    
+
+    
 })
 //handle location
 //this callback function runs once the google maps library is fetched. 

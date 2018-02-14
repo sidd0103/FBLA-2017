@@ -62,7 +62,7 @@ class ItemModal {
         $('.item-modal-container .desc').text(this.data['itemDescription']);
         $('.item-modal-container .price').text('$' + this.data['itemPrice']);
         $('.item-header-title .data').text(this.data['itemName']);
-        $('.item-modal-container .numeric-rating').text(ratingToNumber(this.data['rating']) + '/5');
+        $('.numeric-rating-container .numeric-rating').text(ratingToNumber(this.data['rating']) + '/5');
         if (this.data['itemDetails'].length == 0) {
             $('.item-modal-container .tags').html('<div class="none">No Tags</div>')
         } else {
@@ -128,14 +128,6 @@ class SearchModal {
         this.loadingIcon.removeClass('done');
         var data = getData();
         var results = {'restraunts': [],'dishes': [],'produce': []}
-        //look through featured dishes
-        var dishes = data['dishes']['items'];
-        for (var dish in dishes) {
-            var name = dishes[dish]['itemName'];
-            if (name.toLocaleLowerCase().includes(str.toLocaleLowerCase())) {
-                results['dishes'].push('dishes_items_' + dish);
-            }
-        }
         //look through restraunts
         var restraunts = data['restraunts']['items'];
         for (var restraunt in restraunts) {

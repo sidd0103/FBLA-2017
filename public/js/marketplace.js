@@ -6,7 +6,7 @@ $(document).ready(function () {
     var searchPage = new SearchModal();
     $('.searchInput').keyup(function(){
         var val = $(this).val();
-        if (val.length > 0) {
+        if (val.length > 0) { 
             searchPage.open();
             searchPage.searchFor(val);
             searchPage.displayResults();
@@ -19,11 +19,16 @@ $(document).ready(function () {
         var path = $(this).attr('data-path');
         searchPage.close();
         var element = searchPage.pathToJSON(path);
-        if ((path.split('_'))[0] == 'restraunts') {
+        var splitPath = path.split('_');
+        if (splitPath[0] == 'produce') { //means its a produce item
+            itemModal = new ItemModal(element);
+            itemModal.open();
+        }
+        else if (splitPath.length <= 3) { //means that its the path for a restraunt
             menuModal = new RestaurantMenu(element);
             menuModal.open();
         }
-        else {
+        else { //means its the path for an item in a restraunt. 
             itemModal = new ItemModal(element);
             itemModal.open();
         }
@@ -57,22 +62,6 @@ $(document).ready(function () {
         draggable: true, // Choose whether you can drag to open on touch screens,
         onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
         onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
-    });
-    
-    /*Handle the Filters*/
-    var slider = document.getElementById('test-slider');
-    noUiSlider.create(slider, {
-        start: [20, 80],
-        connect: true,
-        step: 1,
-        orientation: 'horizontal', // 'horizontal' or 'vertical'
-        range: {
-            'min': 0,
-            'max': 100
-        },
-        format: wNumb({
-            decimals: 0
-        })
     });
     
     //handle clicking on a tile
@@ -139,7 +128,7 @@ $(document).ready(function () {
         var num = $('.num-display').text();
         var comments = $('#textarea1').val();
         var options = {num: num, requests:comments};
-        cart.addItem(options, itemModal.data);
+        cart.addItem(options, itemModal.data, true);
     });
     $('body').on('click','.delete-btn',function(){
         console.log('close');
@@ -148,6 +137,7 @@ $(document).ready(function () {
     });
     //handle location modal
     $('.deliver-to').click(function(ev){
+        console.log('clicked');
         ev.stopPropagation();
         deliverModal.open();
     })

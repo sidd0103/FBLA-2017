@@ -176,6 +176,9 @@ body::-webkit-scrollbar {
 
 }
 /*NAV BAR*/
+#navigationBar {
+    height: 100%;
+}
 .login-box {
     margin-top: 70;
     margin-left: 30;
@@ -198,29 +201,6 @@ body::-webkit-scrollbar {
     border: 3px solid white;
     height: 60;
 }
-.priceSlider {
-    padding: 30;
-    padding-bottom: 30;
-    padding-top: 15;
-}
-.noUi-tooltip span {
-    display: block;
-    top: -9.5;
-    text-align: center;
-    left: -.9;
-}
-.noUi-target.noUi-horizontal .noUi-tooltip, .noUi-connect, .noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle{
-    background-color: #ff1744;
-}
-.filter-select {
-    padding: 30;
-    padding-bottom: 0;
-    font-family: Poppins;
-    padding-top: 20;
-}
-.select-wrapper {
-
-}
 .moveup {
     margin-top: -25;
 }
@@ -229,6 +209,27 @@ body::-webkit-scrollbar {
 }
 #navigationBar {
     font-family: Poppins;
+}
+.contactUs {
+    position: absolute;
+    bottom: 0;
+    padding: 16;
+    padding-left: 30;
+    padding-right: 30;
+    width: 100%;
+    display: flex;
+    font-size: 14;
+    color: rgba(0,0,0,.8);
+    transition: background-color .2s;
+    align-items: center;
+    border-top: .5px solid #eee;
+}
+.contactUs:hover {
+    background-color: rgba(0,0,0,.04);
+}
+.contactUs i {
+   margin-right: 30;
+    color: rgba(0,0,0,.8)!important;
 }
 /*SHOPPING CART*/
 .cartTitle {
@@ -246,7 +247,7 @@ body::-webkit-scrollbar {
 }
 .cart {
     padding: 30;
-    padding-bottom: 60;
+    padding-bottom: 75;
     padding-top: 20;
     overflow: auto;
     height: calc(100% - (90px + 50px));
@@ -317,6 +318,8 @@ body::-webkit-scrollbar {
     height: 100%;
     background-color: rgba(0,0,0,.3);
     top: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     position: absolute;
 }
 .cart .item .priceinfo {
@@ -1126,11 +1129,14 @@ input[type=text]#enterLocation {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.item-modal-page .body .ratings div {
+.item-modal-page .body .ratings > div {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
+}
+.item-modal-page .body .ratings > div i {
+    margin-right: 6;
 }
 .flex-row {
     display: flex;

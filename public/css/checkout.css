@@ -141,26 +141,44 @@ body {
 }
 .item {
     border-radius: 30px;
-    overflow: hidden;
     margin: 0 auto;
+    position: relative;
     margin-bottom: 20;
     max-width: 350;
 }
 .item .thumbnail {
     height: 100;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, #cb356b, #bd3f32);
+    background-size: cover;
+}
+.item .thumbnail .darker {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    opacity: 0;
+}
+.item .thumbnail.bg .darker {
+    opacity: 1;
 }
 .item .item-title {
     color: white;
     font-family: Poppins;
+    position: relative;
     font-size: 18;
     font-weight: 700;
 }
 .item .thumbnail .sub {
+    position: relative;
     font-family: Poppins;
     color: #eee;
 }
@@ -298,7 +316,22 @@ body {
     -webkit-text-fill-color: transparent;
     background-position: bottom;
 }
-
+.del-item {
+    position: absolute;
+    right: -10;
+    top: -10;
+    padding: 5;
+    color: #bd3f32;
+    background-color: white;
+    border-radius: 30px;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0s, opacity .2s;
+}
+.item:hover .del-item {
+    transform: scale(1);
+    opacity: 1;
+}
 /*SIDE NAV BAR*/
 
 ul .login-box {
