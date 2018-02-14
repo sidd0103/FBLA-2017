@@ -526,13 +526,14 @@ input[type=text]#enterLocation {
     cursor: pointer;
     display: inline-block;
     width: 100%;
-    min-height: 185;
+    height: 185;
     background-size: cover;
 }
 .darken {
     position: relative;
     width: 100%;
-    min-height: 185;
+     overflow: hidden;
+    height: 185;
     font-family: Poppins;
     background-color: rgba(0,0,0,.3);
 }
@@ -542,6 +543,11 @@ input[type=text]#enterLocation {
     color: white;
     font-size: 180%;
     font-weight: 300;
+    height: 70;
+    width: calc(100% - 40px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .item-rating {
     padding-left: 30;
@@ -850,7 +856,7 @@ input[type=text]#enterLocation {
 .search-modal-container.active .search-modal{
     transform: scale(90);
     opacity: 1;
-    transition: transform .6s .1s, opacity .4s;
+    transition: transform .4s .1s, opacity .4s;
 }
 .search-modal {
     position: fixed;
@@ -882,6 +888,7 @@ input[type=text]#enterLocation {
     padding: 30;
     padding-left: 40;
     padding-right: 40;
+    height: calc(100% - 100px);
     transition: opacity .2s;
     overflow: auto;
     transform: scale(0);
@@ -922,6 +929,10 @@ input[type=text]#enterLocation {
 }
 .search-modal-content ul li .head .name{
     font-weight: 700;
+    max-width: calc(100% - 90px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .search-modal-content ul li .head .type{
     margin-left: auto;
@@ -933,7 +944,14 @@ input[type=text]#enterLocation {
     margin-right: 10;
     background: linear-gradient(to right, #ed4264, #ffedbc);
 }
-
+.searchLoader {
+    opacity: 1;
+   transition: opacity 1s .2s;
+}
+.searchLoader.done {
+    opacity: 0;
+    transition: opacity .2s;
+}
 /*item modal container*/
 .item-modal-container {
     position: fixed;
@@ -946,6 +964,7 @@ input[type=text]#enterLocation {
     z-index: -1000;
     background-color: rgba(0,0,0,.7);
     opacity: 0;
+    padding-bottom: 130;
     transition: opacity .2s, z-index 0s .3s;
 }
 .item-modal-container.active { 
@@ -961,7 +980,6 @@ input[type=text]#enterLocation {
     overflow: hidden;
     background-color: white;
     transform: scale(.5);
-    margin-bottom: 100;
     opacity: 0;
     transition: opacity .2s, transform .2s;
 }
@@ -977,7 +995,7 @@ input[type=text]#enterLocation {
     padding-left: 40;
     position: relative;
     
-    height: 200;
+    height: 120;
     background: linear-gradient(to right, #cb356b, #bd3f32);
     background-size: cover;
 }
@@ -993,6 +1011,11 @@ input[type=text]#enterLocation {
     margin-top: -5;
     position: relative;
     font-family: Poppins;
+}
+.item-header-title .data {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .from {
     font-size: 14;
@@ -1021,11 +1044,14 @@ input[type=text]#enterLocation {
     width: 100%;
     background-color: rgba(0,0,0,.5);
 }
+
+/*CORRECTIONS TO THE CSS THAT WERE MOVED FROM RESPONSIVE AREA*/
 .item-modal-header .btns {
     margin-left: auto;
     width: 160;
     position: relative;
     z-index: 995;
+    margin-top: 40;
 }
 .addtocart-btn {
     height: 70;
@@ -1090,14 +1116,12 @@ input[type=text]#enterLocation {
     position: relative;
     padding: 40;
     z-index: 994;
-    margin-top: -70;
 }
 .item-modal-page .body .ratings {
     display: flex;
     align-items: center;
     padding: 10;
     font-size: 20;
-    margin-top: -10;
      background: linear-gradient(to right, #cb356b, #bd3f32);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1117,6 +1141,7 @@ input[type=text]#enterLocation {
 .flex-row .right-side {
     width: calc(100% - 260px);
     padding: 20;
+    padding-top: 60;
     padding-right: 0;
 }
 .right-side .tags {
@@ -1148,7 +1173,7 @@ input[type=text]#enterLocation {
     font-family: Poppins;
 }
 .dietary-restrictions {
-    margin-top: 50;
+    margin-top: 0;
     font-family: Poppins;
 }
 .tags .none {
@@ -1156,6 +1181,46 @@ input[type=text]#enterLocation {
     width: 100%;
     color: gray;
     font-family: Poppins;
+}
+.item-modal-header .ctnt{
+    flex-direction: column;
+}
+.item-modal-header .btns {
+    margin-left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin-top: 30;
+
+}
+.num-items {
+    margin-left: auto;
+    width: 100%;
+}
+.addtocart-btn {
+    width: 200;
+}
+.item-modal-page .flex-row {
+    flex-direction: column;
+}
+.flex-row .right-side {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20;
+}
+.flex-row .left-side {
+    width: 100%;
+    max-width: 100%;
+}
+.right-side .tags {
+    width: 100%;
+}
+.item-modal-page {
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+.item-modal-header {
+    height: 230;
 }
 /*toast*/
 .toast-style {
@@ -1229,43 +1294,8 @@ input[type=text]#enterLocation {
 
 }
 @media only screen and (max-width: 500px) {
-    .item-modal-header .ctnt{
-        flex-direction: column;
-    }
-    .item-modal-header .btns {
-        margin-left: 0;
-        width: 100%;
-        background-color: white;
-        display: flex;
-        margin-top: 10;
-    }
-    .item-modal-page .body {
-        margin-top: -39;
-    }
-    .num-items {
-        margin-left: auto;
-        width: 100%;
-    }
-    .addtocart-btn {
-        width: 200;
-    }
-    .item-modal-page .flex-row {
-        flex-direction: column;
-    }
-    .flex-row .right-side {
-        width: 100%;
-        padding-left: 0;
-    }
-    .flex-row .left-side {
-        width: 100%;
-        max-width: 100%;
-    }
-    .right-side .tags {
-        width: 100%;
-    }
-    .item-modal-page {
-        border-radius: 0px;
-        margin-bottom: 0;
+    .item-modal-container {
+        padding-bottom: 0;
     }
 }
 @media only screen and (max-width: 1300px) and (min-width: 1100px) {
@@ -1279,6 +1309,9 @@ input[type=text]#enterLocation {
     }
     .item-banner {
         font-size: 350%;
+    }
+    .right-side {
+        padding-top: 0;
     }
     
 }

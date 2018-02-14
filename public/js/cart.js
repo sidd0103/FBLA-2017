@@ -9,7 +9,7 @@ class ShoppingCart {
         console.log(id);
         this.items[id] = {'options':options,'data':data};
         window.sessionStorage.setItem('cart',{'items':this.items,'counter':this.counter});
-        $('.cart').html($('.cart').html() + '<div id="'+id+'" class="z-depth-2 item"> <div class="waves-effect material-icons z-depth-1 delete-btn">close</div> <div class="thumbnail"> <div class="darken-layer"></div> <div class="text"><div class="truncate name">'+data.itemName+'</div><div class="from">Ricks Cafe</div></div> </div> <div class="priceinfo"><div class="num"><i class="material-icons">close</i>'+options.num+'</div><div class="total">$'+data.itemPrice * options.num+'</div></div> </div>');
+        $('.cart').html($('.cart').html() + '<div id="'+id+'" class="z-depth-2 item"> <div class="waves-effect material-icons z-depth-1 delete-btn">close</div> <div class="thumbnail"> <div class="darken-layer"></div> <div class="text"><div class="truncate name">'+data.itemName+'</div><div class="from">'+data.orgin+'</div></div> </div> <div class="priceinfo"><div class="num"><i class="material-icons">close</i>'+options.num+'</div><div class="total">$'+data.itemPrice * options.num+'</div></div> </div>');
         var thumbsrc = {'className':'','src':''};
         if (data.itemImage != null) {
             console.log(id);

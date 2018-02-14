@@ -1,65 +1,77 @@
 //temp data is the data used for the website currently- in the future, this data will be dynamic and user generated, however we don't have a user base yet so we made our own.
 var tempdata = {
     'dishes' : {'formalName' : 'Dish', 'items': [
-        {
-            'itemName' : 'Udon',
-            'itemImage' : '/media/items/dishes/udon.jpg',
-            'itemDescription' : 'A traditional Japanese noodle dish served with broth and vegetables.',
+       {
+            'itemName' : 'Tofu and Eggplant with Basil', 
+           'itemImage' : '/media/items/dishes/tofu.jpg',
+            'itemPrice' : 10, 
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 10,
-            'itemDetails' : ['Vegan'],
+            'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
+            'ingredients':['Tofu','Eggplant','Onion', 'Bellpepper', 'Sauce', 'Basil'], 
+            'itemDescription' : 'A Delicious Mix of Eggplant and Tofu',
+            'itemAvailability' : 110,
+            'orgin' : 'Thai Palace',
+        },
+        {
+            'itemName' : 'Jalapeno Bagel', 
+            'itemImage' : '/media/items/dishes/bagel.jpg',
+            'rating' : {5:100,4:100,3:100,2:100,1:100},
+            'itemPrice' : 8, 
+            'itemDetails' : ['Vegetarian','Pescitarian'], 
+            'ingredients':['Eggs','Wheat','Milk', 'Jalapeno Spread'], 
+            'itemDescription' : 'A Toasted Bagel served with Jalapeno Spread',
+            'itemAvailability' : 160,
+            'orgin' : 'Posh Bagel',
+        },
+        {
+            'itemName' : 'Enchiladas with Verde Sauce', 
+            'itemImage' : '/media/items/dishes/enchilada.jpg',
+            'itemPrice' : 15, 
+            'rating' : {5:100,4:100,3:100,2:100,1:100},
+            'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
+            'ingredients':['Tortilla','Cheese', 'Verde Sauce'], 
+            'itemDescription' : 'Fresh Enchiladas served with Verde Sauce',
+            'itemAvailability' : 83,
+            'orgin' : 'La Taqueria',
+        },
+        {
+            'itemName' : 'BBQ Chicken Pizza', 
+            'itemImage' : '/media/items/dishes/bbq.jpeg',
+            'rating' : {5:100,4:100,3:100,2:100,1:100},
+            'itemPrice' : 10, 
+            'itemDetails' : ['Non-Vegetarian'], 
+            'ingredients':['Chicken','BBQ Sauce','Onions', 'Pizza Dough'], 
+            'itemDescription' : 'A Delicious BBQ Pizza',
             'itemAvailability' : 100,
+            'orgin' : 'Spots Pizza',
         },
         {
-            'itemName' : 'Baja Fish Tacos',
-            'itemImage' : '/media/items/dishes/udon.jpg',
-            'itemDescription' : 'A savory pair of Mahi-Mahi tacos served with coleslaw, beans, lettuce.',
+            'itemName' : 'French Toast', 
+            'itemImage' : '/media/items/dishes/french.jpeg',
+            'itemPrice' : 13, 
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 12,
-            'itemDetails' : ['Non-veg'],
-            'itemAvailability' : 90,
+            'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
+            'ingredients':['Eggs','Wheat','Milk', 'Cinnamon'], 
+            'itemDescription' : 'Crispy, yet Fluffy French Toast Served with a side of Maple Syrup',
+            'itemAvailability' : 34,
+            'orgin' : 'Ricks Cafe',
         },
         {
-            'itemName' : 'Fettuccine Alfredo',
-            'itemImage' : '/media/items/dishes/udon.jpg',
-            'itemDescription' : 'A rich Italian Pasta made with a creamy white sauce.',
+            'itemName' : 'Tomato Soup', 
+            'itemImage' : '/media/items/dishes/soup.jpeg',
+            'itemPrice' : 8, 
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 12,
-            'itemDetails' : ['Vegetarian'],
-            'itemAvailability' : 52,
-        },
-        {
-            'itemName' : 'Chicken Curry',
-            'itemImage' : '/media/items/dishes/udon.jpg',
-            'itemDescription' : 'A traditional Indian dish made with chicken and masalas, served with rice',
-            'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 9,
-            'itemDetails' : ['Non-veg'],
-            'itemAvailability' : 100,
-        },
-        {
-            'itemName' : 'Margarita Pizza',
-            'itemImage' : '/media/items/dishes/udon.jpg',
-            'itemDescription' : 'A traditional Margarita Pizza served hot and fresh',
-            'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 15,
-            'itemDetails' : ['Vegetarian'],
-            'itemAvailability' : 120,
-        },
-        {
-            'itemName' : 'Bean and Cheese Burrito',
-            'itemImage' : '/media/items/dishes/udon.jpg',
-            'itemDescription' : 'A simple but delicious Bean and Cheese Burrito with some lettuce and salsa',
-            'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 7,
-            'itemDetails' : ['Vegetarian'],
-            'itemAvailability' : 70,
+            'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
+            'ingredients':['Broth', 'Tomato Mix', 'Assorted Vegetables'], 
+            'itemDescription' : 'A Piping Hot Cup of Tomato Soup.',
+            'itemAvailability' : 88,
+            'orgin' : 'Posh Bagel',
         },
     ]},
     'restraunts' : {'formalName' : 'Restraunt', 'items': [
         {
             'itemName' : 'Ricks Cafe',
-            'itemImage' : '/media/items/restraunts/raclette.jpg',
+            'itemImage' : '/media/items/restraunts/ricks.jpeg',
             'itemDescription' : 'We are a family owned business offering a family friendly atmosphere for locals and visitors alike.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
@@ -72,6 +84,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk'], 
                         'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
                         'itemAvailability' : 100,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'Chicken Tenders', 
@@ -81,6 +94,7 @@ var tempdata = {
                         'ingredients':['Chicken', 'Basic Other Ingredients'], 
                         'itemDescription' : 'A Crisp Plate of Chicken Tenders and Ranch Sauce',
                         'itemAvailability' : 75,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'Pancakes', 
@@ -90,6 +104,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk'], 
                         'itemDescription' : 'Warm and Fluffy Pancakes served with a side of Maple Syrump',
                         'itemAvailability' : 110,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'French Toast', 
@@ -99,6 +114,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk', 'Cinnamon'], 
                         'itemDescription' : 'Crispy, yet Fluffy French Toast Served with a side of Maple Syrup',
                         'itemAvailability' : 34,
+                        'orgin' : 'Ricks Cafe',
                     },
                 ],
                 'Appetizers' : [
@@ -110,6 +126,7 @@ var tempdata = {
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
                         'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
                         'itemAvailability' : 100,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'Assorted Snacks', 
@@ -119,6 +136,7 @@ var tempdata = {
                         'ingredients':['Carrots', 'Celery', 'Basic Baking Ingredients', 'Cajun Seasoning'], 
                         'itemDescription' : 'An assortment of snacks such as a Fruit plate, a Vegetable Plate, and a Tater Tot Plate',
                         'itemAvailability' : 130,
+                        'orgin' : 'Ricks Cafe',
                     },
                 ],
                 'Entrees' : [
@@ -130,6 +148,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk', 'Salsa', 'Onions'], 
                         'itemDescription' : 'A Spicy Deluxe Omelette with Salsa, A Classic Mexican Breakfast Delicacy',
                         'itemAvailability' : 100,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'Eggs Benedict', 
@@ -138,6 +157,7 @@ var tempdata = {
                         'ingredients':['Eggs','Ham','Toast'], 
                         'itemDescription' : 'Classic eggs benedict with Hollandaise sauce',
                         'itemAvailability' : 100,
+                        'orgin' : 'Ricks Cafe',
                     },
                 ],
                 'Sides/Drinks' : [
@@ -149,6 +169,7 @@ var tempdata = {
                         'ingredients':['Cherry','Sprite','Food Coloring'], 
                         'itemDescription' : 'Sprite with cherry flavor.',
                         'itemAvailability' : 250,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'Banana Milkshake', 
@@ -158,6 +179,7 @@ var tempdata = {
                         'ingredients':['Banana','Milk','Strawberries'], 
                         'itemDescription' : 'Organic milkshake made every morning.  Made with Fresh Bananas.',
                         'itemAvailability' : 150,
+                        'orgin' : 'Ricks Cafe',
                     },
                 ],
                 'Desserts' : [
@@ -170,6 +192,7 @@ var tempdata = {
                         'ingredients':['Vanilla Ice Cream'], 
                         'itemDescription' : 'A Scoop French Vanilla Ice Cream with Rainbow Sprinkles.',
                         'itemAvailability' : 80,
+                        'orgin' : 'Ricks Cafe',
                     },
                     {
                         'itemName' : 'Root Beer Float', 
@@ -179,13 +202,14 @@ var tempdata = {
                         'ingredients':['Soda', 'Vanilla Ice Cream', 'Chocolate Sauce'], 
                         'itemDescription' : 'A Delicious Vanilla Ice Cream - Root Beer Float with added Chocolate Sauce',
                         'itemAvailability' : 82,
+                        'orgin' : 'Ricks Cafe',
                     },
                 ],
             }
         },
         {
             'itemName' : 'Posh Bagel',
-            'itemImage' : '/media/items/restraunts/raclette.jpg',
+            'itemImage' : '/media/items/restraunts/posh.jpeg',
             'itemDescription' : 'We are a family owned business offering a family friendly atmosphere for locals and visitors alike.',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
@@ -198,6 +222,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk', 'Jalapeno Spread'], 
                         'itemDescription' : 'A Toasted Bagel served with Jalapeno Spread',
                         'itemAvailability' : 160,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Chicken Salad Sandwich', 
@@ -207,6 +232,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk', 'Chicken', 'Onion', 'Pickles', 'Cream'], 
                         'itemDescription' : 'A Chicken Salad Sandwich served on a Whole Wheat Bagel',
                         'itemAvailability' : 100,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Tuna Sandwich', 
@@ -216,6 +242,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk', 'Cream', 'Tuna', 'Onion', 'Spices'], 
                         'itemDescription' : 'A Tuna Sandwich served on the Bagel of Your Choice',
                         'itemAvailability' : 66,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Croissant Sandwich with Ham', 
@@ -225,6 +252,7 @@ var tempdata = {
                         'ingredients':['Eggs','Wheat','Milk', 'Ham', 'Spices'], 
                         'itemDescription' : 'A Ham Sandwich served on a Toasted Croissant',
                         'itemAvailability' : 80,
+                        'orgin' : 'Posh Bagel',
                     },
                 ],
                 'Appetizers' : [
@@ -236,6 +264,7 @@ var tempdata = {
                         'ingredients':['Chips'], 
                         'itemDescription' : 'A Bag of Potato Chips in the Flavor of Your Choice',
                         'itemAvailability' : 500,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Fresh Bananas', 
@@ -245,6 +274,7 @@ var tempdata = {
                         'ingredients':['Bananas'], 
                         'itemDescription' : 'A Fresh Banana as a Snack',
                         'itemAvailability' : 203,
+                        'orgin' : 'Posh Bagel',
                     },
                 ],
                 'Entrees' : [
@@ -256,6 +286,7 @@ var tempdata = {
                         'ingredients':['Broth', 'Lentils with Spice Mix', 'Assorted Vegetables'], 
                         'itemDescription' : 'A Piping Hot Cup of Minestrone Soup.',
                         'itemAvailability' : 50,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Tomato Soup', 
@@ -265,6 +296,7 @@ var tempdata = {
                         'ingredients':['Broth', 'Tomato Mix', 'Assorted Vegetables'], 
                         'itemDescription' : 'A Piping Hot Cup of Tomato Soup.',
                         'itemAvailability' : 88,
+                        'orgin' : 'Posh Bagel',
                     },
                 ],
                 'Sides/Drinks' : [
@@ -276,6 +308,7 @@ var tempdata = {
                         'ingredients':['Ginger Ale Soda'], 
                         'itemDescription' : 'Ginger Ale',
                         'itemAvailability' : 200,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Chocolate Milkshake', 
@@ -285,6 +318,7 @@ var tempdata = {
                         'ingredients':['Ice Cream','Milk','Chocolate'], 
                         'itemDescription' : 'Chocolate milkshake.',
                         'itemAvailability' : 64,
+                        'orgin' : 'Posh Bagel',
                     },
                 ],
                 'Desserts' : [
@@ -297,6 +331,7 @@ var tempdata = {
                         'ingredients':['Vanilla Ice Cream', 'Fudge'], 
                         'itemDescription' : 'Some Vanilla Ice Cream with Hot Fudge.',
                         'itemAvailability' : 165,
+                        'orgin' : 'Posh Bagel',
                     },
                     {
                         'itemName' : 'Brownies', 
@@ -306,13 +341,14 @@ var tempdata = {
                         'ingredients':['Baking Ingredients', 'Chocolate'], 
                         'itemDescription' : 'Homemade Brownies',
                         'itemAvailability' : 205,
+                        'orgin' : 'Posh Bagel',
                     },
                 ],
             }
         },
         {
             'itemName' : 'La Taqueria',
-            'itemImage' : '/media/items/restraunts/raclette.jpg',
+            'itemImage' : '/media/items/restraunts/taqueria.jpeg',
             'itemDescription' : 'We are a family owned business offering authentic Mexican cuisine',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
@@ -325,6 +361,7 @@ var tempdata = {
                         'ingredients':['Tortillas', 'Shrimp', 'Salsa', 'Lettuce'], 
                         'itemDescription' : 'A Pair of Deluxe Shrimp Tacos',
                         'itemAvailability' : 120,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Chicken Tostada', 
@@ -334,6 +371,7 @@ var tempdata = {
                         'ingredients':['Chicken','Tostada Mix','Spices'], 
                         'itemDescription' : 'A Mexican Tostada',
                         'itemAvailability' : 100,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Enchiladas with Verde Sauce', 
@@ -343,6 +381,7 @@ var tempdata = {
                         'ingredients':['Tortilla','Cheese', 'Verde Sauce'], 
                         'itemDescription' : 'Fresh Enchiladas served with Verde Sauce',
                         'itemAvailability' : 83,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Taquitos', 
@@ -352,6 +391,7 @@ var tempdata = {
                         'ingredients':['Taquito Shell Mix','Chicken','Spice Mix', 'Lettuce', 'Sour Cream'], 
                         'itemDescription' : '6 Chicken Taquitos served with Lettuce and Sour Cream',
                         'itemAvailability' : 58,
+                        'orgin' : 'La Taqueria',
                     },
                 ],
                 'Appetizers' : [
@@ -363,6 +403,7 @@ var tempdata = {
                         'ingredients':['Chips', 'Salsa'], 
                         'itemDescription' : 'An Order of Chips and Salsa',
                         'itemAvailability' : 132,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Tortilla Soup', 
@@ -372,6 +413,7 @@ var tempdata = {
                         'ingredients':['Tortilla (Shredded)', 'Beans and Vegetables', 'Spice Blend'], 
                         'itemDescription' : 'A Spicy Mexican Tortilla Soup',
                         'itemAvailability' : 68,
+                        'orgin' : 'La Taqueria',
                     },
                 ],
                 'Entrees' : [
@@ -383,6 +425,7 @@ var tempdata = {
                         'ingredients':['Beef','Rice','Beans', 'Vegetables', 'Salsa'], 
                         'itemDescription' : 'A Supreme Beef Burrito',
                         'itemAvailability' : 120,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Vegetable Fajitas', 
@@ -392,6 +435,7 @@ var tempdata = {
                         'ingredients':['Vegetables','Tortillas','Beans and Rice'], 
                         'itemDescription' : 'Make Your Own Tacos with Our Fajita Dish',
                         'itemAvailability' : 85,
+                        'orgin' : 'La Taqueria',
                     },
                 ],
                 'Sides/Drinks' : [
@@ -403,6 +447,7 @@ var tempdata = {
                         'ingredients':['Rice and Spice Mix'], 
                         'itemDescription' : 'A Mexican Rice Drink',
                         'itemAvailability' : 95,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Coke', 
@@ -412,6 +457,7 @@ var tempdata = {
                         'ingredients':['Soda'], 
                         'itemDescription' : 'Refreshing Coke',
                         'itemAvailability' : 230,
+                        'orgin' : 'La Taqueria',
                     },
                 ],
                 'Desserts' : [
@@ -424,6 +470,7 @@ var tempdata = {
                         'ingredients':['Cinnamon and Churro Mix'], 
                         'itemDescription' : 'Delicious Churros',
                         'itemAvailability' : 170,
+                        'orgin' : 'La Taqueria',
                     },
                     {
                         'itemName' : 'Tres Leches Cake', 
@@ -433,13 +480,14 @@ var tempdata = {
                         'ingredients':['Milk','Cake Mix'], 
                         'itemDescription' : 'A delicious Mexican "Three Milk" Cake',
                         'itemAvailability' : 49,
+                        'orgin' : 'La Taqueria',
                     },
                 ],
             }
         },
         {
             'itemName' : 'Spots Pizza',
-            'itemImage' : '/media/items/restraunts/raclette.jpg',
+            'itemImage' : '/media/items/restraunts/spots.jpeg',
             'itemDescription' : 'We are a family owned business serving delicious pizza for the last 20 years',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
@@ -452,6 +500,7 @@ var tempdata = {
                         'ingredients':['Chicken','BBQ Sauce','Onions', 'Pizza Dough'], 
                         'itemDescription' : 'A Delicious BBQ Pizza',
                         'itemAvailability' : 100,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Cheese Pizza', 
@@ -461,6 +510,7 @@ var tempdata = {
                         'ingredients':['Cheese','Pizza Sauce','Pizza Dough'], 
                         'itemDescription' : 'Regular Cheeze Pizza, a Classic',
                         'itemAvailability' : 74,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Pepperoni Pizza', 
@@ -470,6 +520,7 @@ var tempdata = {
                         'ingredients':['Cheese','Pizza Sauce','Pizza Dough', 'Pepperoni'], 
                         'itemDescription' : 'Regular Pepperoni Pizza',
                         'itemAvailability' : 84,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Basic Vegetarian Pizza', 
@@ -479,6 +530,7 @@ var tempdata = {
                         'ingredients':['Cheese','Pizza Sauce','Pizza Dough', 'Vegetables'], 
                         'itemDescription' : 'A Regular Vegetarian Pizza',
                         'itemAvailability' : 123,
+                        'orgin' : 'Spots Pizza',
                     },
                 ],
                 'Appetizers' : [
@@ -490,6 +542,7 @@ var tempdata = {
                         'ingredients':['Cantelope','Strawberries','Watermelon','Pineapple','Apples','Blueberries'], 
                         'itemDescription' : 'Cantelope, Strawberries, Watermelon, Pinapple, Apples, Blueberries. ',
                         'itemAvailability' : 100,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Breadsticks', 
@@ -499,6 +552,7 @@ var tempdata = {
                         'ingredients':['BreadSticks Baking Ingredients', 'Ranch Sauce'], 
                         'itemDescription' : 'An Order of Piping Hot Breadsticks with Dipping Sauce',
                         'itemAvailability' : 113,
+                        'orgin' : 'Spots Pizza',
                     },
                 ],
                 'Entrees' : [
@@ -510,6 +564,7 @@ var tempdata = {
                         'ingredients':['Chicken','BBQ Sauce','Onions', 'Pizza Dough'], 
                         'itemDescription' : 'A Delicious BBQ Pizza',
                         'itemAvailability' : 100,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Garden Salad', 
@@ -519,6 +574,7 @@ var tempdata = {
                         'ingredients':['Salad Mix','Olive Oil'], 
                         'itemDescription' : 'Garden Salad with a simple Olive Oil Dressing',
                         'itemAvailability' : 78,
+                        'orgin' : 'Spots Pizza',
                     },
                 ],
                 'Sides/Drinks' : [
@@ -530,6 +586,7 @@ var tempdata = {
                         'ingredients':['Soda'], 
                         'itemDescription' : 'Pepsi Soda',
                         'itemAvailability' : 230,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Bottle of Soda Water', 
@@ -539,6 +596,7 @@ var tempdata = {
                         'ingredients':['Soda Water'], 
                         'itemDescription' : 'Refreshing Soda Water',
                         'itemAvailability' : 114,
+                        'orgin' : 'Spots Pizza',
                     },
                 ],
                 'Desserts' : [
@@ -551,6 +609,7 @@ var tempdata = {
                         'ingredients':['Vanilla Ice Cream'], 
                         'itemDescription' : 'Some Vanilla Ice Cream.',
                         'itemAvailability' : 100,
+                        'orgin' : 'Spots Pizza',
                     },
                     {
                         'itemName' : 'Cream Puffs', 
@@ -560,13 +619,14 @@ var tempdata = {
                         'ingredients':['Puff-Pastry Mix','Cream'], 
                         'itemDescription' : 'Delicious Cream Puffs, 4 per order',
                         'itemAvailability' : 400,
+                        'orgin' : 'Spots Pizza',
                     },
                 ],
             }
         },
         {
             'itemName' : 'Thai Palace',
-            'itemImage' : '/media/items/restraunts/raclette.jpg',
+            'itemImage' : '/media/items/restraunts/thaipalace.jpeg',
             'itemDescription' : 'We are a popular and delicious Thai restaurant also serving some delicacies from other Asian cuisines',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
@@ -579,6 +639,7 @@ var tempdata = {
                         'ingredients':['Chicken','Coconut Cream','Spice Mix'], 
                         'itemDescription' : 'Delicious Red Curry Chicken With Rice',
                         'itemAvailability' : 38,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Chicken Satay', 
@@ -588,6 +649,7 @@ var tempdata = {
                         'ingredients':['Chicken with Spices'], 
                         'itemDescription' : 'A Delicious Order of Chicken Satay served on Skewers, 4 per order',
                         'itemAvailability' : 129,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Tofu and Eggplant with Basil', 
@@ -597,6 +659,7 @@ var tempdata = {
                         'ingredients':['Tofu','Eggplant','Onion', 'Bellpepper', 'Sauce', 'Basil'], 
                         'itemDescription' : 'A Delicious Mix of Eggplant and Tofu',
                         'itemAvailability' : 110,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Pad Thai', 
@@ -606,6 +669,7 @@ var tempdata = {
                         'ingredients':['Eggs','Noodles','Spices'], 
                         'itemDescription' : 'Delicious noodles served with egg and other spices',
                         'itemAvailability' : 128,
+                        'orgin' : 'Thai Palace',
                     },
                 ],
                 'Appetizers' : [
@@ -617,6 +681,7 @@ var tempdata = {
                         'ingredients':['Cabbage', 'Spices', 'Carrots', 'Spring Roll Shell Mix'], 
                         'itemDescription' : 'A Delicious Order of Spring Rolls (4 per order)',
                         'itemAvailability' : 230,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Pinneaple Fried Rice', 
@@ -626,6 +691,7 @@ var tempdata = {
                         'ingredients':['Pinneaple','Rice','Egg','Spices'], 
                         'itemDescription' : 'A delicious order of fried rice with pinneaple',
                         'itemAvailability' : 138,
+                        'orgin' : 'Thai Palace',
                     },
                 ],
                 'Entrees' : [
@@ -637,6 +703,7 @@ var tempdata = {
                         'ingredients':['Tofu','Eggplant','Onion', 'Bellpepper', 'Sauce', 'Basil'], 
                         'itemDescription' : 'A Delicious Mix of Eggplant and Tofu',
                         'itemAvailability' : 110,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Chicken Satay', 
@@ -646,6 +713,7 @@ var tempdata = {
                         'ingredients':['Chicken with Spices'], 
                         'itemDescription' : 'A Delicious Order of Chicken Satay served on Skewers, 4 per order',
                         'itemAvailability' : 129,
+                        'orgin' : 'Thai Palace',
                     },
                 ],
                 'Sides/Drinks' : [
@@ -657,6 +725,7 @@ var tempdata = {
                         'ingredients':['Green Tea Mix'], 
                         'itemDescription' : 'Warm Cup of Green Tea',
                         'itemAvailability' : 149,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Sprite', 
@@ -666,6 +735,7 @@ var tempdata = {
                         'ingredients':['Soda'], 
                         'itemDescription' : 'Refreshing Sprite',
                         'itemAvailability' : 500,
+                        'orgin' : 'Thai Palace',
                     },
                 ],
                 'Desserts' : [
@@ -678,6 +748,7 @@ var tempdata = {
                         'ingredients':['Red Bean Ice Cream'], 
                         'itemDescription' : 'Some Red Bean-flavored Ice Cream.',
                         'itemAvailability' : 300,
+                        'orgin' : 'Thai Palace',
                     },
                     {
                         'itemName' : 'Vanilla Ice Cream', 
@@ -687,13 +758,14 @@ var tempdata = {
                         'ingredients':['Vanilla Ice Cream'], 
                         'itemDescription' : 'Some Vanilla Ice Cream',
                         'itemAvailability' : 228,
+                        'orgin' : 'Thai Palace',
                     },
                 ],
             }
         },
         {
             'itemName' : 'Noodle Talk',
-            'itemImage' : '/media/items/restraunts/raclette.jpg',
+            'itemImage' : '/media/items/restraunts/noodletalk.jpg',
             'itemDescription' : 'We are a local Chinese restaurant',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
@@ -706,6 +778,7 @@ var tempdata = {
                         'ingredients':['Fried Noodles','Soy Sauce','Vegetables'], 
                         'itemDescription' : 'A Popular Chinese Noodle Dish',
                         'itemAvailability' : 256,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Egg Fried Rice', 
@@ -715,6 +788,7 @@ var tempdata = {
                         'ingredients':['Eggs','Rice','Spices'], 
                         'itemDescription' : 'Egg Fried Rice',
                         'itemAvailability' : 148,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Kung Pao Chicken', 
@@ -724,6 +798,7 @@ var tempdata = {
                         'ingredients':['Chicken','Peanuts','Vegetables', 'Spice Mix'], 
                         'itemDescription' : 'A Delicious Order of Kung Pao Chicken',
                         'itemAvailability' : 137,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Black Pepper Chicken', 
@@ -733,6 +808,7 @@ var tempdata = {
                         'ingredients':['Chicken','Black Pepper','Vegetables', 'Spice Mix'], 
                         'itemDescription' : 'A Delicious Order of Black Pepper Chicken',
                         'itemAvailability' : 126,
+                        'orgin' : 'Noodle Talk',
                     },
                 ],
                 'Appetizers' : [
@@ -744,6 +820,7 @@ var tempdata = {
                         'ingredients':['Cabbage', 'Spices', 'Carrots', 'Spring Roll Shell Mix'], 
                         'itemDescription' : 'A Delicious Order of Spring Rolls (4 per order)',
                         'itemAvailability' : 232,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Chicken Fried Rice', 
@@ -753,6 +830,7 @@ var tempdata = {
                         'ingredients':['Chicken','Rice','Spices'], 
                         'itemDescription' : 'Chicken Fried Rice',
                         'itemAvailability' : 187,
+                        'orgin' : 'Noodle Talk',
                     },
                 ],
                 'Entrees' : [
@@ -764,6 +842,7 @@ var tempdata = {
                         'ingredients':['Chicken','Peanuts','Vegetables', 'Spice Mix'], 
                         'itemDescription' : 'A Delicious Order of Kung Pao Chicken',
                         'itemAvailability' : 137,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Chow Mein', 
@@ -773,6 +852,7 @@ var tempdata = {
                         'ingredients':['Fried Noodles','Soy Sauce','Vegetables'], 
                         'itemDescription' : 'A Popular Chinese Noodle Dish',
                         'itemAvailability' : 256,
+                        'orgin' : 'Noodle Talk',
                     },
                 ],
                 'Sides/Drinks' : [
@@ -784,6 +864,7 @@ var tempdata = {
                         'ingredients':['Black Tea Mix'], 
                         'itemDescription' : 'Warm Cup of Black Tea',
                         'itemAvailability' : 149,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Orange Cream Soda', 
@@ -793,6 +874,7 @@ var tempdata = {
                         'ingredients':['Orange Cream Soda'], 
                         'itemDescription' : 'Delicious Orange Cream Soda',
                         'itemAvailability' : 287,
+                        'orgin' : 'Noodle Talk',
                     },
                 ],
                 'Desserts' : [
@@ -805,6 +887,7 @@ var tempdata = {
                         'ingredients':['Vanilla Ice Cream'], 
                         'itemDescription' : 'A Crunchy Fortune Cookie',
                         'itemAvailability' : 8034,
+                        'orgin' : 'Noodle Talk',
                     },
                     {
                         'itemName' : 'Chocolate Chip Cookies', 
@@ -814,6 +897,7 @@ var tempdata = {
                         'ingredients':['Chocolate Chips','Cookie Mix Ingredients',], 
                         'itemDescription' : 'Delicious Chocolate Chip Cookies baked every morning. 2 per order.',
                         'itemAvailability' : 172,
+                        'orgin' : 'Noodle Talk',
                     },
                 ],
             }
@@ -825,54 +909,60 @@ var tempdata = {
             'itemImage' : '/media/items/produce/apples.jpg',
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 0.5,
+            'itemPrice' : 1,
             'itemDetails' : [],
             'itemAvailability' : 100,
+            'orgin' : 'De Martenelis',
         },
         {
             'itemName' : 'Pears',
-            'itemImage' : '/media/items/produce/apples.jpg',
+            'itemImage' : '/media/items/produce/pears.jpeg',
             'itemDescription' : "Local pears from De Martenelis Farmers Market.",
-            'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 0.5,
-            'itemDetails' : [],
-            'itemAvailability' : 200,
-        },
-        {
-            'itemName' : 'Oranges',
-            'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local oranges from De Martenelis Farmers Market.",
-            'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 0.5,
-            'itemDetails' : [],
-            'itemAvailability' : 400,
-        },
-        {
-            'itemName' : 'Grapefruits',
-            'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local Grapefruit from De Martenelis Farmers Market.",
-            'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 0.5,
-            'itemDetails' : [],
-            'itemAvailability' : 150,
-        },
-        {
-            'itemName' : 'Squash',
-            'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local squash from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'itemPrice' : 1,
             'itemDetails' : [],
+            'itemAvailability' : 200,
+            'orgin' : 'De Martenelis',
+        },
+        {
+            'itemName' : 'Oranges',
+            'itemImage' : '/media/items/produce/oranges.jpeg',
+            'itemDescription' : "Local oranges from De Martenelis Farmers Market.",
+            'rating' : {5:100,4:100,3:100,2:100,1:100},
+            'itemPrice' : 1,
+            'itemDetails' : [],
+            'itemAvailability' : 400,
+            'orgin' : 'De Martenelis',
+        },
+        {
+            'itemName' : 'Grapefruits',
+            'itemImage' : '/media/items/produce/grapefruit.jpeg',
+            'itemDescription' : "Local Grapefruit from De Martenelis Farmers Market.",
+            'rating' : {5:100,4:100,3:100,2:100,1:100},
+            'itemPrice' : 2,
+            'itemDetails' : [],
+            'itemAvailability' : 150,
+            'orgin' : 'De Martenelis',
+        },
+        {
+            'itemName' : 'Squash',
+            'itemImage' : '/media/items/produce/squash.jpeg',
+            'itemDescription' : "Local squash from De Martenelis Farmers Market.",
+            'rating' : {5:100,4:100,3:100,2:100,1:100},
+            'itemPrice' : 2,
+            'itemDetails' : [],
             'itemAvailability' : 120,
+            'orgin' : 'De Martenelis',
         },
         {
             'itemName' : 'Plums',
-            'itemImage' : '/media/items/produce/apples.jpg',
+            'itemImage' : '/media/items/produce/plums.jpeg',
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 0.5,
+            'itemPrice' : 1,
             'itemDetails' : [],
             'itemAvailability' : 300,
+            'orgin' : 'De Martenelis',
         },
     ]}
     
@@ -904,7 +994,7 @@ function initRestraunts(data) {
         var itemRating = data[x].rating;
         //convert the itemrating into html
         var ratingHTML = ratingToHTML(itemRating);
-        var html = '<div data-itemtype="restraunts" data-itemID="'+name.toLowerCase().replace(" ","_")+'" style="background-image: url('+itemImage+')" id="'+itemID+'" class="lazy  z-depth-2 tastery-item"> <div class="darken"> <div class="item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
+        var html = '<div data-itemtype="restraunts" data-itemID="'+name.toLowerCase().replace(" ","_")+'" style="background-image: url('+itemImage+')" id="'+itemID+'" class="lazy  z-depth-2 tastery-item"> <div class="darken"> <div class="truncate item-title">'+name+'</div> <div class="item-description">'+itemDescription+'</div> <div class="item-rating">'+ratingHTML+'</div> </div> </div>';
         totalHTML += html;
     }
     $('#restraunt-items').html(totalHTML);
@@ -929,7 +1019,6 @@ function initDishes(data) {
         totalHTML += html;
     }
     $('#dish-items').html(totalHTML);
-    $('.tooltipped').tooltip();
 }
 function initProduce(data) {
     var totalHTML = '';
@@ -951,7 +1040,6 @@ function initProduce(data) {
         totalHTML += html;
     }
     $('#produce-items').html(totalHTML);
-    $('.tooltipped').tooltip();
 }
 
 
@@ -1004,11 +1092,11 @@ function detailsToHTML(price, details) {
         if (detailsIcons[details[i]]) {
             var detailName = detailsIcons[details[i]][1];
             var detailIcon = detailsIcons[details[i]][0];
-            var iconHTML = '<div data-position="bottom" data-tooltip="'+detailName+'" class="tooltipped item-detail"><i class="material-icons">'+detailIcon+'</i></div>';
+            var iconHTML = '<div data-position="bottom" data-tooltip="'+detailName+'" class="item-detail"><i class="material-icons">'+detailIcon+'</i></div>';
             totalHTML += iconHTML;
         }
     }
-    totalHTML += '<div data-position="bottom" data-tooltip="Price" class="tooltipped item-detail">$'+price+'</div>';
+    totalHTML += '<div data-position="bottom" data-tooltip="Price" class="item-detail">$'+price+'</div>';
     return totalHTML;
 }
 

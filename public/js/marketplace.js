@@ -3,20 +3,33 @@ $(document).ready(function () {
     //handle filling in the item window
     initItems();
     //handle search bar
+    var searchPage = new SearchModal();
     $('.searchInput').keyup(function(){
         var val = $(this).val();
         if (val.length > 0) {
-            $('.search-modal-container').addClass('active');
-            var results = searchFor(val);
-            console.log(results);
+            searchPage.open();
+            searchPage.searchFor(val);
+            searchPage.displayResults();
         }
         else {
-            $('.search-modal-container').removeClass('active');
+            searchPage.close();
+        }
+    })
+    $('.search-modal-content ul').on('click','li',function(){
+        var path = $(this).attr('data-path');
+        searchPage.close();
+        var element = searchPage.pathToJSON(path);
+        if ((path.split('_'))[0] == 'restraunts') {
+            menuModal = new RestaurantMenu(element);
+            menuModal.open();
+        }
+        else {
+            itemModal = new ItemModal(element);
+            itemModal.open();
         }
     })
     //handle the selectcl
     $('select').material_select();
-    
     /*Handle the Side Navigation Opening*/
     //check to see if the navs have been closed
     var navsClosed = false;
@@ -79,7 +92,7 @@ $(document).ready(function () {
             itemModal.open();
         }
     });
-    $('body').on('click','.menu-modal-container, .searchbox-container',function(){
+    $('body').on('click','.menu-modal-container',function(){
         menuModal.close();
     });
     $('body').on('click','.menu-page',function(e){
@@ -175,41 +188,4 @@ function initAutoComplete(){
             }
         }
     });
-}
-function searchFor(str) {
-    var data = getData();
-    var results = {'dishes':[],'restraunts':[],'produce':[]}
-    //look through featured dishes
-    var dishes = data['dishes']['items'];
-    for (var dish in dishes) {
-        var name = dishes[dish]['itemName'];
-        if (name.toLocaleLowerCase().includes(str.toLocaleLowerCase())) {
-            results['dishes'].push('dishes_'+dish);
-        }
-    }
-    //look through restraunts
-    var restraunts = data['restraunts']['items'];
-    for (var restraunt in restraunts) {
-        var name = restraunts[restraunt]['itemName']; 
-        if (name.toLowerCase().includes(str.toLocaleLowerCase())) {
-            results['restraunts'].push('restraunts_'+restraunt);
-        }
-        var menu = restraunts[restraunt]['menu']; 
-        for (var catagory in menu) {
-            for (var item in menu[catagory]) {
-                if (menu[catagory][item]['itemName'].toLowerCase().includes(str.toLocaleLowerCase())) {
-                    (results['dishes']).push('restraunts_'+restraunt+'_'+catagory+'_'+item);
-                }   
-            }
-        }
-    }
-    //look through dishes
-    var produce = data['produce']['items'];
-    for (var item in produce) {
-        var name = produce[item]['itemName'];
-        if (name.toLocaleLowerCase().includes(str.toLocaleLowerCase())) {
-            results['produce'].push('produce_'+item);
-        }
-    }
-    return results;
 }
