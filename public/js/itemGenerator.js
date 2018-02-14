@@ -376,7 +376,7 @@ var tempdata = {
                 ],
                 'Entrees' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Supreme Beef Burrito', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -385,7 +385,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs Benedict', 
+                        'itemName' : 'Vegetable Fajitas', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
@@ -396,7 +396,7 @@ var tempdata = {
                 ],
                 'Sides/Drinks' : [
                     {
-                        'itemName' : 'Shirly Temple', 
+                        'itemName' : 'Horchata', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
@@ -405,7 +405,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Coke', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
@@ -416,7 +416,7 @@ var tempdata = {
                 ],
                 'Desserts' : [
                     {
-                        'itemName' : 'Vanilla Ice Cream', 
+                        'itemName' : 'Churros', 
                         'static' : 100,
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 2, 
@@ -426,7 +426,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Tres Leches Cake', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
@@ -438,14 +438,14 @@ var tempdata = {
             }
         },
         {
-            'itemName' : 'Ricks Cafe',
+            'itemName' : 'Spots Pizza',
             'itemImage' : '/media/items/restraunts/raclette.jpg',
-            'itemDescription' : 'We are a family owned business offering a family friendly atmosphere for locals and visitors alike.',
+            'itemDescription' : 'We are a family owned business serving delicious pizza for the last 20 years',
             'rating' : {5:100,4:100,3:100,2:100,1:100},
             'menu' : {
                 'Popular' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'BBQ Chicken Pizza', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -454,7 +454,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Cheese Pizza', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -463,7 +463,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Pepperoni Pizza', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -472,7 +472,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs and Waffles', 
+                        'itemName' : 'Basic Vegetarian Pizza', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -492,7 +492,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Fruit Bowl', 
+                        'itemName' : 'Breadsticks', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
@@ -503,16 +503,16 @@ var tempdata = {
                 ],
                 'Entrees' : [
                     {
-                        'itemName' : 'Eggs and Waffles', 
-                        'itemPrice' : 10, 
+                        'itemName' : 'BBQ Chicken Pizza', 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
+                        'itemPrice' : 10, 
                         'itemDetails' : ['Vegan','Vegetarian','Pescitarian'], 
                         'ingredients':['Eggs','Wheat','Milk'], 
                         'itemDescription' : 'Hot sunny side up eggs and whole wheat waffles and maple syrup ',
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Eggs Benedict', 
+                        'itemName' : 'Garden Salad', 
                         'itemPrice' : 10, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegeterian'], 
@@ -523,7 +523,7 @@ var tempdata = {
                 ],
                 'Sides/Drinks' : [
                     {
-                        'itemName' : 'Shirly Temple', 
+                        'itemName' : 'Pepsi', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Soda'], 
@@ -532,7 +532,7 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
+                        'itemName' : 'Bottle of Soda Water', 
                         'itemPrice' : 2, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Non-Vegan'], 
@@ -553,8 +553,8 @@ var tempdata = {
                         'itemAvailability' : 100,
                     },
                     {
-                        'itemName' : 'Banana Milkshake', 
-                        'itemPrice' : 2, 
+                        'itemName' : 'Cream Puffs', 
+                        'itemPrice' : 4, 
                         'rating' : {5:100,4:100,3:100,2:100,1:100},
                         'itemDetails' : ['Organic','Non-Vegan'], 
                         'ingredients':['Banana','Milk','Strawberries'], 
@@ -825,54 +825,54 @@ var tempdata = {
             'itemImage' : '/media/items/produce/apples.jpg',
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 4,
+            'itemPrice' : 0.5,
             'itemDetails' : [],
             'itemAvailability' : 100,
         },
         {
-            'itemName' : 'Apples',
+            'itemName' : 'Pears',
             'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local apples from De Martenelis Farmers Market.",
+            'itemDescription' : "Local pears from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 4,
+            'itemPrice' : 0.5,
             'itemDetails' : [],
-            'itemAvailability' : 100,
+            'itemAvailability' : 200,
         },
         {
-            'itemName' : 'Apples',
+            'itemName' : 'Oranges',
             'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local apples from De Martenelis Farmers Market.",
+            'itemDescription' : "Local oranges from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 4,
+            'itemPrice' : 0.5,
             'itemDetails' : [],
-            'itemAvailability' : 100,
+            'itemAvailability' : 400,
         },
         {
-            'itemName' : 'Apples',
+            'itemName' : 'Grapefruits',
             'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local apples from De Martenelis Farmers Market.",
+            'itemDescription' : "Local Grapefruit from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 4,
+            'itemPrice' : 0.5,
             'itemDetails' : [],
-            'itemAvailability' : 100,
+            'itemAvailability' : 150,
         },
         {
-            'itemName' : 'Apples',
+            'itemName' : 'Squash',
             'itemImage' : '/media/items/produce/apples.jpg',
-            'itemDescription' : "Local apples from De Martenelis Farmers Market.",
+            'itemDescription' : "Local squash from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 4,
+            'itemPrice' : 1,
             'itemDetails' : [],
-            'itemAvailability' : 100,
+            'itemAvailability' : 120,
         },
         {
-            'itemName' : 'Apples',
+            'itemName' : 'Plums',
             'itemImage' : '/media/items/produce/apples.jpg',
             'itemDescription' : "Local apples from De Martenelis Farmers Market.",
             'rating' : {5:100,4:100,3:100,2:100,1:100},
-            'itemPrice' : 4,
+            'itemPrice' : 0.5,
             'itemDetails' : [],
-            'itemAvailability' : 100,
+            'itemAvailability' : 300,
         },
     ]}
     
