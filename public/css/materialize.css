@@ -6618,6 +6618,10 @@ input[type=range]:focus::-ms-fill-upper {
     width: 36px;
     height: 36px;
 }
+.preloader-wrapper.tiny {
+    width: 26px;
+    height: 26px;
+}
 .preloader-wrapper.big {
     width: 64px;
     height: 64px;
@@ -6656,6 +6660,10 @@ input[type=range]:focus::-ms-fill-upper {
 .spinner-red,
 .spinner-red-only {
     border-color: #db4437;
+}
+.spinner-white,
+.spinner-white-only {
+    border-color: white;
 }
 .spinner-yellow,
 .spinner-yellow-only {

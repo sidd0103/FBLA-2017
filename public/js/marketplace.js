@@ -5,15 +5,16 @@ $(document).ready(function () {
     //handle search bar
     $('.searchInput').keyup(function(){
         var val = $(this).val();
-        console.log(val);
         if (val.length > 0) {
             $('.search-modal-container').addClass('active');
+            var results = searchFor(val);
+            console.log(results);
         }
         else {
             $('.search-modal-container').removeClass('active');
         }
     })
-    //handle the select
+    //handle the selectcl
     $('select').material_select();
     
     /*Handle the Side Navigation Opening*/
@@ -161,7 +162,6 @@ function initAutoComplete(){
     //when the submit button is clicked, we filter through the address to make sure its valid. 
     $('#location-submit').click(function(){
         var place = autocomplete.getPlace();
-        console.log(place);
         if (place == null) {
             Materialize.toast('Please Enter a Location!',500);
         }
@@ -175,4 +175,41 @@ function initAutoComplete(){
             }
         }
     });
+}
+function searchFor(str) {
+    var data = getData();
+    var results = {'dishes':[],'restraunts':[],'produce':[]}
+    //look through featured dishes
+    var dishes = data['dishes']['items'];
+    for (var dish in dishes) {
+        var name = dishes[dish]['itemName'];
+        if (name.toLocaleLowerCase().includes(str.toLocaleLowerCase())) {
+            results['dishes'].push('dishes_'+dish);
+        }
+    }
+    //look through restraunts
+    var restraunts = data['restraunts']['items'];
+    for (var restraunt in restraunts) {
+        var name = restraunts[restraunt]['itemName']; 
+        if (name.toLowerCase().includes(str.toLocaleLowerCase())) {
+            results['restraunts'].push('restraunts_'+restraunt);
+        }
+        var menu = restraunts[restraunt]['menu']; 
+        for (var catagory in menu) {
+            for (var item in menu[catagory]) {
+                if (menu[catagory][item]['itemName'].toLowerCase().includes(str.toLocaleLowerCase())) {
+                    (results['dishes']).push('restraunts_'+restraunt+'_'+catagory+'_'+item);
+                }   
+            }
+        }
+    }
+    //look through dishes
+    var produce = data['produce']['items'];
+    for (var item in produce) {
+        var name = produce[item]['itemName'];
+        if (name.toLocaleLowerCase().includes(str.toLocaleLowerCase())) {
+            results['produce'].push('produce_'+item);
+        }
+    }
+    return results;
 }

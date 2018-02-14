@@ -597,6 +597,9 @@ input[type=text] {
     position: fixed;
     top: 0;
     z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(0,0,0,.7);
     z-index: -1000;
     opacity: 0;
@@ -612,8 +615,6 @@ input[type=text] {
     max-width: 700;
     padding: 40;
     margin: 0 auto;
-    margin-top: 200;
-    margin-bottom: 200;
     color: white;
 }
 .locations-page .location {
@@ -635,7 +636,7 @@ input[type=text] {
 @media only screen and (max-width: 1400px) {
     .bowl {
         width: 400;
-        top: -260;
+        top: -270;
         right: calc(50% - 200px);
     }
 }
@@ -721,7 +722,7 @@ input[type=text] {
     .bowl {
         width: 500;
         right: calc(50% - 240px);
-        top: -340;
+        top: -360;
     }
     .location-input {
         max-width: 200;
