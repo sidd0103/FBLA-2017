@@ -61,9 +61,14 @@ class CheckOutCart {
     constructor() {
         this.items = {};
         this.counter = 0;
+        this.courrierCost = 5;
+        this.courrierTip = 1;
         this.initCart();
+        this.updateTotal();
     }
     initCart() {
+        //set the courrier cost 
+        this.courrierCost = this.courrierCost += this.courrierTip;
         //we check to see if any items stored to session, if true, we add these to the cart
         if (window.sessionStorage.getItem('cart') != null) {
             var data = JSON.parse(window.sessionStorage.getItem('cart'));
@@ -74,6 +79,17 @@ class CheckOutCart {
                 }
             }
         }
+    }
+    changeTip(offset) {
+        this.courrierCost -= this.courrierTip;
+        if (offset < 0 && this.courrierTip > 0) {
+            this.courrierTip -= 1;
+        }
+        else if (offset > 0) {
+            this.courrierTip += 1;
+        }
+        this.courrierCost += this.courrierTip;
+        this.updateTotal();
     }
     addItem(options, data, toast) {
         //this fucntion adds an item to the cart, the state of the shopping cart object, and the session. 
@@ -109,9 +125,11 @@ class CheckOutCart {
         var totalPrice = 0;
         for (var item in this.items) {
             if (this.items[item] != null) {
-                totalPrice += this.items[item].data.itemPrice * this.items[item].options.num  ;   
+                totalPrice += this.items[item].data.itemPrice * this.items[item].options.num;   
             }
         }
-        $('.mon').text('$'+totalPrice);
+        $('.mon').text('$'+(totalPrice + this.courrierCost));
+        $('.courrier-item .cost').text('$'+this.courrierCost);
+        $('.num-display').text('$'+this.courrierTip);
     }
 }

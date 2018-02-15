@@ -1237,7 +1237,120 @@ input[type=text]#enterLocation {
 .error-icon {
     margin-right: 10;
 }
-
+.change-time-modal {
+    z-index: 600;
+    width: 40%;
+    border-top: solid 1px #eee;
+    top: 70;
+    position: absolute;
+    border-left: 1px solid #eee;
+    border-radius: 1px solid #eee;
+    right: 0;
+    background-color: white;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform .1s, opacity .2s;
+}
+.change-time-modal.active {
+    opacity: 1;
+    transform: scaleY(1);
+    transition: transform .1s, opacity .2s;
+}
+.day-choice {
+    padding-left: 20;
+    font-size: 15;
+    padding-right: 20;
+    font-weight: 700;
+    font-family: Poppins;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    transition: opacity .1s, visibility 0s, position 0s;
+}
+.day-choice.hidden {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity .1s, visibility .1s 0s, position .1s 0s;
+}
+.day-choice div {
+    padding: 10;
+    width: 100%;
+    margin: 3;
+    background-image: url(../media/lightbg2.jpeg);
+    background-position: bottom;
+    color: white;
+}
+.time-choice {
+    padding-right: 20;
+    font-family: Poppins;
+    padding-left: 20;
+    visibility: visible;
+    position: relative;
+    transition: opacity .1s, visibility 0s, position 0s;
+}
+.time-choice.hidden {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: opacity .1s, visibility .1s 0s, position .1s 0s;
+}
+.date-chosen {
+    font-size: 16;
+    font-family: Poppins;
+    font-weight: 700;
+    background-image: url(../media/lightbg2.jpeg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
+}
+.timepicker {
+    padding: 5;
+    position: relative;
+    padding-left: 10;
+    margin-top: 5;
+    padding-right: 10;
+    background-image: url(../media/lightbg2.jpeg);
+    background-position: bottom;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+}
+.save-time-changes {
+    font-size: 15;
+    margin-top: 10;
+    background-image: url(../media/lightbg2.jpeg);
+    background-position: 40% 100%;
+    color: white;
+    display: none;
+}
+.save-time-changes.active {
+    display: block;
+}
+.save-time-changes div {
+    background-color: rgba(0,0,0,.2);
+    padding: 5;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding-left: 10;
+    padding-right: 10;
+}
+.save-time-changes i {
+    margin-right: 10;
+}
+.timepicker .timetype {
+    margin-left: auto;
+    font-weight: 
+}
+.disabled {
+    pointer-events: none;
+}
+.disabled a {
+    color: #eee!important;
+}
 /*RESPONSIVENESS */
 @media only screen and (max-width: 1100px) {
     .openNav, .openCart {
