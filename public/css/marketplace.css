@@ -82,6 +82,9 @@ body::-webkit-scrollbar {
 }
 .time-info {
     margin-left: 10;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 50px);
     margin-top: 2;
     margin-right: 10;
 }
@@ -220,6 +223,17 @@ body::-webkit-scrollbar {
     -webkit-text-fill-color: transparent;
     margin-left: 20;
     margin-right: 20;
+}
+.delivery-time {
+    font-weight: 700;
+    font-family: Poppins;
+    font-size: 18;
+    margin-left: 20;
+    margin-right: 20;
+    padding-bottom: 5;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10;
+    
 }
 .change-time-container.active .change-time-modal {
     opacity: 1;
@@ -1486,7 +1500,7 @@ input[type=text]#enterLocation {
         width: auto;
         margin-left: 10;
     }
-    .level {
+    .time {
         width: auto;
         margin-right: 10;
     }

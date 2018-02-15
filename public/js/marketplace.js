@@ -189,7 +189,8 @@ $(document).ready(function () {
     $('#AM li, #PM li').click(function(){
         time.selectTime($(this).text());
     });
-    $('body').on('click','.save-time-changes',function(){
+    $('.time-choice').on('click','.save-time-changes',function(){
+        Materialize.toast("Changed Delivery Time!",1000,"toast-style");
         time.save();
     });
 })

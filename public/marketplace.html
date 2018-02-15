@@ -39,7 +39,7 @@
         <div class="title red-text accent-3 ">TASTERY</div>
         <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
         <div class="waves-effect responsive-change z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="truncate location-display">West Portola Ave</span></div>
-        <div class="waves-effect responsive-change z-depth-2 time"><i class="material-icons">local_shipping</i><span class="time-info">Delivery: <b>ASAP</b></span></div>
+        <div class="waves-effect responsive-change z-depth-2 time"><i class="material-icons">local_shipping</i><span class="time-info truncate">Delivery: <b>ASAP</b></span></div>
         <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
     </div>
     <!--Location modal-->
@@ -56,14 +56,15 @@
     <!--Delivery Modal-->
     <div class="change-time-container ">
         <div class="z-depth-3 change-time-modal">
-            <div class="time-modal-title">Change Delivery Time</div>
+            <div class="time-modal-title">Change Delivery Time from:</div>
+            <div class="delivery-time">Tomorrow, 9 - 10pm</div>
             <div class="day-choice">
                 <div class="waves-effect today">Today</div>
                 <div class="waves-effect tomorrow">Tomorrow</div>
                 <div class="waves-effect nextDay"></div>
             </div>
             <div class="time-choice hidden">
-                <label>Select a time for delivery:</label>
+                <label>Select a new time for delivery on:</label>
                 <div class="date-chosen">Tomorrow</div>
                 <div data-activates='AM' class="dropdown-button waves-effect timepicker"><div class="timedisplay">Pick a time</div><div class="timetype">AM</div></div>
                 <div class="waves-effect save-time-changes"><div><i class="material-icons">check</i>Save Changes</div></div>

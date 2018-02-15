@@ -269,15 +269,17 @@ class timeModal {
         sessionStorage.setItem('time', payload);
         if (this.time.type == 'ASAP') {
             $('.time-info').html('<span>ASAP</span> 20 - 40 mins');
+            $('.delivery-time').text('ASAP');
         }
         else if (this.time.type = 'PLAN') {
             var date = this.time.date;
             if (this.time.date.length > 8) {
                 date = this.time.date.substring(0,this.time.date.indexOf(','));
             }
-            console.log("hi");
             $('.time-info').html('<span>'+date+'</span>, '+this.time.time);
+            $('.delivery-time').text(date + ', ' + this.time.time);
         }
+        this.close();
     }
     open() {
         this.switchToDate();
