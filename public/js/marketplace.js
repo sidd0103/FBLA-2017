@@ -156,6 +156,42 @@ $(document).ready(function () {
     $('.checkoutbnt').click(function(){
         document.location.href = "checkout.html";
     })
+    //handle delivery modal
+    var time = new timeModal();
+    $('.time').click(function(){
+        time.open();
+    });
+    $('.change-time-container').click(function(){
+        time.close();
+    })
+    $('.change-time-modal').click(function(e){
+        e.stopPropagation();
+        $('.timepicker').dropdown('close');
+    });
+    $('.day-choice div').click(function(){
+        var date = $(this).text();
+        time.selectDate(date);
+        time.switchToTime();
+    });
+    $('.timepicker').dropdown();
+    $('.timepicker').click(function(e){
+        e.stopPropagation();
+    });
+    $('.timetype').click(function(event){
+        event.stopPropagation();
+        var types = ['AM','PM'];
+        var type = $(this).text();
+        $(this).text(types[(types.indexOf(type) + 1) % types.length]);
+        $(this).parent().attr('data-activates',types[(types.indexOf(type) + 1) % types.length]);
+        $('.timepicker').dropdown();
+        time.selectTime(null);
+    })
+    $('#AM li, #PM li').click(function(){
+        time.selectTime($(this).text());
+    });
+    $('body').on('click','.save-time-changes',function(){
+        time.save();
+    });
 })
 
 //this callback function runs once the google maps library is fetched. 

@@ -8,6 +8,7 @@
     <!--Link Prelim js-->
     <script src="js/jquery-3.2.1.js"></script>
     <script defer src="js/materialize.js"></script>
+    <script src="js/moment.js"></script>
     <!--Link prelim css-->
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/materialize.css" rel="stylesheet">
@@ -38,7 +39,7 @@
         <div class="title red-text accent-3 ">TASTERY</div>
         <div data-activates="navigationBar" id="openNavbtn" class="activeNav z-depth-3 waves-effect waves-light openNav"><a class="nav-button"><i class="white-text material-icons">menu</i></a></div>
         <div class="waves-effect responsive-change z-depth-2 deliver-to"><i class="material-icons">location_on</i><span class="truncate location-display">West Portola Ave</span></div>
-        <div class="waves-effect responsive-change z-depth-2 level"><i class="material-icons">local_shipping</i><span class="level-display">Delivery: <b>ASAP</b></span></div>
+        <div class="waves-effect responsive-change z-depth-2 time"><i class="material-icons">local_shipping</i><span class="time-info">Delivery: <b>ASAP</b></span></div>
         <div data-activates="shoppingCart" id="openCartbtn" class="activeCart z-depth-3 waves-effect waves-light openCart"><a class="nav-button"><i class="white-text material-icons">shopping_basket</i></a></div>
     </div>
     <!--Location modal-->
@@ -53,35 +54,38 @@
         </div>
     </div>
     <!--Delivery Modal-->
-    <div class="change-time-modal">
-        <div class="day-choice">
-            <div class="waves-effect today">Today</div>
-            <div class="waves-effect tomorrow">Tomorrow</div>
-            <div class="waves-effect nextDay"></div>
-        </div>
-        <div class="time-choice hidden">
-            <label>Select a time for delivery:</label>
-            <div class="date-chosen">Tomorrow</div>
-            <div data-activates='AM' class="dropdown-button waves-effect timepicker"><div class="timedisplay">Pick a time</div><div class="timetype">AM</div></div>
-            <div class="waves-effect save-time-changes"><div><i class="material-icons">check</i>Save Changes</div></div>
-            <ul id='AM' class='dropdown-content'>
-                <li><a href="#!">7-8 am</a></li>
-                <li><a href="#!">8-9 am</a></li>
-                <li><a href="#!">9-10 am</a></li>
-                <li><a href="#!">10-11 am</a></li>
-                <li><a href="#!">11-12 am</a></li>
-            </ul>
-            <ul id='PM' class='dropdown-content'>
-                <li><a href="#!">12-1 pm</a></li>
-                <li><a href="#!">1-2 pm</a></li>
-                <li><a href="#!">2-3 pm</a></li>
-                <li><a href="#!">4-5 pm</a></li>
-                <li><a href="#!">5-6 pm</a></li>
-                <li><a href="#!">6-7 pm</a></li>
-                <li><a href="#!">7-8 pm</a></li>
-                <li><a href="#!">8-9 pm</a></li>
-                <li><a href="#!">9-10 pm</a></li>
-            </ul>
+    <div class="change-time-container ">
+        <div class="z-depth-3 change-time-modal">
+            <div class="time-modal-title">Change Delivery Time</div>
+            <div class="day-choice">
+                <div class="waves-effect today">Today</div>
+                <div class="waves-effect tomorrow">Tomorrow</div>
+                <div class="waves-effect nextDay"></div>
+            </div>
+            <div class="time-choice hidden">
+                <label>Select a time for delivery:</label>
+                <div class="date-chosen">Tomorrow</div>
+                <div data-activates='AM' class="dropdown-button waves-effect timepicker"><div class="timedisplay">Pick a time</div><div class="timetype">AM</div></div>
+                <div class="waves-effect save-time-changes"><div><i class="material-icons">check</i>Save Changes</div></div>
+                <ul id='AM' class='dropdown-content'>
+                    <li><a href="#!">7-8 am</a></li>
+                    <li><a href="#!">8-9 am</a></li>
+                    <li><a href="#!">9-10 am</a></li>
+                    <li><a href="#!">10-11 am</a></li>
+                    <li><a href="#!">11-12 am</a></li>
+                </ul>
+                <ul id='PM' class='dropdown-content'>
+                    <li><a href="#!">12-1 pm</a></li>
+                    <li><a href="#!">1-2 pm</a></li>
+                    <li><a href="#!">2-3 pm</a></li>
+                    <li><a href="#!">4-5 pm</a></li>
+                    <li><a href="#!">5-6 pm</a></li>
+                    <li><a href="#!">6-7 pm</a></li>
+                    <li><a href="#!">7-8 pm</a></li>
+                    <li><a href="#!">8-9 pm</a></li>
+                    <li><a href="#!">9-10 pm</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <!--search input box-->

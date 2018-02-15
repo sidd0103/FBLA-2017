@@ -191,3 +191,102 @@ class SearchModal {
     }
 
 }
+class timeModal {
+    constructor() {
+        this.time;
+        this.container = $('.change-time-container');
+        this.initTime();
+    }
+    initTime () {
+        var time = JSON.parse(sessionStorage.getItem('time'));
+        if (time == null) {
+            this.time = {'type':'ASAP',date:null,time:null};
+        } else {
+            this.time = time;
+            this.save();
+        }
+        var twoDays = moment().add(2,'days').format("dddd, MMMM Do YYYY");
+        $('.nextDay').text(twoDays);
+        
+    }
+    selectDate(dateSelected) {
+        if (dateSelected == 'ASAP') {
+            this.time.type = 'ASAP';
+            this.time.date = null;
+        }
+        else {
+            this.time.type = 'PLAN';
+            this.time.date = dateSelected;
+        }
+    }
+    selectTime(timeSelected) {
+        this.time.time = timeSelected;
+        if (this.time == null) {
+            $('.timedisplay').text('Pick a time');
+            $('.save-time-changes').removeClass('active');
+        }
+        else {
+            $('.timedisplay').text(this.time.time.substring(0,this.time.time.indexOf(' ')));   
+            $('.save-time-changes').addClass('active');
+        }
+    }
+    switchToTime() {
+        this.fixDropdownTimes('reset',$('#AM li'));
+        this.fixDropdownTimes('reset',$('#PM li'));
+        if (this.time.date == 'Today') {
+            this.fixDropdownTimes('disable',$('#AM li'));
+            this.fixDropdownTimes('disable',$('#PM li'));
+        }
+        $('.day-choice').addClass('hidden');
+        $('.date-chosen').text(this.time.date);
+        $('.time-choice').removeClass('hidden');
+    }
+    fixDropdownTimes(action, dropdown) {
+        dropdown.each(function(index) {
+            var tempTimeString = $(this).text().substring($(this).text().indexOf("-") + 1).replace(/ /g,'');
+            var optionTime = moment(tempTimeString, 'h:mma');
+            var nowTime = moment();
+            nowTime.add(45,'minutes');
+            if (action == 'disable') {
+                if (optionTime.isBefore(nowTime)) {
+                    $(this).addClass('disabled');
+                }
+                else {
+                    return false;
+                }
+            }
+            else if (action == 'reset') {
+                $(this).removeClass('disabled');
+            }
+        })
+    }
+    switchToDate() {
+        $('.time-choice').addClass('hidden');
+        $('.day-choice').removeClass('hidden');
+    }
+    save() {
+        var payload = JSON.stringify(this.time);
+        sessionStorage.setItem('time', payload);
+        if (this.time.type == 'ASAP') {
+            $('.time-info').html('<span>ASAP</span> 20 - 40 mins');
+        }
+        else if (this.time.type = 'PLAN') {
+            var date = this.time.date;
+            if (this.time.date.length > 8) {
+                date = this.time.date.substring(0,this.time.date.indexOf(','));
+            }
+            console.log("hi");
+            $('.time-info').html('<span>'+date+'</span>, '+this.time.time);
+        }
+    }
+    open() {
+        this.switchToDate();
+        $('.save-time-changes').removeClass('active');
+        this.container.addClass('active');
+        $('.overlay').addClass('active');
+    }
+    close(noOverflow) {
+        this.container.removeClass('active');
+        $('.overlay').removeClass('active');
+    }
+}
