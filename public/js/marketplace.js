@@ -64,6 +64,9 @@ $(document).ready(function () {
         onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
     
+    
+
+    
     //handle clicking on a tile
     var menuModal;
     var itemModal;
@@ -131,7 +134,6 @@ $(document).ready(function () {
         cart.addItem(options, itemModal.data, true);
     });
     $('body').on('click','.delete-btn',function(){
-        console.log('close');
         var id = $(this).parent('.item').attr('id');
         cart.removeItem(id);
     });

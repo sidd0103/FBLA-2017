@@ -11,7 +11,6 @@ class ShoppingCart {
             var data = JSON.parse(window.sessionStorage.getItem('cart'));
             var items = data.items;
             for (var item in items) {
-                console.log(items[item]);
                 if (items[item] != null) {
                     this.addItem(items[item]['options'],items[item]['data'], false);   
                 }
@@ -26,7 +25,6 @@ class ShoppingCart {
         $('.cart').html($('.cart').html() + '<div id="'+id+'" class="z-depth-2 item"> <div class="waves-effect material-icons z-depth-1 delete-btn">close</div> <div class="thumbnail"> <div class="darken-layer"></div> <div class="text"><div class="truncate name">'+data.itemName+'</div><div class="from">'+data.orgin+'</div></div> </div> <div class="priceinfo"><div class="num"><i class="material-icons">close</i>'+options.num+'</div><div class="total">$'+data.itemPrice * options.num+'</div></div> </div>');
         var thumbsrc = {'className':'','src':''};
         if (data.itemImage != null) {
-            console.log(id);
             $('#'+id + ' .thumbnail').addClass('bg').css('background-image','url('+data.itemImage+')');
         }
         if (toast == true) {
@@ -39,7 +37,6 @@ class ShoppingCart {
 
     }
     removeItem(id) {
-        console.log(this.items[id])
         this.items[id] = null;
         $('#'+id).remove();
         this.updateTotal();
@@ -54,7 +51,6 @@ class ShoppingCart {
                 totalPrice += this.items[item].data.itemPrice * this.items[item].options.num  ;   
             }
         }
-        console.log(totalPrice);
         $('li .total').text('$'+totalPrice);
     }
 }
@@ -73,7 +69,6 @@ class CheckOutCart {
             var data = JSON.parse(window.sessionStorage.getItem('cart'));
             var items = data.items;
             for (var item in items) {
-                console.log(items[item]);
                 if (items[item] != null) {
                     this.addItem(items[item]['options'],items[item]['data'], false);   
                 }
@@ -91,7 +86,6 @@ class CheckOutCart {
         $('.item-container').html('<div id="'+id+'" class="z-depth-2 item"> <div class="waves-effect z-depth-1 del-item material-icons">close</div> <div class="thumbnail"> <div class="darker"></div> <div> <div class="item-title">'+data.itemName+'</div> <div class="sub">'+data.orgin+'</div> </div> </div> <div class="description"> <label>Instructions</label> <div class="instructions">'+options.requests+'</div> </div> <div class="price-details"> <div class="num">x'+options.num+'</div> <div class="price">$'+data.itemPrice * options.num+'</div> </div></div>' + $('.item-container').html());
         var thumbsrc = {'className':'','src':''};
         if (data.itemImage != null) {
-            console.log(id);
             $('#'+id + ' .thumbnail').addClass('bg').css('background-image','url('+data.itemImage+')');
         }
         if (toast == true) {
@@ -104,7 +98,6 @@ class CheckOutCart {
 
     }
     removeItem(id) {
-        console.log(this.items[id])
         this.items[id] = null;
         $('#'+id).remove();
         this.updateTotal();
@@ -119,7 +112,6 @@ class CheckOutCart {
                 totalPrice += this.items[item].data.itemPrice * this.items[item].options.num  ;   
             }
         }
-        console.log(totalPrice);
         $('.mon').text('$'+totalPrice);
     }
 }
