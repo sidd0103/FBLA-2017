@@ -9,6 +9,10 @@ $(document).ready(function () {
         onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
         onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
+    //contactus
+    $('.contactUs').click(function(){
+        document.location.href = 'contact.html';
+    });
     //handle the generation of cart items
     var cart = new CheckOutCart();
     $('body').on('click','.del-item',function(){
@@ -169,6 +173,8 @@ class timeModal {
         if (dateSelected == 'ASAP') {
             this.time.type = 'ASAP';
             this.time.date = null;
+            this.close();
+            this.save();
         }
         else {
             this.time.type = 'PLAN';
@@ -233,6 +239,7 @@ class timeModal {
             }
             $('.time-info').html('<span>'+date+'</span>, '+this.time.time);
         }
+        this.close();
     }
     open() {
         this.switchToDate();

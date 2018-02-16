@@ -135,3 +135,31 @@ ul .noUi-tooltip span {
 #navigationBar {
     font-family: Poppins;
 }
+
+
+#navigationBar {
+    height: 100%;
+}
+.contactUs {
+    position: absolute;
+    bottom: 0;
+    padding: 16;
+    padding-left: 30;
+    padding-right: 30;
+    width: 100%;
+    display: flex;
+    font-size: 14;
+    color: rgba(0, 0, 0, .8);
+    transition: background-color .2s;
+    align-items: center;
+    border-top: .5px solid #eee;
+}
+
+.contactUs:hover {
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.contactUs i {
+    margin-right: 30;
+    color: rgba(0, 0, 0, .8)!important;
+}

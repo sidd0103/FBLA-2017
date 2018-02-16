@@ -213,6 +213,8 @@ class timeModal {
         if (dateSelected == 'ASAP') {
             this.time.type = 'ASAP';
             this.time.date = null;
+            this.close();
+            this.save();
         }
         else {
             this.time.type = 'PLAN';
@@ -268,7 +270,7 @@ class timeModal {
         var payload = JSON.stringify(this.time);
         sessionStorage.setItem('time', payload);
         if (this.time.type == 'ASAP') {
-            $('.time-info').html('<span>ASAP</span> 20 - 40 mins');
+            $('.time-info').html('<b>ASAP</b> 20 - 40 mins');
             $('.delivery-time').text('ASAP');
         }
         else if (this.time.type = 'PLAN') {
@@ -276,7 +278,7 @@ class timeModal {
             if (this.time.date.length > 8) {
                 date = this.time.date.substring(0,this.time.date.indexOf(','));
             }
-            $('.time-info').html('<span>'+date+'</span>, '+this.time.time);
+            $('.time-info').html('<b>'+date+'</b>, '+this.time.time);
             $('.delivery-time').text(date + ', ' + this.time.time);
         }
         this.close();

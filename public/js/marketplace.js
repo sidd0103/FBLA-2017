@@ -2,6 +2,10 @@ var deliverModal;
 $(document).ready(function () {
     //handle filling in the item window
     initItems();
+    //contact us link
+    $('.contactUs').click(function(){
+        document.location.href = 'contact.html';
+    });
     //handle search bar
     var searchPage = new SearchModal();
     $('.searchInput').keyup(function(){

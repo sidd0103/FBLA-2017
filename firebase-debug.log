@@ -1,0 +1,71 @@
+[debug] [2018-02-16T07:58:00.838Z] ----------------------------------------------------------------------
+[debug] [2018-02-16T07:58:00.842Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sidbi\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-02-16T07:58:00.844Z] CLI Version:   3.15.2
+[debug] [2018-02-16T07:58:00.844Z] Platform:      win32
+[debug] [2018-02-16T07:58:00.844Z] Node Version:  v6.11.0
+[debug] [2018-02-16T07:58:00.845Z] Time:          Thu Feb 15 2018 23:58:00 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:00.845Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-16T07:58:00.881Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-16T07:58:00.883Z] > authorizing via signed-in user
+[debug] [2018-02-16T07:58:00.885Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-16T07:58:00.886Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/qTwv9rWeHPeLOwbjziq2JdNRsOb3v7_oqSsWVw1Zgu8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Feb 15 2018 23:58:00 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:01.111Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-16T07:58:01.123Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tastery-c81be  
+ Thu Feb 15 2018 23:58:01 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:01.593Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-16T07:58:01.594Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tastery-c81be/tokens  
+ Thu Feb 15 2018 23:58:01 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:02.084Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tastery-c81be'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-02-16T07:58:02.561Z] >>> HTTP REQUEST PUT https://tastery-c81be.firebaseio.com/.settings/rules.json?dryRun=true {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Thu Feb 15 2018 23:58:02 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:03.013Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database tastery-c81be is valid
+[debug] [2018-02-16T07:58:03.022Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.7"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] [2018-02-16T07:58:03.027Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/tastery-c81be?view=CONSUMER_VIEW  
+ Thu Feb 15 2018 23:58:03 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:03.027Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/tastery-c81be?view=CONSUMER_VIEW  
+ Thu Feb 15 2018 23:58:03 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:03.799Z] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] [2018-02-16T07:58:03.861Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2018-02-16T07:58:03.864Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/tastery-c81be  
+ Thu Feb 15 2018 23:58:03 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:03.865Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/tastery-c81be/apiKeys  
+ Thu Feb 15 2018 23:58:03 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:04.323Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-16T07:58:04.329Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-02-16T07:58:12.838Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/tastery-c81be/configs  
+ Thu Feb 15 2018 23:58:12 GMT-0800 (Pacific Standard Time)
+[debug] [2018-02-16T07:58:13.113Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-02-16T07:58:16.079Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tastery-c81be/uploads/-L5SbgPH2ljuvgVOnu3f?fileCount=105&message=  
+ Thu Feb 15 2018 23:58:16 GMT-0800 (Pacific Standard Time)
