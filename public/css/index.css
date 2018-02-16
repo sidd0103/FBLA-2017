@@ -502,13 +502,14 @@ input[type=text] {
     position: relative;
 }
 .farmer-pic  {
-    background-image: url(../media/people/farmer.jpg);
+    background-image: url(../media/people/cook.jpg);
 }
 .average-pic{
     background-image: url(../media/people/average.jpg);
 }
 .cook-pic {
-    background-image: url(../media/people/cook.jpg);
+    background-image: url(../media/delivery.jpeg);
+    background-position: center;
 }
 .responsive-columns  {
     
