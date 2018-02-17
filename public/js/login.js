@@ -10,4 +10,11 @@ $(document).ready(function(){
     $('.contactUs').click(function(){
         document.location.href = 'contact.html';
     });
+    //login submit button
+    $('.login-btn').click(function(){
+        console.log("clicked");
+        var email = $('#email').val();
+        var pass = $('#password').val();
+        tasteAuth.login(email, pass, true);
+    });
 })

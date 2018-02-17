@@ -10,4 +10,34 @@ $(document).ready(function(){
     $('.contactUs').click(function(){
         document.location.href = 'contact.html';
     });
+    //login link
+    $('.login-box').click(function(){
+        if (tasteAuth.loggedIn == false) {
+            document.location.href = 'login.html';
+        }
+    });
+    $('.register-btn').click(function(){
+        var type = $('.active').attr('href').replace('#','');
+        var payload = {};
+        var valid = true;
+        var error = "";
+        $('#'+type+' input').each(function(){
+            var id = $(this).attr('id');
+            if (id.includes('vpassword')) {
+                if (payload['password'] != $(this).val()) {
+                    valid = false;
+                    error = "Your passwords don't match!";
+                    return false;
+                }
+            }
+            payload[id.replace(/[0-9]/g, "")] = $(this).val();  
+        })
+        console.log(payload);
+        if (valid) {
+            tasteAuth.createUserAccount(payload);
+        }
+        else {
+            Materialize.toast('<span class="error-icon material-icons">error</span>'+error,800,'toast-style');
+        }
+    })
 })

@@ -20,11 +20,24 @@
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
-    <script src="js/animations.js"></script>
+    <script src="js/authorization.js"></script>
     <link href="css/register.css" rel="stylesheet">
     <script src="js/register.js"></script>
     <script src="js/responsive.js"></script>
-    <script src="js/location.js"></script>
+    <!--FIREBASE DATBASE AND AUTHENTICATION-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDMe7zPAw5IjyJDVrblxNcB6PQ7w4Oh0tg",
+            authDomain: "tastery-c81be.firebaseapp.com",
+            databaseURL: "https://tastery-c81be.firebaseio.com",
+            projectId: "tastery-c81be",
+            storageBucket: "tastery-c81be.appspot.com",
+            messagingSenderId: "378381445745"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 <body>
@@ -50,14 +63,18 @@
         <li><a class="waves-effect" href="checkout.html"><i class="material-icons">attach_money</i>Checkout</a></li>
         <div class="waves-effect contactUs"><i class="material-icons">help_outline</i>Contact Us</div>
     </ul>
+    <!--Welcome modal-->
+    <div class="welcomeModal">
+    
+    </div>
     <!--Page title-->
     <div class="page-title">REGISTER</div>
     <!--login box-->
     <div class="z-depth-2 register-box">
         <ul class="expand tabs-fixed-width tabs">
-            <li class="tab col s3"><a href="#taster">Taster</a></li>
-            <li class="tab col s3"><a href="#courrier">COURRIER</a></li>
-            <li class="tab col s3"><a href="#partner">PARTNER</a></li>
+            <li class="tab col s3"><a href="#taster">USER</a></li>
+            <li class="tab col s3"><a href="#courrier">COURIER</a></li>
+            <li class="tab col s3"><a href="#partner">COOK</a></li>
         </ul>
         <div id="taster" class="row">
             <div class="input-field">
@@ -69,7 +86,7 @@
                 <label for="lname">Your Last Name</label>
             </div>
             <div class="input-field">
-                <input id="email" type="text" class="validate">
+                <input id="email" type="email" class="validate">
                 <label for="email">Your Email</label>
             </div>
             <div class="input-field">
@@ -83,54 +100,54 @@
         </div>
         <div id="courrier" class="row">
             <div class="input-field">
-                <input id="fname" type="text" class="validate">
-                <label for="fname">Your First Name</label>
+                <input id="fname2" type="text" class="validate">
+                <label for="fname2">Your First Name</label>
             </div>
             <div class="input-field">
-                <input id="lname" type="text" class="validate">
-                <label for="lname">Your Last Name</label>
+                <input id="lname2" type="text" class="validate">
+                <label for="lname2">Your Last Name</label>
             </div>
             <div class="input-field">
-                <input id="city" type="text" class="validate">
-                <label for="city">Your Location </label>
+                <input id="city2" type="text" class="validate">
+                <label for="city2">Your Location </label>
             </div>
             <div class="input-field">
-                <input id="email" type="text" class="validate">
-                <label for="email">Your Email</label>
+                <input id="email2" type="email" class="validate">
+                <label for="email2">Your Email</label>
             </div>
             <div class="input-field">
-                <input id="password" type="password" class="validate">
-                <label for="password">Your Password</label>
+                <input id="password2" type="password" class="validate">
+                <label for="password2">Your Password</label>
             </div>
             <div class="input-field">
-                <input id="vpassword" type="password" class="validate">
-                <label for="vpassword">Retype Password</label>
+                <input id="vpassword2" type="password" class="validate">
+                <label for="vpassword2">Retype Password</label>
             </div>
         </div>
         <div id="partner" class="row">
             <div class="input-field">
-                <input id="fname" type="text" class="validate">
-                <label for="fname">Your First Name</label>
+                <input id="fname3" type="text" class="validate">
+                <label for="fname3">Your First Name</label>
             </div>
             <div class="input-field">
-                <input id="lname" type="text" class="validate">
-                <label for="lname">Your Last Name</label>
+                <input id="lname3" type="text" class="validate">
+                <label for="lname3">Your Last Name</label>
             </div>
             <div class="input-field">
-                <input id="city" type="text" class="validate">
-                <label for="city">Your Location </label>
+                <input id="city3" type="text" class="validate">
+                <label for="city3">Your Location </label>
             </div>
             <div class="input-field">
-                <input id="email" type="text" class="validate">
-                <label for="email">Your Email</label>
+                <input id="email3" type="email" class="validate">
+                <label for="email3">Your Email</label>
             </div>
             <div class="input-field">
-                <input id="password" type="password" class="validate">
-                <label for="password">Your Password</label>
+                <input id="password3" type="password" class="validate">
+                <label for="password3">Your Password</label>
             </div>
             <div class="input-field">
-                <input id="vpassword" type="password" class="validate">
-                <label for="vpassword">Retype Password</label>
+                <input id="vpassword3" type="password" class="validate">
+                <label for="vpassword3">Retype Password</label>
             </div>
         </div>
         <div class="waves-effect z-depth-3 register-btn">Register</div>

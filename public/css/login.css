@@ -92,6 +92,17 @@ body {
     font-family: Poppins;
     background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+/*toast*/
+
+.toast-style {
+    font-family: Poppins;
+    font-weight: 700;
+    background: linear-gradient(to right, #cb356b, #bd3f32);
+}
+
+.error-icon {
+    margin-right: 10;
+}
 /*SIDE NAV BAR*/
 ul .login-box {
     margin-top: 70;

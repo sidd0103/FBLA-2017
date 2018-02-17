@@ -21,8 +21,23 @@
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
+    <script src="js/authorization.js"></script>
     <link href="css/contact.css" rel="stylesheet">
     <script src="js/contact.js"></script>
+    <!--FIREBASE DATBASE AND AUTHENTICATION-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDMe7zPAw5IjyJDVrblxNcB6PQ7w4Oh0tg",
+            authDomain: "tastery-c81be.firebaseapp.com",
+            databaseURL: "https://tastery-c81be.firebaseio.com",
+            projectId: "tastery-c81be",
+            storageBucket: "tastery-c81be.appspot.com",
+            messagingSenderId: "378381445745"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 <body>
@@ -52,6 +67,10 @@
     <div class="z-depth-1 contact-us-page">
         <div class="comment-area">
             <div class="row">
+                <div class="input-field">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Please enter your email.</label>
+                </div>
                 <div class="input-field">
                   <textarea id="textarea1" class="materialize-textarea"></textarea>
                   <label for="textarea1">Please enter inquiries and comments here.</label>

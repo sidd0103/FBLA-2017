@@ -21,6 +21,7 @@
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
+    <script src="js/authorization.js"></script>
     <link href="css/marketplace.css" rel="stylesheet">
     <script defer src="js/responsive.js"></script>
     <script src="js/marketplace.js"></script>
@@ -30,6 +31,20 @@
     <!--GMAPS API-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
     <link href="css/autocomplete.css" rel=stylesheet>
+    <!--FIREBASE DATBASE AND AUTHENTICATION-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDMe7zPAw5IjyJDVrblxNcB6PQ7w4Oh0tg",
+            authDomain: "tastery-c81be.firebaseapp.com",
+            databaseURL: "https://tastery-c81be.firebaseio.com",
+            projectId: "tastery-c81be",
+            storageBucket: "tastery-c81be.appspot.com",
+            messagingSenderId: "378381445745"
+        };
+        firebase.initializeApp(config);
+    </script>
 
 </head>
 
@@ -199,7 +214,7 @@
                     <div class="z-depth-4 menu-thumb">
                         <div class="darker">
                             <div class="menu-title">
-                                <div class="sub">Restraunt</div>
+                                <div class="sub">Restaurant</div>
                                 <div class="menu-title-name">Ricks Cafe </div>
                             </div>
 

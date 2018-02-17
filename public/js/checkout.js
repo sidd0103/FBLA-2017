@@ -13,6 +13,12 @@ $(document).ready(function () {
     $('.contactUs').click(function(){
         document.location.href = 'contact.html';
     });
+    //login link
+    $('.login-box').click(function(){
+        if (tasteAuth.loggedIn == false) {
+            document.location.href = 'login.html';
+        }
+    });
     //handle the generation of cart items
     var cart = new CheckOutCart();
     $('body').on('click','.del-item',function(){

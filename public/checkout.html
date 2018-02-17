@@ -21,6 +21,7 @@
     <!--Set page attributes, ie responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Get our working files linked-->
+    <script src="js/authorization.js"></script>
     <link href="css/checkout.css" rel="stylesheet">
     <script src="js/checkout.js"></script>
     <script src="js/cart.js"></script>
@@ -28,6 +29,20 @@
     <script src="https://js.stripe.com/v3/"></script>
     <!--GMAPS API-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuG9a_KqnetUGUdCzt4VlJk2PIVo-1QN4&libraries=places&callback=initAutoComplete" async defer></script>
+    <!--FIREBASE DATBASE AND AUTHENTICATION-->
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDMe7zPAw5IjyJDVrblxNcB6PQ7w4Oh0tg",
+            authDomain: "tastery-c81be.firebaseapp.com",
+            databaseURL: "https://tastery-c81be.firebaseio.com",
+            projectId: "tastery-c81be",
+            storageBucket: "tastery-c81be.appspot.com",
+            messagingSenderId: "378381445745"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 <body>
@@ -72,8 +87,13 @@
                 <div class="time-choice hidden">
                     <label>Select a time for delivery:</label>
                     <div class="date-chosen">Tomorrow</div>
-                    <div data-activates='AM' class="dropdown-button waves-effect timepicker"><div class="timedisplay">Pick a time</div><div class="timetype">AM</div></div>
-                    <div class="waves-effect save-time-changes"><div><i class="material-icons">check</i>Save Changes</div></div>
+                    <div data-activates='AM' class="dropdown-button waves-effect timepicker">
+                        <div class="timedisplay">Pick a time</div>
+                        <div class="timetype">AM</div>
+                    </div>
+                    <div class="waves-effect save-time-changes">
+                        <div><i class="material-icons">check</i>Save Changes</div>
+                    </div>
                     <ul id='AM' class='dropdown-content'>
                         <li><a href="#!">7-8 am</a></li>
                         <li><a href="#!">8-9 am</a></li>

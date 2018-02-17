@@ -6,6 +6,12 @@ $(document).ready(function () {
     $('.contactUs').click(function(){
         document.location.href = 'contact.html';
     });
+    //login link
+    $('.login-box').click(function(){
+        if (tasteAuth.loggedIn == false) {
+            document.location.href = 'login.html';
+        }
+    });
     //handle search bar
     var searchPage = new SearchModal();
     $('.searchInput').keyup(function(){
