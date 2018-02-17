@@ -22,8 +22,12 @@ body {
 .nav-top {
     top: 0;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 50;
     position: fixed;
     width: 100%;
@@ -36,8 +40,15 @@ body {
     font-family: Poppins;
     font-weight: 600;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-transform: none;
@@ -46,8 +57,15 @@ body {
     margin-left: 40;
     font-family: Poppins;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-weight: 600;
@@ -87,6 +105,8 @@ body {
     background-color: white;
 }
 .deliver-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
@@ -132,7 +152,8 @@ body {
     margin-left: auto;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
 }
 .time-info span {
     font-weight: 700;
@@ -156,11 +177,23 @@ body {
     height: 100;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32);
     background-size: cover;
 }
@@ -198,12 +231,20 @@ body {
     padding-left: 20;
     border-top: 1px solid #eee;
     padding-right: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .price-details .num {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 17;
 }
 .price-details .price {
@@ -217,6 +258,8 @@ body {
     max-width: 350;
 }
 .courrier-item .header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-image: url(../media/delivery.jpeg);
     background-size: cover;
@@ -237,30 +280,49 @@ body {
     font-weight: 700;
     font-family: Poppins;
     padding-top: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 10;
 }
 .tip-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
 }
 .num-display {
     padding-left: 10;
     padding-right: 10;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .plus, .minus {
     width: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 20;
     font-weight: 300;
     border-radius: 30px;
 }
 .credit-card-enter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: Poppins;
 }
@@ -286,7 +348,11 @@ body {
     border: 1px solid transparent;
 
     -webkit-transition: box-shadow 150ms ease;
+    -webkit-transition: -webkit-box-shadow 150ms ease;
+    transition: -webkit-box-shadow 150ms ease;
+    -o-transition: box-shadow 150ms ease;
     transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
 }
 .StripeElement--focus {
 }
@@ -304,8 +370,12 @@ body {
     padding-top: 20;
     border-left: 1px solid #eee;
     padding-bottom: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .submit .txt {
     font-size: 18;
@@ -331,12 +401,20 @@ body {
     color: #bd3f32;
     background-color: white;
     border-radius: 30px;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
     opacity: 0;
+    -webkit-transition: opacity .2s, -webkit-transform 0s;
+    transition: opacity .2s, -webkit-transform 0s;
+    -o-transition: transform 0s, opacity .2s;
     transition: transform 0s, opacity .2s;
+    transition: transform 0s, opacity .2s, -webkit-transform 0s;
 }
 .item:hover .del-item {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     opacity: 1;
 }
 /*SIDE NAV BAR*/
@@ -398,11 +476,17 @@ ul .noUi-tooltip span {
     padding-left: 30;
     padding-right: 30;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 14;
     color: rgba(0,0,0,.8);
+    -webkit-transition: background-color .2s;
+    -o-transition: background-color .2s;
     transition: background-color .2s;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top: .5px solid #eee;
 }
 .contactUs:hover {
@@ -418,8 +502,12 @@ ul .noUi-tooltip span {
     padding-left: 40;
     padding-right: 40;
     top: 70;
-    transform: scaleY(0);
-    transform-origin: top;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
     width: 60%;
     z-index: 100;
     background-color: white;
@@ -430,7 +518,11 @@ ul .noUi-tooltip span {
     border-top: 1px solid #eee;
     color: red;
     border-right: 1px solid #eee;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .1s, -webkit-transform .2s;
+    -o-transition: transform .2s, opacity .1s;
     transition: transform .2s, opacity .1s;
+    transition: transform .2s, opacity .1s, -webkit-transform .2s;
 }
 .change-location-modal input {
     font-family: Poppins;
@@ -440,8 +532,12 @@ ul .noUi-tooltip span {
     font-size: 15;
     font-family: Poppins;
     padding: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid #eee;
     background-image: url(../media/lightbg2.jpeg);
     background-position: bottom;
@@ -484,9 +580,15 @@ ul .noUi-tooltip span {
 .pac-icon {
 }
 .change-location-modal.active {
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
     opacity: 1;
+    -webkit-transition: opacity .1s, -webkit-transform .2s;
+    transition: opacity .1s, -webkit-transform .2s;
+    -o-transition: transform .2s, opacity .1s;
     transition: transform .2s, opacity .1s;
+    transition: transform .2s, opacity .1s, -webkit-transform .2s;
 }
 /*
 /*modal overlay*/
@@ -503,6 +605,9 @@ ul .noUi-tooltip span {
 .toast-style {
     font-family: Poppins;
     font-weight: 700;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32);
 }
 .error-icon {
@@ -519,15 +624,29 @@ ul .noUi-tooltip span {
     border-radius: 1px solid #eee;
     right: 0;
     background-color: white;
-    transform-origin: top;
-    transform: scaleY(0);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
     opacity: 0;
+    -webkit-transition: opacity .2s, -webkit-transform .1s;
+    transition: opacity .2s, -webkit-transform .1s;
+    -o-transition: transform .1s, opacity .2s;
     transition: transform .1s, opacity .2s;
+    transition: transform .1s, opacity .2s, -webkit-transform .1s;
 }
 .change-time-modal.active {
     opacity: 1;
-    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: opacity .2s, -webkit-transform .1s;
+    transition: opacity .2s, -webkit-transform .1s;
+    -o-transition: transform .1s, opacity .2s;
     transition: transform .1s, opacity .2s;
+    transition: transform .1s, opacity .2s, -webkit-transform .1s;
 }
 .day-choice {
     padding-left: 20;
@@ -538,12 +657,16 @@ ul .noUi-tooltip span {
     opacity: 1;
     visibility: visible;
     position: relative;
+    -webkit-transition: opacity .1s, visibility 0s, position 0s;
+    -o-transition: opacity .1s, visibility 0s, position 0s;
     transition: opacity .1s, visibility 0s, position 0s;
 }
 .day-choice.hidden {
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    -webkit-transition: opacity .1s, visibility .1s 0s, position .1s 0s;
+    -o-transition: opacity .1s, visibility .1s 0s, position .1s 0s;
     transition: opacity .1s, visibility .1s 0s, position .1s 0s;
 }
 .day-choice div {
@@ -560,12 +683,16 @@ ul .noUi-tooltip span {
     padding-left: 20;
     visibility: visible;
     position: relative;
+    -webkit-transition: opacity .1s, visibility 0s, position 0s;
+    -o-transition: opacity .1s, visibility 0s, position 0s;
     transition: opacity .1s, visibility 0s, position 0s;
 }
 .time-choice.hidden {
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    -webkit-transition: opacity .1s, visibility .1s 0s, position .1s 0s;
+    -o-transition: opacity .1s, visibility .1s 0s, position .1s 0s;
     transition: opacity .1s, visibility .1s 0s, position .1s 0s;
 }
 .date-chosen {
@@ -588,6 +715,8 @@ ul .noUi-tooltip span {
     color: white;
     font-weight: 700;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .save-time-changes {
@@ -604,8 +733,12 @@ ul .noUi-tooltip span {
 .save-time-changes div {
     background-color: rgba(0,0,0,.2);
     padding: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 700;
     padding-left: 10;
     padding-right: 10;
@@ -626,7 +759,10 @@ ul .noUi-tooltip span {
 /*responsiveness*/
 @media only screen and (max-width: 650px) {
     .deliver-info {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .time-info {
         margin-left: 0;
@@ -640,7 +776,10 @@ ul .noUi-tooltip span {
         padding-right: 50;
     }
     .credit-card-enter {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .submit {
         width: 100%;

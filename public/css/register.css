@@ -18,6 +18,9 @@ body {
 .toast-style {
     font-family: Poppins;
     font-weight: 700;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32);
 }
 
@@ -28,8 +31,12 @@ body {
 .nav-top {
     top: 0;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 50;
     position: fixed;
     width: 100%;
@@ -42,6 +49,9 @@ body {
     font-family: Poppins;
     font-weight: 600;
     border-radius: 30px;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-transform: none;
 }
@@ -49,8 +59,15 @@ body {
     margin-left: 40;
     font-family: Poppins;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-weight: 600;
     text-transform: none;
@@ -83,7 +100,10 @@ body {
     margin: 0 auto;
     cursor: pointer;
      padding-left: 50;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     color: white;
     font-weight: 700;
     font-family: Poppins;
@@ -122,6 +142,9 @@ body {
     margin-right: 50;
     width: calc(100% - 100px);
     font-family: Poppins;
+    background: -webkit-gradient(linear, left top, right top, from(#cb356b), to(#bd3f32));
+    background: -webkit-linear-gradient(left, #cb356b, #bd3f32);
+    background: -o-linear-gradient(left, #cb356b, #bd3f32);
     background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /*SIDE NAV BAR*/
@@ -182,11 +205,17 @@ ul .noUi-tooltip span {
     padding-left: 30;
     padding-right: 30;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 14;
     color: rgba(0, 0, 0, .8);
+    -webkit-transition: background-color .2s;
+    -o-transition: background-color .2s;
     transition: background-color .2s;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-top: .5px solid #eee;
 }
 
@@ -200,7 +229,6 @@ ul .noUi-tooltip span {
 }
 @media only screen and (max-width: 400px) {
     .register-box {
-        height: calc(100% - 00px);
         margin-bottom: 0;
     }
 }
