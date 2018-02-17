@@ -19,22 +19,29 @@ class ShoppingCart {
     }
     addItem(options, data, toast) {
         //this fucntion adds an item to the cart, the state of the shopping cart object, and the session. 
-        var id = data.itemName.replace(/ /g,"_") + this.counter;
-        this.counter ++;
-        this.items[id] = {'options':options,'data':data};
-        $('.cart').html($('.cart').html() + '<div id="'+id+'" class="z-depth-2 item"> <div class="waves-effect material-icons z-depth-1 delete-btn">close</div> <div class="thumbnail"> <div class="darken-layer"></div> <div class="text"><div class="truncate name">'+data.itemName+'</div><div class="from">'+data.orgin+'</div></div> </div> <div class="priceinfo"><div class="num"><i class="material-icons">close</i>'+options.num+'</div><div class="total">$'+data.itemPrice * options.num+'</div></div> </div>');
-        var thumbsrc = {'className':'','src':''};
-        if (data.itemImage != null) {
-            $('#'+id + ' .thumbnail').addClass('bg').css('background-image','url('+data.itemImage+')');
+        if (data.itemAvailability - options.num > 0) {
+            console.log(data);
+            data.itemAvailability -= options.num;
+            var id = data.itemName.replace(/ /g,"_") + this.counter;
+            $('.item-count-num').text(data.itemAvailability);
+            this.counter ++;
+            this.items[id] = {'options':options,'data':data};
+            $('.cart').html($('.cart').html() + '<div id="'+id+'" class="z-depth-2 item"> <div class="waves-effect material-icons z-depth-1 delete-btn">close</div> <div class="thumbnail"> <div class="darken-layer"></div> <div class="text"><div class="truncate name">'+data.itemName+'</div><div class="from">'+data.orgin+'</div></div> </div> <div class="priceinfo"><div class="num"><i class="material-icons">close</i>'+options.num+'</div><div class="total">$'+data.itemPrice * options.num+'</div></div> </div>');
+            var thumbsrc = {'className':'','src':''};
+            if (data.itemImage != null) {
+                $('#'+id + ' .thumbnail').addClass('bg').css('background-image','url('+data.itemImage+')');
+            }
+            if (toast == true) {
+                Materialize.toast("Added "+data.itemName+" to shopping cart!",2000,'toast-style');   
+            }
+            this.updateTotal();
+            //save payload to session
+            var payload = {'items':this.items,'counter':this.counter};
+            window.sessionStorage.setItem('cart',JSON.stringify(payload));
         }
-        if (toast == true) {
-            Materialize.toast("Added "+data.itemName+" to shopping cart!",2000,'toast-style');   
+        else {
+            Materialize.toast('<span class="error-icon material-icons">error</span>Not enough items left!', 800, 'toast-style');
         }
-        this.updateTotal();
-        //save payload to session
-        var payload = {'items':this.items,'counter':this.counter};
-        window.sessionStorage.setItem('cart',JSON.stringify(payload));
-
     }
     removeItem(id) {
         this.items[id] = null;
@@ -92,7 +99,7 @@ class CheckOutCart {
         this.updateTotal();
     }
     addItem(options, data, toast) {
-        //this fucntion adds an item to the cart, the state of the shopping cart object, and the session. 
+        //this function adds an item to the cart, the state of the shopping cart object, and the session. 
         var id = data.itemName.replace(/ /g,"_") + this.counter;
         this.counter ++;
         this.items[id] = {'options':options,'data':data};

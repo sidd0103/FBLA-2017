@@ -200,6 +200,11 @@ input[type=text] {
     background-image: url(../media/lightbg2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: bottom;
 }
+#login-dropdown {
+    z-index: 400;
+    left: 30!important;
+    top: 160!important;
+}
 .login-box > div {
     color: white;
     font-family: Poppins;

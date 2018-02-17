@@ -49,11 +49,13 @@
     </div>
     <!--SIDE NAVIGATION BAR -->
     <ul id="navigationBar" class="side-nav">
-        <div class="waves-effect z-depth-3 login-box">
-            <img class="z-depth-3 prof-pic circle" src="media/people/guest.jpg">
-            <div href="#!name"><span class="name">Sign in</span></div>
+        <div data-activates="" class="waves-effect z-depth-3 login-box">
+            <div href="#!name"><b><span class="name">Sign in</span></b></div>
             <div href="#!email"><span class="email">To make tasting easier.</span></div>
         </div>
+        <ul id='login-dropdown' class='dropdown-content'>
+            <li id="logout"><a href="#">Logout</a></li>
+        </ul>
         <li class="down">
             <div class="divider"></div>
         </li>
@@ -65,10 +67,11 @@
     </ul>
     <!--Welcome modal-->
     <div class="welcomeModal">
-    
+
     </div>
     <!--Page title-->
     <div class="page-title">REGISTER</div>
+    <div data-to="login.html" class="sub link">Already have an account? Click here to login.</div>
     <!--login box-->
     <div class="z-depth-2 register-box">
         <ul class="expand tabs-fixed-width tabs">

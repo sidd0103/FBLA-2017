@@ -10,7 +10,8 @@
 }
 /*BODY*/
 body {
-   background: linear-gradient(to right, #ed4264, #ffedbc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-image: url(../media/burger.jpg);
+    background-size: cover;
 }
 /*toast*/
 
@@ -70,10 +71,24 @@ body {
     padding-left: 50;
     padding-right: 50;
     font-family: Poppins;
-    color: white;
+    background-image: url(../media/lightbg2.jpeg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
     font-size: 50;
-    margin-bottom: 20;
     font-weight: 700;
+}
+.sub {
+    max-width: 500;
+    margin: 0 auto;
+    cursor: pointer;
+     padding-left: 50;
+    user-select: none;
+    color: white;
+    font-weight: 700;
+    font-family: Poppins;
+    margin-bottom: 20;
+    padding-right: 50;
 }
 /*login box*/
 .register-box {
@@ -117,8 +132,13 @@ ul .login-box {
     width: calc(100% - 60px);
     margin-right: 20;
     margin-bottom: 15;
-    background: linear-gradient(to right, #cb356b, #bd3f32); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 
+    background-image: url(../media/lightbg2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: bottom;
+}
+#login-dropdown {
+    z-index: 400;
+    left: 30!important;
+    top: 160!important;
 }
 ul .login-box > div {
     color: white;
@@ -179,7 +199,8 @@ ul .noUi-tooltip span {
     color: rgba(0, 0, 0, .8)!important;
 }
 @media only screen and (max-width: 400px) {
-    .page-title {
-        text-align: center;
+    .register-box {
+        height: calc(100% - 00px);
+        margin-bottom: 0;
     }
 }

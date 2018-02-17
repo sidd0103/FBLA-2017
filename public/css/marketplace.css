@@ -391,11 +391,14 @@ body::-webkit-scrollbar {
     width: calc(100% - 60px);
     margin-right: 20;
     margin-bottom: 15;
-    background: linear-gradient(to right, #cb356b, #bd3f32);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius:
+    background-image: url(../media/lightbg2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: bottom;
 }
-
+#login-dropdown {
+    z-index: 400;
+    left: 30!important;
+    top: 160!important;
+}
 .login-box > div {
     color: white;
     font-family: Poppins;
@@ -857,7 +860,11 @@ input[type=text]#enterLocation {
     padding-bottom: 10;
     padding-top: 0;
 }
-
+.item-count {
+    color: white;
+    font-family: Poppins;
+    margin-left: 5;
+}
 /*MENU MODAL*/
 
 .menu-modal-container {

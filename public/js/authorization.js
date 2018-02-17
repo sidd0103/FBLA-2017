@@ -44,10 +44,20 @@ class tasteAuthentication {
             if (valid) {
                 that.loggedIn = true;
                 if (toast) {
-                    Materialize.toast("Logged in!", 1000, "toast-style");
+                    window.location.href = "index.html";
                 }
             }
 
+        });
+    }
+    logout() {
+        var that = this;
+        firebase.auth().signOut().then(function() {
+            Materialize.toast("Signed out.", 1000, "toast-style");
+            that.loggedIn = false;
+        }, function(error) {
+            var errorMessage = error.message;
+            Materialize.toast('<span class="error-icon material-icons">error</span>' + errorMessage, 800, 'toast-style');
         });
     }
 
@@ -62,11 +72,21 @@ $(document).ready(function () {
                 $('.login-box .name').text(data.fname + ' ' + data.lname);
                 $('.login-box .email').text(user.email);
             });
+            $('.login-box').attr('data-activates','login-dropdown');
+            $('.login-box').addClass('dropdown-button');
+            $('.login-box').dropdown();
             tasteAuth.loggedIn = true;
         } else {
             // User is signed out.
             // ...
+            $('.login-box .name').text('Sign in');
+            $('.login-box .email').text('To make tasting easier.');
+            $('.login-box').attr('data-activates','');
+            $('.login-box').removeClass('dropdown-button');
             tasteAuth.loggedIn = false;
         }
     });
+    $('#logout').click(function(){
+        tasteAuth.logout();
+    })
 })

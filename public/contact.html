@@ -49,11 +49,13 @@
     </div>
     <!--SIDE NAVIGATION BAR -->
     <ul id="navigationBar" class="side-nav">
-        <div class="waves-effect z-depth-3 login-box">
-            <img class="z-depth-3 prof-pic circle" src="media/people/guest.jpg">
-            <div href="#!name"><span class="name">Sign in</span></div>
+        <div data-activates="" class="waves-effect z-depth-3 login-box">
+            <div href="#!name"><b><span class="name">Sign in</span></b></div>
             <div href="#!email"><span class="email">To make tasting easier.</span></div>
         </div>
+        <ul id='login-dropdown' class='dropdown-content'>
+            <li id="logout"><a href="#">Logout</a></li>
+        </ul>
         <li class="down">
             <div class="divider"></div>
         </li>
@@ -72,8 +74,8 @@
                     <label for="email">Please enter your email.</label>
                 </div>
                 <div class="input-field">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Please enter inquiries and comments here.</label>
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Please enter inquiries and comments here.</label>
                 </div>
                 <div class="z-depth-1 waves-effect submit">Submit</div>
             </div>

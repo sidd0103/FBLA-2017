@@ -73,6 +73,7 @@ class ItemModal {
             $('.item-modal-container .tags').html(tagHTML)
         }
         $('.place-link').text(this.data['orgin']);
+        $('.item-count-num').text(this.data['itemAvailability']);
     }
     open() {
         this.on = true;
